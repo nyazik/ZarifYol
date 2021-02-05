@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "74ED1CCD-BE2F-40DC-B630-63CF3CAAF1CE"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A8B7C433-902C-4190-85A7-9A9AA1829B9A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/Controller/Login/RegisterVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "RegisterVC"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CEFA267A-398C-4DA3-AA56-20725EE55680"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/Controller/AddToCartVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F75F441-1836-4DD0-B832-E99CB13BA977"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/View/CollectionViewCell/ProductsYouMayLikeCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "784D34F6-D5F7-4CD9-AF2E-CEC83C420A7E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "SubCategoryVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "784D34F6-D5F7-4CD9-AF2E-CEC83C420A7E - 14fb5a519b182d22"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.SubCategoryVC.subCategoryTableView.getter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "784D34F6-D5F7-4CD9-AF2E-CEC83C420A7E - b311aef0539fc13e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.SubCategoryVC.subCategoryTableView.setter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "784D34F6-D5F7-4CD9-AF2E-CEC83C420A7E - b93513d7b27d8abb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.SubCategoryVC.subCategoryTableView.modify : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "784D34F6-D5F7-4CD9-AF2E-CEC83C420A7E - ef2542c21550604c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.SubCategoryVC.subCategoryTableView.modify : Swift.Optional&lt;__C.UITableView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "784D34F6-D5F7-4CD9-AF2E-CEC83C420A7E - 6e65ca758052a80a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.SubCategoryVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ZarifYol.SubCategoryVC"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  uuid = "784D34F6-D5F7-4CD9-AF2E-CEC83C420A7E - 446368fb89244f5c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.SubCategoryVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ZarifYol.SubCategoryVC&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "102">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0685CB3D-1EAC-40C4-B35E-19C82D1FA878"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "SubCategoryVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "0685CB3D-1EAC-40C4-B35E-19C82D1FA878 - 14fb5a519b182d22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.SubCategoryVC.subCategoryTableView.getter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "0685CB3D-1EAC-40C4-B35E-19C82D1FA878 - b311aef0539fc13e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.SubCategoryVC.subCategoryTableView.setter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "0685CB3D-1EAC-40C4-B35E-19C82D1FA878 - b93513d7b27d8abb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.SubCategoryVC.subCategoryTableView.modify : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "0685CB3D-1EAC-40C4-B35E-19C82D1FA878 - ef2542c21550604c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.SubCategoryVC.subCategoryTableView.modify : Swift.Optional&lt;__C.UITableView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "0685CB3D-1EAC-40C4-B35E-19C82D1FA878 - 6e65ca758052a80a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.SubCategoryVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ZarifYol.SubCategoryVC"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  uuid = "0685CB3D-1EAC-40C4-B35E-19C82D1FA878 - 446368fb89244f5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.SubCategoryVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ZarifYol.SubCategoryVC&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Filtering/SubCategoryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "102">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D5DE4ACE-3E35-4C74-9384-2DD05B2D5DA4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/Controller/Tabbar/Profile/ProfileVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "favouriteProduct(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D5DE4ACE-3E35-4C74-9384-2DD05B2D5DA4 - 24b596b4c5d87b05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.ProfileVC.addToCart(__C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Tabbar/Profile/ProfileVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "D5DE4ACE-3E35-4C74-9384-2DD05B2D5DA4 - 24b596b4c5d87b05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.ProfileVC.addToCart(__C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Tabbar/Profile/ProfileVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "794">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22B3B963-DDF7-45EA-B41D-8AFAE3287C07"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/View/TableViewCell/FavouriteProductCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "configureRoundCorner(view:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "334ABD54-AC6B-46DA-88FB-AE26B6903860"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/Controller/EditAddressVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "EditAddressVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "334ABD54-AC6B-46DA-88FB-AE26B6903860 - 48d82efb1b0e6832"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.EditAddressVC.__deallocating_deinit"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/EditAddressVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "334ABD54-AC6B-46DA-88FB-AE26B6903860 - 772f343e00b0d31a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.EditAddressVC.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ZarifYol.EditAddressVC"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/EditAddressVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "334ABD54-AC6B-46DA-88FB-AE26B6903860 - 671a4436d42c7236"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.EditAddressVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ZarifYol.EditAddressVC"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/EditAddressVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "351">
+               </Location>
+               <Location
+                  uuid = "334ABD54-AC6B-46DA-88FB-AE26B6903860 - f8b8ab59c4472172"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.EditAddressVC.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ZarifYol.EditAddressVC&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/EditAddressVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "334ABD54-AC6B-46DA-88FB-AE26B6903860 - 191e02316d7aefc0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.EditAddressVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ZarifYol.EditAddressVC&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/EditAddressVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "292">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F68CF84-9FD3-4880-B958-85061EA8025B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/Controller/Tabbar/Profile/MyAddressesVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "43E94662-BA9D-49BC-AD50-D3F060BD37C2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x7fff5e707460">
+            <Locations>
+               <Location
+                  uuid = "43E94662-BA9D-49BC-AD50-D3F060BD37C2 - f3c00e0713b713ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__pthread_kill"
+                  moduleName = "libsystem_kernel.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

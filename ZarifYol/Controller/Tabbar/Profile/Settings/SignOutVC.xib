@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignOutVC" customModule="ZarifYol" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="BJv-WA-QsF" id="P0K-M5-7Cr"/>
+                <outlet property="cancelButton" destination="hVa-NW-6jy" id="gLI-UY-QEy"/>
+                <outlet property="cellView" destination="Afh-rF-sDv" id="SEt-Mj-wy1"/>
+                <outlet property="signOutButton" destination="eBt-Bx-E7z" id="6lP-Vh-gwM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJv-WA-QsF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Afh-rF-sDv">
+                    <rect key="frame" x="20" y="348" width="374" height="200"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3D-yq-Ddl">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                            <color key="backgroundColor" red="1" green="0.44682055710000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Çıkış Yapmak İstediğine Emin Misin?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejU-Gf-4LW">
+                            <rect key="frame" x="30" y="78" width="314" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="I6w-AB-PRj">
+                            <rect key="frame" x="0.0" y="155" width="374" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVa-NW-6jy">
+                                    <rect key="frame" x="0.0" y="0.0" width="187" height="45"/>
+                                    <color key="backgroundColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="İptal Et">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cancelButtonPressed:" destination="-1" eventType="touchUpInside" id="SxT-Fz-bZw"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBt-Bx-E7z">
+                                    <rect key="frame" x="187" y="0.0" width="187" height="45"/>
+                                    <color key="backgroundColor" red="0.87058823529411766" green="0.035294117647058823" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="Çıkış Yap">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="signOutButtonPressed:" destination="-1" eventType="touchUpInside" id="Iks-3B-129"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="bnh-An-ZwN"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="T3D-yq-Ddl" secondAttribute="trailing" id="5Tz-85-ARn"/>
+                        <constraint firstAttribute="bottom" secondItem="I6w-AB-PRj" secondAttribute="bottom" id="6sP-eq-Kb7"/>
+                        <constraint firstAttribute="height" constant="200" id="7IJ-na-ibS"/>
+                        <constraint firstItem="ejU-Gf-4LW" firstAttribute="top" secondItem="T3D-yq-Ddl" secondAttribute="bottom" constant="30" id="BjI-o8-SeH"/>
+                        <constraint firstItem="I6w-AB-PRj" firstAttribute="leading" secondItem="Afh-rF-sDv" secondAttribute="leading" id="DfK-Dl-V9G"/>
+                        <constraint firstItem="T3D-yq-Ddl" firstAttribute="height" secondItem="Afh-rF-sDv" secondAttribute="height" multiplier="0.24" id="GXm-YI-Hh0"/>
+                        <constraint firstAttribute="trailing" secondItem="ejU-Gf-4LW" secondAttribute="trailing" constant="30" id="QVX-sA-2Mg"/>
+                        <constraint firstItem="T3D-yq-Ddl" firstAttribute="leading" secondItem="Afh-rF-sDv" secondAttribute="leading" id="YoY-g0-QcX"/>
+                        <constraint firstAttribute="trailing" secondItem="I6w-AB-PRj" secondAttribute="trailing" id="jvD-po-ep0"/>
+                        <constraint firstItem="T3D-yq-Ddl" firstAttribute="top" secondItem="Afh-rF-sDv" secondAttribute="top" id="pFX-ue-XVY"/>
+                        <constraint firstItem="ejU-Gf-4LW" firstAttribute="leading" secondItem="Afh-rF-sDv" secondAttribute="leading" constant="30" id="zY4-yv-E9j"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BJv-WA-QsF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4VX-5F-myY"/>
+                <constraint firstItem="Afh-rF-sDv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="4qm-Fr-zhz"/>
+                <constraint firstItem="BJv-WA-QsF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7E4-nK-ZJU"/>
+                <constraint firstAttribute="bottom" secondItem="BJv-WA-QsF" secondAttribute="bottom" id="Fbj-bQ-9ca"/>
+                <constraint firstAttribute="trailing" secondItem="BJv-WA-QsF" secondAttribute="trailing" id="Woe-pm-cdd"/>
+                <constraint firstItem="Afh-rF-sDv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="c9k-FR-7eH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Afh-rF-sDv" secondAttribute="trailing" constant="20" id="h0V-j4-2sC"/>
+                <constraint firstItem="Afh-rF-sDv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rA2-7p-8Ai"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="70.982142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
