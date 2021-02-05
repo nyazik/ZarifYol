@@ -1,0 +1,91 @@
+PODS:
+  - Cosmos (23.0.0)
+  - GMStepper (2.2)
+  - iOSDropDown (0.3.4)
+  - MaterialComponents/AnimationTiming (121.0.1)
+  - MaterialComponents/Availability (121.0.1)
+  - MaterialComponents/Buttons (121.0.1):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Elevation (121.0.1):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (121.0.1):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (121.0.1)
+  - MaterialComponents/private/Application (121.0.1)
+  - MaterialComponents/private/Color (121.0.1):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Math (121.0.1)
+  - MaterialComponents/Ripple (121.0.1):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (121.0.1)
+  - MaterialComponents/ShadowLayer (121.0.1):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (121.0.1):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (121.0.1):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/TextFields (121.0.1):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (121.0.1):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+    - MDFTextAccessibility
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
+  - SideMenu (6.5.0)
+
+DEPENDENCIES:
+  - Cosmos
+  - GMStepper
+  - iOSDropDown
+  - MaterialComponents/TextFields
+  - SideMenu
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+    - GMStepper
+    - iOSDropDown
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
+    - SideMenu
+
+SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  GMStepper: 89fb106944dfcc3aa3add7164e3ebd463ea2104b
+  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
+  MaterialComponents: afb3574c87696721741006fbb428d26c7565fc0f
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+
+PODFILE CHECKSUM: 33fcd5a21eed369aac12fe6c5ccd84df3363a26b
+
+COCOAPODS: 1.10.0
