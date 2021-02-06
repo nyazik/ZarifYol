@@ -11,13 +11,13 @@ class PayForOrderVC: UIViewController {
 
     @IBOutlet weak var agreementButton: UIButton!
     @IBOutlet weak var bottomView: UIView!
-    @IBOutlet weak var deliveryAddressView: UIView!
     @IBOutlet weak var deliveryAddressBorderView: UIView!
     @IBOutlet weak var creditCardView: UIView!
     @IBOutlet weak var creditCardBorderView: UIView!
     @IBOutlet weak var creditOptionsView: UIView!
     @IBOutlet weak var approveAndPayButton: UIButton!
-    
+    @IBOutlet weak var deliveryAddressView: UIView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +59,6 @@ class PayForOrderVC: UIViewController {
     
     func configureView(view: UIView){
         view.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
-        view.layer.masksToBounds = true
     }
 
     @IBAction func backButtonPressed(_ sender: UIButton) {

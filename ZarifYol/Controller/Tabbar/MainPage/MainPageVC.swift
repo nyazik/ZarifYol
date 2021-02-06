@@ -19,6 +19,7 @@ class MainPageVC: UIViewController {
     @IBOutlet weak var categoriesCollectionTableView: UICollectionView!
     @IBOutlet weak var brandsTableView: UITableView!
     
+    var arrayHeader = [0, 0, 0, 0, 0 , 0, 0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +45,16 @@ class MainPageVC: UIViewController {
         
         let forthTap = UITapGestureRecognizer(target: self, action: #selector(self.favouriteProduct(_:)))
         favouriteTabbarView.addGestureRecognizer(forthTap)
+        
+        brandsTableView.register(UINib(nibName: "MainPageProductCell", bundle: nil), forCellReuseIdentifier: "cell")
+
+
+        let headerNib = UINib.init(nibName: "MainPageProductView", bundle: Bundle.main)
+        brandsTableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "cell")
+        
     }
+    
+    
     
     @objc func favouriteProduct(_ sender: UITapGestureRecognizer) {
         let vc = self.storyboard?.instantiateViewController(identifier: "FavouriteProductsVC") as! FavouriteProductsVC
@@ -142,20 +152,22 @@ class MainPageVC: UIViewController {
         SideMenuManager.default.leftMenuNavigationController?.settings = settings
         SideMenuPresentationStyle.menuSlideIn.backgroundColor = UIColor.yellow
     }
-    
-    
-
 
 }
 
 
 extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+//        return 4
+        return (self.arrayHeader[section] == 0) ? 0 : 3
+
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MainPageProductCell
+        cell.configureCell()
+        //cell.textLabel?.text = "section: \(indexPath.section)  row: \(indexPath.row)"
         return cell
     }
     
@@ -163,6 +175,58 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
         return 140
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+            return 140
+        }
+//
+    
+        // 5
+        func numberOfSections(in tableView: UITableView) -> Int {
+            return arrayHeader.count
+        }
+    
+    internal func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//           let viewHeader = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 40))
+//        let viewHeader = Bundle.main.loadNibNamed("MainPageProductView", owner: self, options: nil)
+////           viewHeader.backgroundColor = UIColor.darkGray // Changing the header background color to gray
+////           let button = UIButton(type: .custom)
+////           button.frame = viewHeader.bounds
+////           button.tag = section // Assign section tag to this button
+////           button.addTarget(self, action: #selector(tapSection(sender:)), for: .touchUpInside)
+////           button.setTitle("Section: \(section)", for: .normal)
+////           viewHeader.addSubview(button)
+//           return viewHeader
+        
+        
+
+        
+        if let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "cell") as? MainPageProductView {
+            headerView.configureCell()
+//            headerView.bgView.backgroundColor = .green
+            headerView.startShoppingButton.backgroundColor = .white
+            headerView.startShoppingButton.tag = section
+            headerView.startShoppingButton.addTarget(self, action: #selector(tapSection(sender:)), for: .touchUpInside)
+         //headerView.titleName.text = "webkul"
+          return headerView
+        }
+         
+        return nil
+        
+    }
+    
+   
+    @objc func tapSection(sender: UIButton) {
+            self.arrayHeader[sender.tag] = (self.arrayHeader[sender.tag] == 1) ? 0 : 1
+            self.brandsTableView.reloadSections([sender.tag], with: .fade)
+        }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+            return 5
+        }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+            return UIView()
+        }
+
 }
 
 extension MainPageVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{

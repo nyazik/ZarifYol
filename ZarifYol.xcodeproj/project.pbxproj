@@ -64,6 +64,10 @@
 		CD5AC74C25C93FFB005A267B /* PaymentSuccessfulVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AC74A25C93FFB005A267B /* PaymentSuccessfulVC.swift */; };
 		CD5AC75425C9767F005A267B /* SuccessfulPaymentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5AC75225C9767F005A267B /* SuccessfulPaymentCell.xib */; };
 		CD5AC75525C9767F005A267B /* SuccessfulPaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AC75325C9767F005A267B /* SuccessfulPaymentCell.swift */; };
+		CD5C45C025CDE385009667A9 /* MainPageProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5C45BE25CDE385009667A9 /* MainPageProductCell.xib */; };
+		CD5C45C125CDE385009667A9 /* MainPageProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C45BF25CDE385009667A9 /* MainPageProductCell.swift */; };
+		CD5C45C425CDE7AC009667A9 /* MainPageProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5C45C325CDE7AC009667A9 /* MainPageProductView.xib */; };
+		CD5C45C725CDE7EB009667A9 /* MainPageProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C45C625CDE7EB009667A9 /* MainPageProductView.swift */; };
 		CD7C2F9725C5B75200FB4DE4 /* AddToCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C2F9625C5B75200FB4DE4 /* AddToCartVC.swift */; };
 		CD7C2F9A25C5B7D700FB4DE4 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C2F9925C5B7D700FB4DE4 /* CartCell.swift */; };
 		CD7C2FA325C5E5A900FB4DE4 /* FavouriteProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C2FA225C5E5A900FB4DE4 /* FavouriteProductsVC.swift */; };
@@ -153,6 +157,10 @@
 		CD5AC74A25C93FFB005A267B /* PaymentSuccessfulVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessfulVC.swift; sourceTree = "<group>"; };
 		CD5AC75225C9767F005A267B /* SuccessfulPaymentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessfulPaymentCell.xib; sourceTree = "<group>"; };
 		CD5AC75325C9767F005A267B /* SuccessfulPaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulPaymentCell.swift; sourceTree = "<group>"; };
+		CD5C45BE25CDE385009667A9 /* MainPageProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageProductCell.xib; sourceTree = "<group>"; };
+		CD5C45BF25CDE385009667A9 /* MainPageProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageProductCell.swift; sourceTree = "<group>"; };
+		CD5C45C325CDE7AC009667A9 /* MainPageProductView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageProductView.xib; sourceTree = "<group>"; };
+		CD5C45C625CDE7EB009667A9 /* MainPageProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageProductView.swift; sourceTree = "<group>"; };
 		CD7C2F9625C5B75200FB4DE4 /* AddToCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartVC.swift; sourceTree = "<group>"; };
 		CD7C2F9925C5B7D700FB4DE4 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		CD7C2FA225C5E5A900FB4DE4 /* FavouriteProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteProductsVC.swift; sourceTree = "<group>"; };
@@ -236,6 +244,10 @@
 				CDAED5D225C1CCC2000D090C /* BoutiqueProductListVC.swift */,
 				CD4BA42B25C9D959007E9C97 /* BoutiqueProductDetailVC.swift */,
 				CD1136F625C8980D00E26130 /* AllCommentsVC.swift */,
+				CD5C45BE25CDE385009667A9 /* MainPageProductCell.xib */,
+				CD5C45BF25CDE385009667A9 /* MainPageProductCell.swift */,
+				CD5C45C325CDE7AC009667A9 /* MainPageProductView.xib */,
+				CD5C45C625CDE7EB009667A9 /* MainPageProductView.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -529,6 +541,8 @@
 				CD29D07825C3FD4300CC7BAD /* GOTHICB.TTF in Resources */,
 				CD5AC75425C9767F005A267B /* SuccessfulPaymentCell.xib in Resources */,
 				CD29D07225C3FD4300CC7BAD /* Century Gothic.ttf in Resources */,
+				CD5C45C425CDE7AC009667A9 /* MainPageProductView.xib in Resources */,
+				CD5C45C025CDE385009667A9 /* MainPageProductCell.xib in Resources */,
 				CD29D07725C3FD4300CC7BAD /* gothicb.ttf in Resources */,
 				CD29D07125C3FD4300CC7BAD /* GOTHICI.TTF in Resources */,
 				CD29D07525C3FD4300CC7BAD /* gothici.ttf in Resources */,
@@ -599,6 +613,7 @@
 				CD462D3C25C7CD0D00544C36 /* OrderDetailVC.swift in Sources */,
 				CD1136F725C8980D00E26130 /* AllCommentsVC.swift in Sources */,
 				CD1136E825C8123000E26130 /* TextView+Ext.swift in Sources */,
+				CD5C45C725CDE7EB009667A9 /* MainPageProductView.swift in Sources */,
 				CD36D4FA25C1A22D003CF2D0 /* UIView+Ext.swift in Sources */,
 				CD4BA42C25C9D959007E9C97 /* BoutiqueProductDetailVC.swift in Sources */,
 				CD462D2E25C7254800544C36 /* SavedCreditCardCell.swift in Sources */,
@@ -648,6 +663,7 @@
 				CDAED5C725C1B4C4000D090C /* MainPageVC.swift in Sources */,
 				CDB96B3925C3DFF50071F7BC /* FilteringCategoryVC.swift in Sources */,
 				CD1136F125C83F4F00E26130 /* OrderPreviewCell.swift in Sources */,
+				CD5C45C125CDE385009667A9 /* MainPageProductCell.swift in Sources */,
 				CDD92F4825CD258A0017AA8F /* PersonalInformationVC.swift in Sources */,
 				CD462D2B25C7250100544C36 /* SavedCreditCardsVC.swift in Sources */,
 				CD36D4FB25C1A22D003CF2D0 /* UIViewController+Ext.swift in Sources */,
