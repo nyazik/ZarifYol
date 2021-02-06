@@ -235,21 +235,18 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		CD34963125C6B56B00E76CD0 /* MainPage */ = {
+		CD34963125C6B56B00E76CD0 /* MainPageTabbar */ = {
 			isa = PBXGroup;
 			children = (
+				CD43B18D25CF26E800098F44 /* Main Page */,
 				CDAED5C625C1B4C4000D090C /* MainPageVC.swift */,
 				CDC8465625C58674004FC67F /* SearchVC.swift */,
 				CDC8465D25C5AAC8004FC67F /* NotificationVC.swift */,
-				CDAED5D225C1CCC2000D090C /* BoutiqueProductListVC.swift */,
-				CD4BA42B25C9D959007E9C97 /* BoutiqueProductDetailVC.swift */,
-				CD1136F625C8980D00E26130 /* AllCommentsVC.swift */,
-				CD5C45BE25CDE385009667A9 /* MainPageProductCell.xib */,
-				CD5C45BF25CDE385009667A9 /* MainPageProductCell.swift */,
-				CD5C45C325CDE7AC009667A9 /* MainPageProductView.xib */,
-				CD5C45C625CDE7EB009667A9 /* MainPageProductView.swift */,
+				CD43B19425CF285900098F44 /* MainPageTableViewCell */,
+				CD43B19125CF283400098F44 /* MainPagetableViewHeader */,
+				CD43B18F25CF279200098F44 /* BoutiqueProductList */,
 			);
-			path = MainPage;
+			path = MainPageTabbar;
 			sourceTree = "<group>";
 		};
 		CD34963525C6B5C900E76CD0 /* Profile */ = {
@@ -375,10 +372,45 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		CD43B18D25CF26E800098F44 /* Main Page */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Main Page";
+			sourceTree = "<group>";
+		};
+		CD43B18F25CF279200098F44 /* BoutiqueProductList */ = {
+			isa = PBXGroup;
+			children = (
+				CDAED5D225C1CCC2000D090C /* BoutiqueProductListVC.swift */,
+				CD4BA42B25C9D959007E9C97 /* BoutiqueProductDetailVC.swift */,
+				CD1136F625C8980D00E26130 /* AllCommentsVC.swift */,
+			);
+			path = BoutiqueProductList;
+			sourceTree = "<group>";
+		};
+		CD43B19125CF283400098F44 /* MainPagetableViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				CD5C45C325CDE7AC009667A9 /* MainPageProductView.xib */,
+				CD5C45C625CDE7EB009667A9 /* MainPageProductView.swift */,
+			);
+			path = MainPagetableViewHeader;
+			sourceTree = "<group>";
+		};
+		CD43B19425CF285900098F44 /* MainPageTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CD5C45BE25CDE385009667A9 /* MainPageProductCell.xib */,
+				CD5C45BF25CDE385009667A9 /* MainPageProductCell.swift */,
+			);
+			path = MainPageTableViewCell;
+			sourceTree = "<group>";
+		};
 		CD7C2FA025C5E58000FB4DE4 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
-				CD34963125C6B56B00E76CD0 /* MainPage */,
+				CD34963125C6B56B00E76CD0 /* MainPageTabbar */,
 				CDA2639025CBE9CA00D17546 /* CategoriesVC.swift */,
 				CDDB249F25C9287E0004B470 /* AddToCart */,
 				CD7C2FA225C5E5A900FB4DE4 /* FavouriteProductsVC.swift */,

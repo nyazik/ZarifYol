@@ -28,13 +28,16 @@ class ForgotPasswordVC: UIViewController {
         let color = UIColor.white
         let placeholder = textField.placeholder ?? "" //There should be a placeholder set in storyboard or elsewhere string or pass empty
         textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor : color])
+        textField.backgroundColor = UIColor.clear
+
     }
     
     func configureButton(button: UIButton){
         button.layer.borderColor = UIColor(red:123/255, green:119/255, blue:115/255, alpha: 1).cgColor
 //        button.layer.opacity = 0.5
         button.layer.borderWidth = 5
-        
+        button.backgroundColor = UIColor.clear
+
     }
 
     @IBAction func sendButtonPressed(_ sender: UIButton) {
@@ -43,5 +46,9 @@ class ForgotPasswordVC: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        dismiss(animated: false, completion: nil)
+
+    }
     
 }

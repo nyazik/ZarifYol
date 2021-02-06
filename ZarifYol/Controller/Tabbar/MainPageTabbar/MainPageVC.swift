@@ -9,7 +9,7 @@ import UIKit
 import SideMenu
 
 class MainPageVC: UIViewController {
-
+    
     @IBOutlet weak var profileTabbarView: UIView!
     @IBOutlet weak var favouriteTabbarView: UIView!
     @IBOutlet weak var tabbarView: UIView!
@@ -47,8 +47,8 @@ class MainPageVC: UIViewController {
         favouriteTabbarView.addGestureRecognizer(forthTap)
         
         brandsTableView.register(UINib(nibName: "MainPageProductCell", bundle: nil), forCellReuseIdentifier: "cell")
-
-
+        
+        
         let headerNib = UINib.init(nibName: "MainPageProductView", bundle: Bundle.main)
         brandsTableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "cell")
         
@@ -88,7 +88,7 @@ class MainPageVC: UIViewController {
         configureTabbarShadow(view: tabbarView)
         configureTabbarShadow(view: myCartTabbarView)
     }
-
+    
     
     func configureRoundView(view: UIView){
         view.layer.cornerRadius = view.frame.height / 2
@@ -145,23 +145,23 @@ class MainPageVC: UIViewController {
         settings.presentationStyle = .menuSlideIn
         settings.pushStyle = .preserveAndHideBackButton
         settings.statusBarEndAlpha = 0
-//        settings.presentationStyle.backgroundColor = UIColor.blue
+        //        settings.presentationStyle.backgroundColor = UIColor.blue
         settings.presentationStyle.presentingEndAlpha = 0.7
         settings.presentationStyle.onTopShadowOpacity = 0.5
         settings.menuWidth = self.view.frame.width - self.view.frame.width * 0.3
         SideMenuManager.default.leftMenuNavigationController?.settings = settings
         SideMenuPresentationStyle.menuSlideIn.backgroundColor = UIColor.yellow
     }
-
+    
 }
 
 
 extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 4
+        //        return 4
         return (self.arrayHeader[section] == 0) ? 0 : 3
-
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -176,57 +176,64 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-            return 140
-        }
-//
+        return 140
+    }
+    //
     
-        // 5
-        func numberOfSections(in tableView: UITableView) -> Int {
-            return arrayHeader.count
-        }
+    // 5
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return arrayHeader.count
+    }
     
     internal func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//           let viewHeader = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 40))
-//        let viewHeader = Bundle.main.loadNibNamed("MainPageProductView", owner: self, options: nil)
-////           viewHeader.backgroundColor = UIColor.darkGray // Changing the header background color to gray
-////           let button = UIButton(type: .custom)
-////           button.frame = viewHeader.bounds
-////           button.tag = section // Assign section tag to this button
-////           button.addTarget(self, action: #selector(tapSection(sender:)), for: .touchUpInside)
-////           button.setTitle("Section: \(section)", for: .normal)
-////           viewHeader.addSubview(button)
-//           return viewHeader
+        //           let viewHeader = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 40))
+        //        let viewHeader = Bundle.main.loadNibNamed("MainPageProductView", owner: self, options: nil)
+        ////           viewHeader.backgroundColor = UIColor.darkGray // Changing the header background color to gray
+        ////           let button = UIButton(type: .custom)
+        ////           button.frame = viewHeader.bounds
+        ////           button.tag = section // Assign section tag to this button
+        ////           button.addTarget(self, action: #selector(tapSection(sender:)), for: .touchUpInside)
+        ////           button.setTitle("Section: \(section)", for: .normal)
+        ////           viewHeader.addSubview(button)
+        //           return viewHeader
         
         
+        
+        //let screenSize: CGRect = UIScreen.main.bounds
+//        let screenSize: CGRect = UIScreen.main.bounds
+//        let myView = UIView(frame: CGRect(x: 0, y: 0, width: screenSize.width - 10, height: 10))
+//        myView.backgroundColor = UIColor.red
+//        self.view.addSubview(myView)
 
         
         if let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "cell") as? MainPageProductView {
+            
             headerView.configureCell()
-//            headerView.bgView.backgroundColor = .green
             headerView.startShoppingButton.backgroundColor = .white
             headerView.startShoppingButton.tag = section
             headerView.startShoppingButton.addTarget(self, action: #selector(tapSection(sender:)), for: .touchUpInside)
-         //headerView.titleName.text = "webkul"
-          return headerView
+            return headerView
         }
-         
+        
         return nil
         
     }
     
-   
+    
     @objc func tapSection(sender: UIButton) {
-            self.arrayHeader[sender.tag] = (self.arrayHeader[sender.tag] == 1) ? 0 : 1
-            self.brandsTableView.reloadSections([sender.tag], with: .fade)
+        self.arrayHeader[sender.tag] = (self.arrayHeader[sender.tag] == 1) ? 0 : 1
+        self.brandsTableView.reloadSections([sender.tag], with: .fade)
         }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-            return 5
-        }
+        
+        return 5
+    }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-            return UIView()
-        }
-
+        
+        return UIView()
+    }
+    
 }
 
 extension MainPageVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
@@ -236,7 +243,6 @@ extension MainPageVC: UICollectionViewDataSource, UICollectionViewDelegate, UICo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CategoriesCell
-        cell.configureView()
         return cell
     }
     
