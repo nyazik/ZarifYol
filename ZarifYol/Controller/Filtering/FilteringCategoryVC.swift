@@ -11,7 +11,6 @@ class FilteringCategoryVC: UIViewController {
 
     @IBOutlet weak var filteringCategoryTableView: UITableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +30,8 @@ extension FilteringCategoryVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FilteringCategoryCell
+        cell.categoryNameLabel.text = "Fiyat"
         return cell
     }
     

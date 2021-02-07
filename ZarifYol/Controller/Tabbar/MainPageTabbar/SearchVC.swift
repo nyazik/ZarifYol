@@ -10,13 +10,14 @@ import UIKit
 class SearchVC: UIViewController {
 
     
+    @IBOutlet weak var searchProductSearchBar: UISearchBar!
     @IBOutlet weak var searchCategoryCollectionView: UICollectionView!
-    
     @IBOutlet weak var seachResultTableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         searchCategoryCollectionView.dataSource = self
         searchCategoryCollectionView.delegate = self
         
@@ -39,18 +40,14 @@ extension SearchVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SearchCategoryCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PopularSearchResultCell
+        cell.popularSearchResultLabel.text = "Parfüm"
         cell.configureLayouts()
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let screenWidth = UIScreen.main.bounds.width
-        var width = (screenWidth-30)/2
-        width = width > 190 ? 190 : width
-        //print("\(width) \(screenWidth)")
         return CGSize.init(width: 120, height: 40)
-        
         
     }
     
@@ -64,7 +61,8 @@ extension SearchVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PreviousSearchResultCell
+        cell.previousSearchResultLabel.text = "Parfüm"
         return cell
     }
     

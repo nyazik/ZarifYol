@@ -11,6 +11,8 @@ class BoutiqueCategoryCell: UICollectionViewCell {
     
     @IBOutlet weak var cellView: UIView!
     
+    @IBOutlet weak var categoryNameLabel: UILabel!
+    
     func configureView(){
         cellView.layer.cornerRadius = 10
         cellView.layer.backgroundColor = UIColor.white.cgColor

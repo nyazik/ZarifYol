@@ -70,16 +70,14 @@ class CategoriesVC: UIViewController {
     }
     
     func setupLayouts(){
-        
-        configureRoundView(view: myCartTabbarView)
-        configureRoundView(view: myCartInsideView)
+        myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
+        myCartInsideView.layer.cornerRadius = myCartInsideView.frame.height / 2
         configureShadow(view: myCartInsideView)
         configureTabbarShadow(view: tabbarView)
         configureTabbarShadow(view: myCartTabbarView)
     }
 
     func configureRoundView(view: UIView){
-        view.layer.cornerRadius = view.frame.height / 2
     }
     
     func configureShadow(view: UIView){
@@ -138,6 +136,7 @@ extension CategoriesVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CategoryCell
+        cell.categoryNameLabel.text = "Zarifyol Özel"
         return cell
     }
     
@@ -152,6 +151,7 @@ extension CategoriesVC: UICollectionViewDataSource, UICollectionViewDelegate, UI
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SubCategoryCell
+        cell.subCategoryNameLabel.text = "Zarifyol"
         cell.configureCell()
         return cell
     }

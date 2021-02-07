@@ -10,8 +10,8 @@ import UIKit
 class ForgotPasswordVC: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var sendPasswordButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()

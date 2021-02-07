@@ -11,6 +11,7 @@ class BoutiqueProductListVC: UIViewController {
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var productCollectionView: UICollectionView!
+    @IBOutlet weak var boutiqueNameLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -20,6 +21,8 @@ class BoutiqueProductListVC: UIViewController {
         
         productCollectionView.dataSource = self
         productCollectionView.delegate = self
+        
+        boutiqueNameLabel.text = "KARAKOÇ GİYİM"
     }
         
     
@@ -55,10 +58,20 @@ extension BoutiqueProductListVC: UICollectionViewDataSource, UICollectionViewDel
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == categoryCollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! BoutiqueCategoryCell
+            cell.categoryNameLabel.text = "Kadin"
             cell.configureView()
             return cell
         }else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ProductCell
+            cell.newProductView.isHidden = false
+            cell.productDescriptionLabel.text = "KARAKOÇ GİYİM Moleskin Seatle…"
+            cell.salePersentageLabel.text = "%20 indirim"
+            cell.previousPriceLabel.text = "120 ₺"
+            cell.priceLabel.text = "90,50 ₺"
+            cell.favouriteQuantityLabel.text = "111"
+            cell.commentQuantityLabel.text = "134"
+            cell.numberOfBoughtProductLabel.text = "105"
+            cell.rateProductCosmosView.rating = 4
             cell.setupLayouts()
             //cell.configureView()
             return cell
@@ -70,16 +83,11 @@ extension BoutiqueProductListVC: UICollectionViewDataSource, UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == categoryCollectionView{
-            let screenWidth = UIScreen.main.bounds.width
-            var width = (screenWidth-30)/2
-            width = width > 190 ? 190 : width
-            //print("\(width) \(screenWidth)")
             return CGSize.init(width: 100, height: 50)
         }else{
             let screenWidth = UIScreen.main.bounds.width
             var width = (screenWidth-30)/2
             width = width > 190 ? 190 : width
-            //print("\(width) \(screenWidth)")
             return CGSize.init(width: width, height: 300)
         }
         

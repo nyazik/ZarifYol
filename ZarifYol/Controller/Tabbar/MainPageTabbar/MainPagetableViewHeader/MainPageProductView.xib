@@ -48,14 +48,20 @@
                         <constraint firstItem="Bhb-vf-G98" firstAttribute="leading" secondItem="Bna-Bp-QeF" secondAttribute="leading" id="wSa-dB-mkU"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RS5-9Y-qna">
+                    <rect key="frame" x="382" y="141" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Atl-8P-XwT"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Bna-Bp-QeF" firstAttribute="top" secondItem="39e-ga-3qd" secondAttribute="top" id="1E3-OB-v7d"/>
                 <constraint firstItem="Bna-Bp-QeF" firstAttribute="leading" secondItem="Atl-8P-XwT" secondAttribute="leading" id="NTN-Wn-gXw"/>
+                <constraint firstAttribute="trailing" secondItem="RS5-9Y-qna" secondAttribute="trailing" constant="20" id="dJ5-vX-My4"/>
                 <constraint firstItem="Atl-8P-XwT" firstAttribute="trailing" secondItem="Bna-Bp-QeF" secondAttribute="trailing" id="eO0-yz-rJv"/>
                 <constraint firstAttribute="bottom" secondItem="Bna-Bp-QeF" secondAttribute="bottom" id="iAj-PC-0M2"/>
+                <constraint firstAttribute="bottom" secondItem="RS5-9Y-qna" secondAttribute="bottom" constant="-25" id="jqd-oS-v2U"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

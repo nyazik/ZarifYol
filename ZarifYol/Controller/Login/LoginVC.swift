@@ -9,7 +9,6 @@ import UIKit
 
 class LoginVC: UIViewController {
     
-    
     @IBOutlet weak var nameSurnameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
@@ -17,10 +16,13 @@ class LoginVC: UIViewController {
     var textFields: [UITextField] {
         return [nameSurnameTextField, passwordTextField]
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+        
         textFields.forEach {$0.delegate = self}
+        
         setupLayouts()
     }
     override func viewWillAppear(_ animated: Bool) {

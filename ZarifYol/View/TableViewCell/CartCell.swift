@@ -9,10 +9,14 @@ import UIKit
 import GMStepper
 
 class CartCell: UITableViewCell {
-    
-    @IBOutlet weak var stepper: GMStepper!
+
     @IBOutlet weak var cellView: UIView!
+    @IBOutlet weak var stepper: GMStepper!
     @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var productColorLabel: UILabel!
+    @IBOutlet weak var productPriceLabel: UILabel!
+    @IBOutlet weak var productSizeLabel: UILabel!
     
     func configureLayouts(){
         configureImageView(view: productImageView)

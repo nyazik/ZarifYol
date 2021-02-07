@@ -20,7 +20,6 @@ class PersonalInformationVC: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var saveButton: UIButton!
     
     
-    
     var nameSurnameController: MDCTextInputControllerOutlined?
     var phoneNumberController: MDCTextInputControllerOutlined?
     var emailController: MDCTextInputControllerOutlined?
@@ -37,7 +36,7 @@ class PersonalInformationVC: UIViewController, UIImagePickerControllerDelegate, 
         hideKeyboardWhenTappedAround()
         textFields.forEach {$0.delegate = self}
         setupLayouts()
-
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,30 +67,38 @@ class PersonalInformationVC: UIViewController, UIImagePickerControllerDelegate, 
         configureRoundView(view: profileImageView)
         
         saveButton.roundCorners(corners: [.topLeft, .topRight], radius: saveButton.frame.height / 2)
-    
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.changeProfilePhotoButtonPressed(_:)))
+        roundView.addGestureRecognizer(tap)
         
     }
+    
     func configureRoundView(view: UIView){
         view.layer.cornerRadius = view.frame.height / 2
     }
     
     func configureTextView(container: MDCTextInputControllerOutlined?){
+        
         container?.borderRadius = 15
         container?.roundedCorners = [.topRight, .bottomRight]
         container?.borderStrokeColor = UIColor.lightGray
         container?.inlinePlaceholderColor = UIColor.lightGray
         container?.activeColor = UIColor(named: "color_orange")
         container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
+        
     }
     
-
+    
+    @IBAction func saveButtonPressed(_ sender: UIButton) {
+        
+    }
+    
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
     
-    @IBAction func changeProfilePhotoButtonPressed(_ sender: UIButton) {
+    @objc @IBAction func changeProfilePhotoButtonPressed(_ sender: UIButton) {
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
             let imagePicker = UIImagePickerController()
             if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
@@ -124,6 +131,8 @@ class PersonalInformationVC: UIViewController, UIImagePickerControllerDelegate, 
     }
     
 }
+
+
 
 
 extension PersonalInformationVC : UITextFieldDelegate {

@@ -10,17 +10,23 @@ import MaterialComponents
 
 class AddAndEditCreditCardVC: UIViewController {
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var accountNameTextField: MDCTextField!
     @IBOutlet weak var nameOfTheBankTextField: MDCTextField!
     @IBOutlet weak var accountNumberTextField: MDCTextField!
     @IBOutlet weak var expirationDateTextField: MDCTextField!
     @IBOutlet weak var CVCTextField: MDCTextField!
-    
     @IBOutlet weak var saveButton: UIButton!
     
+    var addCard = false
     
     var textFields: [UITextField] {
         return [accountNameTextField, nameOfTheBankTextField, accountNumberTextField, expirationDateTextField, CVCTextField]
+        if addCard == true{
+            titleLabel.text = "Kart Ekle"
+        }else{
+            titleLabel.text = "Kart Bilgileri Güncelle"
+        }
     }
     
     var accountNameController: MDCTextInputControllerOutlined?
@@ -74,7 +80,14 @@ class AddAndEditCreditCardVC: UIViewController {
         container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
     }
 
-
+    
+    @IBAction func saveButtonPressed(_ sender: UIButton) {
+        if addCard == false{
+            dismiss(animated: true, completion: nil)
+        }else{
+        }
+    }
+    
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }

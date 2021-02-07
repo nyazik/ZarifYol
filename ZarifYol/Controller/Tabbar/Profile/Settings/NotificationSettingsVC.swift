@@ -9,8 +9,11 @@ import UIKit
 
 class NotificationSettingsVC: UIViewController {
 
-    
     @IBOutlet weak var notificationSettingsTableView: UITableView!
+    
+    var notificationSettingArray = ["E-Mail", "SMS", "Bildirim"]
+    
+    var notificaationSettingRuleArray = ["İlgimi çekebilecek kampanyalarla ve butik bültenleriyle ilgili e-mail almak istiyorum.", "İlgimi çekebilecek kampanyalar için sms almak istiyorum.", "Gelen bildirimlerim için olan ayarlarımın açık olmasını istiyorum."]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +31,15 @@ class NotificationSettingsVC: UIViewController {
 
 extension NotificationSettingsVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return notificationSettingArray.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NotificationSettingsCell
         cell.configureLayouts()
+        cell.notificationSettingCellLabel.text = notificationSettingArray[indexPath.row]
+        cell.notificaationSettingCellRuleLabel.text = notificaationSettingRuleArray[indexPath.row]
         return cell
     }
     

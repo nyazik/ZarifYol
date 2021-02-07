@@ -9,13 +9,22 @@ import UIKit
 
 class OrderDetailVC: UIViewController {
     
-    
     @IBOutlet weak var orderDetailTableView: UITableView!
+    @IBOutlet weak var orderNumberLabel: UILabel!
+    @IBOutlet weak var orderDateLabel: UILabel!
+    @IBOutlet weak var orderSummaryLabel: UILabel!
+    @IBOutlet weak var totalPriceLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         orderDetailTableView.dataSource = self
         orderDetailTableView.delegate = self
+        
+        orderNumberLabel.text = "48483848"
+        orderDateLabel.text = "48483848"
+        orderSummaryLabel.text = "4 Teslimat, 4 Ürün"
+        totalPriceLabel.text = "353.45 ₺"
     }
     
 
@@ -39,6 +48,11 @@ extension OrderDetailVC: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! OrderDetailCell
+        cell.estimatedDeliveryDateLabel.text = "26 Ocak- 1 Şubat"
+        cell.deliveryNumberLabel.text = "25022020"
+        cell.deliveryStatusLabel.text = "Teslim Edildi"
+        cell.priceLabel.text = "90,50₺"
+        cell.productDescriptionLabel.text = "KARAKOÇ GİYİM Moleskin Seatle Gömlek"
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.rateProduct(_:)))
             cell.evaluateView.addGestureRecognizer(tapGesture)
         cell.configureLayouts()

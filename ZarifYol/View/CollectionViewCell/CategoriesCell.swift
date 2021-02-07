@@ -9,6 +9,6 @@ import UIKit
 
 class CategoriesCell: UICollectionViewCell {
     
-    
+    @IBOutlet weak var categoryNameLabel: UILabel!
     
 }

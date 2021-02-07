@@ -9,7 +9,14 @@ import UIKit
 import iOSDropDown
 
 class BoutiqueProductDetailVC: UIViewController {
-
+    
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var previousPriceLabel: UILabel!
+    @IBOutlet weak var allCommentsButton: UIButton!
+    @IBOutlet weak var numberOfBoughtProductLabel: UILabel!
+    @IBOutlet weak var commentsQuantityLabel: UILabel!
+    @IBOutlet weak var favouriteProductQuantityLabel: UILabel!
+    @IBOutlet weak var productDescriptionLabel: UILabel!
     @IBOutlet weak var pageIndicatorPageControl: UIPageControl!
     @IBOutlet weak var boutiqueProductDetailImageCollectionView: UICollectionView!
     @IBOutlet weak var productColorCollectionView: UICollectionView!
@@ -45,7 +52,7 @@ class BoutiqueProductDetailVC: UIViewController {
         
         setupLayouts()
         
-    
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -69,6 +76,13 @@ class BoutiqueProductDetailVC: UIViewController {
         addToCartButton.roundCorners(corners: [.topLeft, .topRight], radius: addToCartButton.frame.height / 2)
         bottomView.addShadow(color: .lightGray, opacity: 0.5, radius: 10)
         bottomView.backgroundColor = UIColor.white
+        
+        productDescriptionLabel.text = "KARAKOÇ GİYİM Moleskin Seatle Gömlek"
+        favouriteProductQuantityLabel.text = "111"
+        numberOfBoughtProductLabel.text = "105"
+        allCommentsButton.titleLabel?.text = "Tümünü Gör (324)"
+        previousPriceLabel.text = "120₺"
+        priceLabel.text = "90,50 ₺"
     }
     
       
@@ -84,12 +98,14 @@ class BoutiqueProductDetailVC: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
-    
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
-
+    @IBAction func addToCartButtonPressed(_ sender: UIButton) {
+        
+    }
+    
 }
 
 extension BoutiqueProductDetailVC: UICollectionViewDataSource, UICollectionViewDelegate{
@@ -113,10 +129,13 @@ extension BoutiqueProductDetailVC: UICollectionViewDataSource, UICollectionViewD
             return cell
         }else if collectionView == productColorCollectionView{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! BoutiqueProductColorCell
+            cell.productColorImageView.image = #imageLiteral(resourceName: "ic_registerBackground")
             cell.configureCell()
             return cell
         }else{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ProductsYouMayLikeCell
+            cell.productLabel.text = "Oduncu Gömlek"
+            cell.categoryLabel.text = "Gömlek"
             cell.configureCell()
             return cell
         }
@@ -213,7 +232,9 @@ extension BoutiqueProductDetailVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AllCommentsInBoutiqueProductCell
+        cell.commentBodyLabel.text = "Erkek arkadaşım için aldığım bu gömleği çok severek giyiyor. Fiyatını  hakeden bir gömlek."
+        cell.commentDateLabel.text = "24 Kasım 2020   I  12:47"
         return cell
     }
     

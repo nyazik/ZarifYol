@@ -11,6 +11,7 @@ import SideMenu
 class FavouriteProductsVC: UIViewController {
     
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var profileTabbarView: UIView!
     @IBOutlet weak var favouriteTabbarView: UIView!
     @IBOutlet weak var tabbarView: UIView!
@@ -26,7 +27,7 @@ class FavouriteProductsVC: UIViewController {
         favouriteProductTableView.delegate = self
         setupSideMenu()
         setupLayouts()
-
+        titleLabel.text = "Favorilerim (4 ürün)"
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.addToCart(_:)))
         myCartTabbarView.addGestureRecognizer(tap)
@@ -132,12 +133,29 @@ class FavouriteProductsVC: UIViewController {
 }
 
 extension FavouriteProductsVC: UITableViewDataSource, UITableViewDelegate{
+    
+
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
+    @objc func addToCartTapped(_ sender: UITapGestureRecognizer){
+//        let vc = self.storyboard?.instantiateViewController(identifier: "AddToCartVC") as! AddToCartVC
+//        vc.modalPresentationStyle = .fullScreen
+//        self.present(vc, animated: false, completion: nil)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FavouriteProductCell
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.addToCartTapped(_:)))
+        cell.addtoToCardView.addGestureRecognizer(tapGesture)
+
+        cell.productNameLabel.text = "Oduncu Gömlek"
+        cell.productPriceLabel.text = "76 ₺"
+        cell.productColorLabel.text = "Siyah"
+        cell.productSizeLabel.text = "M"
         cell.setupLayouts()
         return cell
     }

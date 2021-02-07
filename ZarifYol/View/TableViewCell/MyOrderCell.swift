@@ -18,14 +18,15 @@ class MyOrderCell: UITableViewCell {
     var delegate: MyOrderCellDelegate?
 
     @IBOutlet weak var orderDetailButton: UIButton!
+    @IBOutlet weak var dateOfOrderLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var orderStatus: UILabel!
+    
     
     func configureCell(){
-        configureButton(button: orderDetailButton)
+        orderDetailButton.roundCorners(corners: [.topLeft, .bottomLeft], radius: 10)
     }
     
-    func configureButton(button: UIButton){
-        button.roundCorners(corners: [.topLeft, .bottomLeft], radius: 10)
-    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -52,16 +53,13 @@ extension MyOrderCell: UICollectionViewDataSource, UICollectionViewDelegate, UIC
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! OrderPreviewCell
-
+        
         cell.configureCell()
         return cell
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let screenWidth = UIScreen.main.bounds.width
-        var width = (screenWidth-30)/2
-        width = width > 190 ? 190 : width
         return CGSize.init(width: 60, height: 60)
     }
     

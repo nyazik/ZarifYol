@@ -11,7 +11,6 @@ class MyOrdersVC: UIViewController {
 
     @IBOutlet weak var myOrdersTableView: UITableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         myOrdersTableView.dataSource = self
@@ -29,7 +28,6 @@ extension MyOrdersVC: UITableViewDataSource, UITableViewDelegate, MyOrderCellDel
     
     func didOrderButtonPressed(tag: Int) {
         print(tag)
-        
         let vc = self.storyboard?.instantiateViewController(identifier: "OrderDetailVC") as! OrderDetailVC
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
@@ -42,6 +40,9 @@ extension MyOrdersVC: UITableViewDataSource, UITableViewDelegate, MyOrderCellDel
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MyOrderCell
+        cell.dateOfOrderLabel.text = "28 Kasım 2020"
+        cell.priceLabel.text = "350.00 ₺"
+        cell.orderStatus.text = "Siparişleriniz Hazırlanıyor…"
         cell.delegate = self
         cell.configureCell()
         return cell

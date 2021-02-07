@@ -9,12 +9,15 @@ import UIKit
 
 class SubCategoryFilteringVC: UIViewController {
     
+    @IBOutlet weak var searchFilterSearchBar: UISearchBar!
     @IBOutlet weak var subCategoryFilteringTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         subCategoryFilteringTableView.dataSource = self
         subCategoryFilteringTableView.delegate = self
+        
     }
     
    

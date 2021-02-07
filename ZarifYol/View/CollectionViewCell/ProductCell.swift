@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Cosmos
 
 class ProductCell: UICollectionViewCell {
     
@@ -15,44 +16,38 @@ class ProductCell: UICollectionViewCell {
     @IBOutlet weak var priceView: UIView!
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var saleStackView: UIStackView!
-
+    @IBOutlet weak var newProductView: UIView!
+    @IBOutlet weak var productDescriptionLabel: UILabel!
+    @IBOutlet weak var salePersentageLabel: UILabel!
+    @IBOutlet weak var previousPriceLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var favouriteQuantityLabel: UILabel!
+    @IBOutlet weak var commentQuantityLabel: UILabel!
+    @IBOutlet weak var numberOfBoughtProductLabel: UILabel!
+    @IBOutlet weak var rateProductCosmosView: CosmosView!
+    
     func setupLayouts(){
-        configureRoundView(view: favView)
-        configureShadow(view: favView)
         
-        configureCornerRadiusView(view: newView)
+        favView.layer.cornerRadius = favView.frame.height / 2
+        favView.layer.backgroundColor = UIColor.white.cgColor
+        favView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
         
-        configureCornerRadiusView(view: priceView)
+        newView.layer.cornerRadius = 10
+        priceView.layer.cornerRadius = 10
         
-        configureViewCornerRadius(view: cellView)
-        configureBorder(view: cellView)
         cellView.clipsToBounds = true
+        cellView.layer.cornerRadius = 10
+        configureBorder(view: cellView)
         
         saleStackView.isHidden = true
+        newProductView.isHidden = false
     }
     
-    func configureRoundView(view: UIView){
-        view.layer.cornerRadius = view.frame.height / 2
-    }
-    
-    func configureCornerRadiusView(view:  UIView){
-        view.layer.cornerRadius = 10
-    }
-    func configureViewCornerRadius(view: UIView) {
-        view.layer.cornerRadius = 15
-    }
     
     func configureBorder(view: UIView){
         view.layer.borderColor = UIColor.lightGray.cgColor
         view.layer.borderWidth = 1
     }
     
-    func configureShadow(view: UIView){
-        view.backgroundColor = UIColor.white
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOpacity = 0.5
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 5
-    }
-    
+   
 }

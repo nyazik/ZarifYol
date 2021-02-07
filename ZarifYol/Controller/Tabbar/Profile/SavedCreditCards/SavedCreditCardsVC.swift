@@ -13,6 +13,7 @@ class SavedCreditCardsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         savesCreditCardTableView.dataSource = self
         savesCreditCardTableView.delegate = self
         
@@ -30,16 +31,18 @@ extension SavedCreditCardsVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     @objc func editCreditCart(_ sender: UITapGestureRecognizer){
-//        print("tapped")
         let vc = self.storyboard?.instantiateViewController(identifier: "AddAndEditCreditCardVC") as! AddAndEditCreditCardVC
+        vc.addCard = false
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SavedCreditCardCell
+        cell.bankNameLabel.text = "İş Bankası Kartım- 1607"
+        cell.numberOfCreditCardLabel.text = "1111111111******1111"
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.editCreditCart(_:)))
-            cell.editCreditCartView.addGestureRecognizer(tapGesture)
+            cell.editCreditCardView.addGestureRecognizer(tapGesture)
         cell.setupLayouts()
         return cell
     }

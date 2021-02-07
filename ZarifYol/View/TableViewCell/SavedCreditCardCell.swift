@@ -10,7 +10,9 @@ import UIKit
 class SavedCreditCardCell: UITableViewCell {
 
     @IBOutlet weak var cellView: UIView!
-    @IBOutlet weak var editCreditCartView: UIView!
+    @IBOutlet weak var editCreditCardView: UIView!
+    @IBOutlet weak var bankNameLabel: UILabel!
+    @IBOutlet weak var numberOfCreditCardLabel: UILabel!
     
     func setupLayouts(){
         configureView(view: cellView)

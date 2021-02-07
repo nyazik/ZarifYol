@@ -31,6 +31,8 @@ extension NotificationVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NotificationCell
+        cell.notificationBodyLabel.text = "Sepetindeki ürünler indirimde!"
+        cell.notificationDateLabel.text = "2 saat önce"
         return cell
     }
     

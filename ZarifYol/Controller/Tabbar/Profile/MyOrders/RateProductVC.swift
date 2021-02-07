@@ -6,12 +6,21 @@
 //
 
 import UIKit
+import Cosmos
 
 class RateProductVC: UIViewController {
     
+    @IBOutlet weak var userAgreementButton: UIButton!
+    @IBOutlet weak var showNameUnderCommentsButton: UIButton!
     @IBOutlet weak var priceView: UIView!
     @IBOutlet weak var commentTextView: UITextView!
     @IBOutlet weak var sendButton: UIButton!
+    @IBOutlet weak var productImageView: UIImageView!
+    
+    @IBOutlet weak var productBrandLabel: UILabel!
+    @IBOutlet weak var productDescriptionLabel: UILabel!
+    @IBOutlet weak var productPriceLabel: UILabel!
+    @IBOutlet weak var rateProductCosmosView: CosmosView!
     
     
     
@@ -20,7 +29,10 @@ class RateProductVC: UIViewController {
         setupLayouts()
         commentTextView.delegate = self
         hideKeyboardWhenTappedAround()
-
+        productBrandLabel.text =  "KARAKOÇ GİYİM"
+        productDescriptionLabel.text = "Moleskin Seatle Gömlek"
+        productPriceLabel.text = "90,50₺"
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,8 +65,31 @@ class RateProductVC: UIViewController {
         button.roundCorners(corners: [.topRight, .topLeft], radius:   button.frame.height / 2)
     }
     
+    @IBAction func showNameUnderCommentsButtonButtonPressed(_ sender: UIButton) {
+        if showNameUnderCommentsButton.isSelected {
+            showNameUnderCommentsButton.isSelected = false
+        }
+        else {
+            showNameUnderCommentsButton.isSelected = true
+        }
+    }
+    
+    @IBAction func userAgreementButtonButtonPressed(_ sender: UIButton) {
+        if userAgreementButton.isSelected {
+            userAgreementButton.isSelected = false
+        }
+        else {
+            userAgreementButton.isSelected = true
+        }
+    }
+    
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func sendCommentAndRateButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+
     }
     
 }

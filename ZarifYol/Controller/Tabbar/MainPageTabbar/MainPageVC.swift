@@ -21,6 +21,8 @@ class MainPageVC: UIViewController {
     
     var arrayHeader = [0, 0, 0, 0, 0 , 0, 0]
     
+    var  selectedIndex: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //DELEGATE
@@ -84,9 +86,10 @@ class MainPageVC: UIViewController {
     func setupLayouts(){
         configureRoundView(view: myCartTabbarView)
         configureRoundView(view: myCartInsideView)
-        configureShadow(view: myCartInsideView)
-        configureTabbarShadow(view: tabbarView)
-        configureTabbarShadow(view: myCartTabbarView)
+        myCartInsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
+        tabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        myCartTabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+
     }
     
     
@@ -94,21 +97,7 @@ class MainPageVC: UIViewController {
         view.layer.cornerRadius = view.frame.height / 2
     }
     
-    func configureShadow(view: UIView){
-        view.backgroundColor = UIColor.white
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOpacity = 0.3
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 3
-    }
-    
-    func configureTabbarShadow(view: UIView){
-        view.backgroundColor = UIColor.white
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOpacity = 0.5
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 5
-    }
+
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(identifier: "SearchVC") as! SearchVC
@@ -158,16 +147,27 @@ class MainPageVC: UIViewController {
 
 extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     
+    @objc func tapSection(sender: UIButton) {
+//        self.arrayHeader[sender.tag] = (self.arrayHeader[sender.tag] == 1) ? 0 : 1
+//        self.selectedIndex = sender.tag
+        if self.selectedIndex == sender.tag {
+        self.selectedIndex = nil
+        } else {
+        self.selectedIndex = sender.tag
+        }
+//        self.brandsTableView.reloadSections(indexSet,  with: .fade)
+        self.brandsTableView.reloadSections(IndexSet(0..<brandsTableView.numberOfSections), with: .fade)
+
+        }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //        return 4
-        return (self.arrayHeader[section] == 0) ? 0 : 3
-        
+        return selectedIndex == section ? 3 : 0
+//        return (self.arrayHeader[section] == 0) ? 0 : 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MainPageProductCell
         cell.configureCell()
-        //cell.textLabel?.text = "section: \(indexPath.section)  row: \(indexPath.row)"
         return cell
     }
     
@@ -178,7 +178,6 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 140
     }
-    //
     
     // 5
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -186,26 +185,7 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     internal func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        //           let viewHeader = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 40))
-        //        let viewHeader = Bundle.main.loadNibNamed("MainPageProductView", owner: self, options: nil)
-        ////           viewHeader.backgroundColor = UIColor.darkGray // Changing the header background color to gray
-        ////           let button = UIButton(type: .custom)
-        ////           button.frame = viewHeader.bounds
-        ////           button.tag = section // Assign section tag to this button
-        ////           button.addTarget(self, action: #selector(tapSection(sender:)), for: .touchUpInside)
-        ////           button.setTitle("Section: \(section)", for: .normal)
-        ////           viewHeader.addSubview(button)
-        //           return viewHeader
-        
-        
-        
-        //let screenSize: CGRect = UIScreen.main.bounds
-//        let screenSize: CGRect = UIScreen.main.bounds
-//        let myView = UIView(frame: CGRect(x: 0, y: 0, width: screenSize.width - 10, height: 10))
-//        myView.backgroundColor = UIColor.red
-//        self.view.addSubview(myView)
-
-        
+   
         if let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "cell") as? MainPageProductView {
             
             headerView.configureCell()
@@ -220,15 +200,13 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     
-    @objc func tapSection(sender: UIButton) {
-        self.arrayHeader[sender.tag] = (self.arrayHeader[sender.tag] == 1) ? 0 : 1
-        self.brandsTableView.reloadSections([sender.tag], with: .fade)
-        }
+    
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         
         return 5
     }
+    
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         
         return UIView()
@@ -243,6 +221,7 @@ extension MainPageVC: UICollectionViewDataSource, UICollectionViewDelegate, UICo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CategoriesCell
+        cell.categoryNameLabel.text = "erkek"
         return cell
     }
     

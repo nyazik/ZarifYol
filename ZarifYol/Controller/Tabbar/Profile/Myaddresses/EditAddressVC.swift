@@ -11,6 +11,7 @@ import MaterialComponents
 
 class EditAddressVC: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameSurnameTextField: MDCTextField!
     @IBOutlet weak var phoneNumberTextField: MDCTextField!
     @IBOutlet weak var districtTextField: MDCTextField!
@@ -19,6 +20,8 @@ class EditAddressVC: UIViewController {
     @IBOutlet weak var addressTextField: MDCTextField!
     @IBOutlet weak var addressTitleTextField: MDCTextField!
     @IBOutlet weak var saveButton: UIButton!
+    
+    var addAddress = false
     
     var textFields: [UITextField] {
         return [nameSurnameTextField, phoneNumberTextField, districtTextField, provinceTextField, streetNameTextField, addressTextField, addressTitleTextField]
@@ -39,6 +42,11 @@ class EditAddressVC: UIViewController {
         hideKeyboardWhenTappedAround()
         
         textFields.forEach {$0.delegate = self}
+        if addAddress == true{
+            titleLabel.text = "Adres Ekle"
+        }else{
+            titleLabel.text = "Adres Düzenle"
+        }
     }
     
     
@@ -85,6 +93,14 @@ class EditAddressVC: UIViewController {
         container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
     }
     
+    
+    @IBAction func saveButtonPressed(_ sender: UIButton) {
+        if addAddress == false{
+            dismiss(animated: true, completion: nil)
+        } else {
+            
+        }
+    }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)

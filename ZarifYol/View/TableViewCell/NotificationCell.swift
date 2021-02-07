@@ -9,5 +9,8 @@ import UIKit
 
 class NotificationCell: UITableViewCell {
 
+    @IBOutlet weak var notificationBodyLabel: UILabel!
+    @IBOutlet weak var notificationImageView: UIImageView!
+    @IBOutlet weak var notificationDateLabel: UILabel!
     
 }

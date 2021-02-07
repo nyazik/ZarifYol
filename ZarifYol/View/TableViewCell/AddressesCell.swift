@@ -11,6 +11,11 @@ class AddressesCell: UITableViewCell {
 
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var editAddressView: UIView!
+    @IBOutlet weak var cityNameLabel: UILabel!
+    @IBOutlet weak var nameSurnameLabel: UILabel!
+    @IBOutlet weak var phoneNumberLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    
     
     func setupLayouts(){
         configureView(view: cellView)

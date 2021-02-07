@@ -8,7 +8,9 @@
 import UIKit
 
 class SubCategoryCell: UICollectionViewCell {
+    
     @IBOutlet weak var subCategoryImageView: UIImageView!
+    @IBOutlet weak var subCategoryNameLabel: UILabel!
     
     func configureCell() {
         subCategoryImageView.layer.cornerRadius = 10

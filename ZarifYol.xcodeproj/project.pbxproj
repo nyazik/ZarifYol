@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B9EFECB708B232FF20052CD6 /* Pods_ZarifYol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0517EC88DAB55B6C735A118F /* Pods_ZarifYol.framework */; };
+		CD086AAD25CFCC2000379630 /* PreviousSearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD086AAC25CFCC2000379630 /* PreviousSearchResultCell.swift */; };
 		CD1136E525C7FCAE00E26130 /* TRCenturyGothicRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD1136E425C7FCAE00E26130 /* TRCenturyGothicRegular.ttf */; };
 		CD1136E825C8123000E26130 /* TextView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1136E725C8123000E26130 /* TextView+Ext.swift */; };
 		CD1136EB25C8390400E26130 /* MyOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1136EA25C8390400E26130 /* MyOrdersVC.swift */; };
@@ -60,6 +61,8 @@
 		CD4BA42C25C9D959007E9C97 /* BoutiqueProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4BA42B25C9D959007E9C97 /* BoutiqueProductDetailVC.swift */; };
 		CD4BA42F25C9D9E8007E9C97 /* BoutiqueProductImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4BA42E25C9D9E8007E9C97 /* BoutiqueProductImageCell.swift */; };
 		CD4BA43225CA77EA007E9C97 /* BoutiqueProductColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4BA43125CA77EA007E9C97 /* BoutiqueProductColorCell.swift */; };
+		CD5235F025D04D1D00E0DFD2 /* AllCommentsInBoutiqueProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5235EF25D04D1D00E0DFD2 /* AllCommentsInBoutiqueProductCell.swift */; };
+		CD5235F325D058F100E0DFD2 /* FilteringCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5235F225D058F100E0DFD2 /* FilteringCategoryCell.swift */; };
 		CD5AC74B25C93FFB005A267B /* PaymentSuccessfulVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5AC74925C93FFB005A267B /* PaymentSuccessfulVC.xib */; };
 		CD5AC74C25C93FFB005A267B /* PaymentSuccessfulVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AC74A25C93FFB005A267B /* PaymentSuccessfulVC.swift */; };
 		CD5AC75425C9767F005A267B /* SuccessfulPaymentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5AC75225C9767F005A267B /* SuccessfulPaymentCell.xib */; };
@@ -83,9 +86,8 @@
 		CDB96B2725C2DB3A0071F7BC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB96B2625C2DB3A0071F7BC /* LoginVC.swift */; };
 		CDB96B2A25C2DE670071F7BC /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB96B2925C2DE670071F7BC /* ForgotPasswordVC.swift */; };
 		CDB96B3925C3DFF50071F7BC /* FilteringCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB96B3825C3DFF50071F7BC /* FilteringCategoryVC.swift */; };
-		CDC8464A25C44D00004FC67F /* BrandsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8464925C44D00004FC67F /* BrandsCell.swift */; };
 		CDC8465725C58674004FC67F /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8465625C58674004FC67F /* SearchVC.swift */; };
-		CDC8465A25C58977004FC67F /* SearchCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8465925C58977004FC67F /* SearchCategoryCell.swift */; };
+		CDC8465A25C58977004FC67F /* PopularSearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8465925C58977004FC67F /* PopularSearchResultCell.swift */; };
 		CDC8465E25C5AAC8004FC67F /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8465D25C5AAC8004FC67F /* NotificationVC.swift */; };
 		CDC8466A25C5AD4F004FC67F /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8466925C5AD4F004FC67F /* NotificationCell.swift */; };
 		CDD92F4825CD258A0017AA8F /* PersonalInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD92F4725CD258A0017AA8F /* PersonalInformationVC.swift */; };
@@ -99,6 +101,7 @@
 		0517EC88DAB55B6C735A118F /* Pods_ZarifYol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZarifYol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		134605E4F399BAB0C2C650DE /* Pods-ZarifYol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZarifYol.debug.xcconfig"; path = "Target Support Files/Pods-ZarifYol/Pods-ZarifYol.debug.xcconfig"; sourceTree = "<group>"; };
 		5941A70848CA19A8A2495893 /* Pods-ZarifYol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZarifYol.release.xcconfig"; path = "Target Support Files/Pods-ZarifYol/Pods-ZarifYol.release.xcconfig"; sourceTree = "<group>"; };
+		CD086AAC25CFCC2000379630 /* PreviousSearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousSearchResultCell.swift; sourceTree = "<group>"; };
 		CD1136E425C7FCAE00E26130 /* TRCenturyGothicRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TRCenturyGothicRegular.ttf; sourceTree = "<group>"; };
 		CD1136E725C8123000E26130 /* TextView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView+Ext.swift"; sourceTree = "<group>"; };
 		CD1136EA25C8390400E26130 /* MyOrdersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersVC.swift; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 		CD4BA42B25C9D959007E9C97 /* BoutiqueProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutiqueProductDetailVC.swift; sourceTree = "<group>"; };
 		CD4BA42E25C9D9E8007E9C97 /* BoutiqueProductImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutiqueProductImageCell.swift; sourceTree = "<group>"; };
 		CD4BA43125CA77EA007E9C97 /* BoutiqueProductColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutiqueProductColorCell.swift; sourceTree = "<group>"; };
+		CD5235EF25D04D1D00E0DFD2 /* AllCommentsInBoutiqueProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCommentsInBoutiqueProductCell.swift; sourceTree = "<group>"; };
+		CD5235F225D058F100E0DFD2 /* FilteringCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringCategoryCell.swift; sourceTree = "<group>"; };
 		CD5AC74925C93FFB005A267B /* PaymentSuccessfulVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentSuccessfulVC.xib; sourceTree = "<group>"; };
 		CD5AC74A25C93FFB005A267B /* PaymentSuccessfulVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessfulVC.swift; sourceTree = "<group>"; };
 		CD5AC75225C9767F005A267B /* SuccessfulPaymentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessfulPaymentCell.xib; sourceTree = "<group>"; };
@@ -176,9 +181,8 @@
 		CDB96B2625C2DB3A0071F7BC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CDB96B2925C2DE670071F7BC /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		CDB96B3825C3DFF50071F7BC /* FilteringCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringCategoryVC.swift; sourceTree = "<group>"; };
-		CDC8464925C44D00004FC67F /* BrandsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsCell.swift; sourceTree = "<group>"; };
 		CDC8465625C58674004FC67F /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
-		CDC8465925C58977004FC67F /* SearchCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryCell.swift; sourceTree = "<group>"; };
+		CDC8465925C58977004FC67F /* PopularSearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSearchResultCell.swift; sourceTree = "<group>"; };
 		CDC8465D25C5AAC8004FC67F /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		CDC8466925C5AD4F004FC67F /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		CDD92F4725CD258A0017AA8F /* PersonalInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInformationVC.swift; sourceTree = "<group>"; };
@@ -238,7 +242,6 @@
 		CD34963125C6B56B00E76CD0 /* MainPageTabbar */ = {
 			isa = PBXGroup;
 			children = (
-				CD43B18D25CF26E800098F44 /* Main Page */,
 				CDAED5C625C1B4C4000D090C /* MainPageVC.swift */,
 				CDC8465625C58674004FC67F /* SearchVC.swift */,
 				CDC8465D25C5AAC8004FC67F /* NotificationVC.swift */,
@@ -372,13 +375,6 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		CD43B18D25CF26E800098F44 /* Main Page */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Main Page";
-			sourceTree = "<group>";
-		};
 		CD43B18F25CF279200098F44 /* BoutiqueProductList */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,7 +419,6 @@
 			isa = PBXGroup;
 			children = (
 				CD29D05925C3F1E300CC7BAD /* SubCategoryFilteringCell.swift */,
-				CDC8464925C44D00004FC67F /* BrandsCell.swift */,
 				CDC8466925C5AD4F004FC67F /* NotificationCell.swift */,
 				CD7C2F9925C5B7D700FB4DE4 /* CartCell.swift */,
 				CD34962025C5EFED00E76CD0 /* FavouriteProductCell.swift */,
@@ -435,6 +430,9 @@
 				CD1136ED25C83A1000E26130 /* MyOrderCell.swift */,
 				CD1136FA25C8985700E26130 /* AllCommentsCell.swift */,
 				CDA2639425CBEC5500D17546 /* CategoryCell.swift */,
+				CD086AAC25CFCC2000379630 /* PreviousSearchResultCell.swift */,
+				CD5235EF25D04D1D00E0DFD2 /* AllCommentsInBoutiqueProductCell.swift */,
+				CD5235F225D058F100E0DFD2 /* FilteringCategoryCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -445,7 +443,7 @@
 				CDAED5CF25C1B598000D090C /* CategoriesCell.swift */,
 				CDAED5D525C1CD05000D090C /* BoutiqueCategoryCell.swift */,
 				CDF51FB525C1E2F300D67F8D /* ProductCell.swift */,
-				CDC8465925C58977004FC67F /* SearchCategoryCell.swift */,
+				CDC8465925C58977004FC67F /* PopularSearchResultCell.swift */,
 				CD1136F025C83F4F00E26130 /* OrderPreviewCell.swift */,
 				CD4BA42E25C9D9E8007E9C97 /* BoutiqueProductImageCell.swift */,
 				CD4BA43125CA77EA007E9C97 /* BoutiqueProductColorCell.swift */,
@@ -640,6 +638,7 @@
 				CDC8465E25C5AAC8004FC67F /* NotificationVC.swift in Sources */,
 				CDC8465725C58674004FC67F /* SearchVC.swift in Sources */,
 				CD462D3F25C7CDE100544C36 /* OrderDetailCell.swift in Sources */,
+				CD086AAD25CFCC2000379630 /* PreviousSearchResultCell.swift in Sources */,
 				CD949BA425CD1BD2003DB828 /* AddAndEditCreditCardVC.swift in Sources */,
 				CD34963825C6B85D00E76CD0 /* SettingsVC.swift in Sources */,
 				CD462D3C25C7CD0D00544C36 /* OrderDetailVC.swift in Sources */,
@@ -653,7 +652,6 @@
 				CD36D4DA25C1A1F8003CF2D0 /* RegisterVC.swift in Sources */,
 				CDB96B2725C2DB3A0071F7BC /* LoginVC.swift in Sources */,
 				CD36D4F625C1A22D003CF2D0 /* UIColor+Ext.swift in Sources */,
-				CDC8464A25C44D00004FC67F /* BrandsCell.swift in Sources */,
 				CD34962C25C6999A00E76CD0 /* ProfileVC.swift in Sources */,
 				CD27833425CC79A500C0CEE5 /* ChangePasswordVC.swift in Sources */,
 				CD34962F25C69B8100E76CD0 /* ProfileMenuCell.swift in Sources */,
@@ -674,15 +672,17 @@
 				CD29D05725C3EF7C00CC7BAD /* SubCategoryFilteringVC.swift in Sources */,
 				CDA2639125CBE9CA00D17546 /* CategoriesVC.swift in Sources */,
 				CD1136FB25C8985700E26130 /* AllCommentsCell.swift in Sources */,
+				CD5235F025D04D1D00E0DFD2 /* AllCommentsInBoutiqueProductCell.swift in Sources */,
 				CDAED5D325C1CCC2000D090C /* BoutiqueProductListVC.swift in Sources */,
 				CD1136EB25C8390400E26130 /* MyOrdersVC.swift in Sources */,
 				CD36D4F925C1A22D003CF2D0 /* TextField+Ext.swift in Sources */,
 				CDAED5D625C1CD05000D090C /* BoutiqueCategoryCell.swift in Sources */,
 				CDA2639825CBEE3700D17546 /* SubCategoryCell.swift in Sources */,
 				CD29D05A25C3F1E300CC7BAD /* SubCategoryFilteringCell.swift in Sources */,
-				CDC8465A25C58977004FC67F /* SearchCategoryCell.swift in Sources */,
+				CDC8465A25C58977004FC67F /* PopularSearchResultCell.swift in Sources */,
 				CD34965025C6F01A00E76CD0 /* MenuVC.swift in Sources */,
 				CD34964725C6D56600E76CD0 /* NotificationSettingsCell.swift in Sources */,
+				CD5235F325D058F100E0DFD2 /* FilteringCategoryCell.swift in Sources */,
 				CD4BA42F25C9D9E8007E9C97 /* BoutiqueProductImageCell.swift in Sources */,
 				CDDB24A225C928D00004B470 /* PayForOrderVC.swift in Sources */,
 				CDB96B2A25C2DE670071F7BC /* ForgotPasswordVC.swift in Sources */,

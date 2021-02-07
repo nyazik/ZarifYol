@@ -19,6 +19,9 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var myCategoriesTabbarView: UIView!
     @IBOutlet weak var mainPageTabbarView: UIView!
+    @IBOutlet weak var profileNameSurnameLabel: UILabel!
+    @IBOutlet weak var profileEmailLabel: UILabel!
+    
     
     var accountDetailArray = ["Kişisel Bilgiler", "Siparişlerim", "Adreslerim", "Ödeme Bilgilerim", "Ayarlarım"]
     let images = [UIImage(named: "ic_profil"), UIImage(named: "ic_orders"),  UIImage(named: "ic_fav"), UIImage(named: "ic_card"), UIImage(named: "ic_settings") ]
@@ -29,6 +32,7 @@ class ProfileVC: UIViewController {
         profileMenuTableView.delegate = self
         setupLayouts()
         setupSideMenu()
+        
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.addToCart(_:)))
         myCartTabbarView.addGestureRecognizer(tap)
@@ -72,31 +76,19 @@ class ProfileVC: UIViewController {
         configureRoundView(view: profileImageView)
         configureRoundView(view: myCartTabbarView)
         configureRoundView(view: myCartInsideView)
-        configureShadow(view: myCartInsideView)
-        configureTabbarShadow(view: tabbarView)
-        configureTabbarShadow(view: myCartTabbarView)
+        myCartInsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
         
+        tabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        myCartTabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+
+        profileNameSurnameLabel.text = "Wook Web"
+        profileEmailLabel.text = "info@wookweb.com"
     }
     
     func configureRoundView(view: UIView){
         view.layer.cornerRadius = view.frame.height / 2
     }
     
-    func configureShadow(view: UIView){
-        view.backgroundColor = UIColor.white
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOpacity = 0.3
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 3
-    }
-    
-    func configureTabbarShadow(view: UIView){
-        view.backgroundColor = UIColor.white
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOpacity = 0.5
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 5
-    }
     
     @IBAction func menuButtonPressed(_ sender: UIButton) {
         let menu = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as! SideMenuNavigationController

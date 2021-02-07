@@ -43,7 +43,7 @@
                                             <fragment content="120₺">
                                                 <attributes>
                                                     <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" size="18" name=".SFNS-Regular"/>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     <integer key="NSStrikethrough" value="1"/>
                                                 </attributes>

@@ -8,6 +8,7 @@
 import UIKit
 
 class BoutiqueProductImageCell: UICollectionViewCell {
+    
     @IBOutlet weak var productImageView: UIImageView!
     
 }
