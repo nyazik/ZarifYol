@@ -55,28 +55,23 @@ class SettingsVC: UIViewController {
     
     
     func setupLayouts(){
-        configureRoundCorner(view: changePasswordCellView)
-        configureRoundCorner(view: notificationSettingsCellView)
-        configureRoundCorner(view: signOutCellView)
-        configureShadow(view: changePasswordCellView)
-        configureShadow(view: notificationSettingsCellView)
-        configureShadow(view: signOutCellView)
+
+        changePasswordCellView.layer.cornerRadius = 10
+        notificationSettingsCellView.layer.cornerRadius = 10
+        signOutCellView.layer.cornerRadius = 10
+        
+        changePasswordCellView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        notificationSettingsCellView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        signOutCellView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        
+        changePasswordCellView.layer.backgroundColor = UIColor.white.cgColor
+        notificationSettingsCellView.layer.backgroundColor = UIColor.white.cgColor
+        signOutCellView.layer.backgroundColor = UIColor.white.cgColor
+
     }
     
-    func configureRoundCorner(view: UIView){
-        view.layer.cornerRadius = 10
-        view.layer.backgroundColor = UIColor.white.cgColor
-    }
-   
-    
-    func configureShadow(view: UIView){
-        view.backgroundColor = UIColor.white
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOpacity = 0.5
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 5
-    }
-    
+ 
+  
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)

@@ -9,13 +9,13 @@ import UIKit
 
 class PaymentSuccessfulVC: UIViewController {
     
-    
     @IBOutlet weak var closePopupButton: UIButton!
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var listOfOrdersTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         listOfOrdersTableView.dataSource = self
         listOfOrdersTableView.delegate = self
         
@@ -28,19 +28,16 @@ class PaymentSuccessfulVC: UIViewController {
         
     }
     
-    func configureLayouts(){
-        configureCornerRadiusButton(button: closePopupButton)
-    }
-
-    
-    func configureCornerRadiusButton(button:UIButton){
-        button.layer.cornerRadius = 15
-    }
-    
     @objc func touchTapped(_ sender: UITapGestureRecognizer) {
         dismiss(animated: false, completion: nil)
     }
+    
+    func configureLayouts(){
+        closePopupButton.layer.cornerRadius = 15
 
+    }
+
+  
     
     @IBAction func closePopupButtonPressed(_ sender: UIButton) {
         dismiss(animated: false, completion: nil)

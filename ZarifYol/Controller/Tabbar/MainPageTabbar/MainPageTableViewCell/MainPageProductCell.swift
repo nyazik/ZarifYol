@@ -27,12 +27,13 @@ class MainPageProductCell: UITableViewCell {
     func configureCell(){
         configureRoundView(view: addToCellOutsideView)
         configureRoundView(view: addToCellInsideView)
+        addToCellOutsideView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        addToCellInsideView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
         cellView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
     }
     
     func configureRoundView(view: UIView){
         view.layer.cornerRadius = view.frame.height / 2
-        view.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
         view.backgroundColor = UIColor.white
     }
     

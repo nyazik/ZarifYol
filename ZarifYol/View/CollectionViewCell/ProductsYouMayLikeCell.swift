@@ -15,7 +15,6 @@ class ProductsYouMayLikeCell: UICollectionViewCell {
     @IBOutlet weak var productLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     
-    
     func configureCell() {
         productView.layer.cornerRadius = 10
         productView.addShadow(color: .lightGray, opacity: 0.5, radius: 5.0)

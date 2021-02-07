@@ -39,27 +39,20 @@ class AddToCartVC: UIViewController {
     
     
     func setupLayouts(){
-        configureShadow(view: priceView)
         payButton.roundCorners(corners: [.topLeft, .topRight], radius: payButton.frame.height / 2)
-        configureShadow(view: bottomView)
-        configureCornerRadius(view: saleButton)
-        configureCornerRadius(view: saleCodeTextField)
+        bottomView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        priceView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        priceView.backgroundColor = UIColor.white
+        saleButton.layer.cornerRadius = 10
+        saleCodeTextField.layer.cornerRadius = 10
+
         saleCodeTextField.setRightPaddingPoints(10)
         saleCodeTextField.setLeftPaddingPoints(10)
         saleCodeTextField.text = "34567890"
         totalPriceToPayLabel.text = "152 ₺"
     }
     
-    func configureCornerRadius(view: UIView){
-        view.layer.cornerRadius = 10
-    }
-    func configureShadow(view: UIView){
-        view.backgroundColor = UIColor.white
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOpacity = 0.5
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 5
-    }
+
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)

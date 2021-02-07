@@ -90,7 +90,7 @@ class PersonalInformationVC: UIViewController, UIImagePickerControllerDelegate, 
     
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {
-        
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {

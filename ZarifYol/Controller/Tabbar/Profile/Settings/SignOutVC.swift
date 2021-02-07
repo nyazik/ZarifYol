@@ -19,28 +19,24 @@ class SignOutVC: UIViewController {
         super.viewDidLoad()
         configureLayouts()
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.quitPopup(_:)))
-        backgroundView.addGestureRecognizer(tap)
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(self.quitPopup(_:)))
+//        backgroundView.addGestureRecognizer(tap)
     }
 
-    @objc func quitPopup(_ sender: UITapGestureRecognizer) {
-        dismiss(animated: false, completion: nil)
-    }
+//    @objc func quitPopup(_ sender: UITapGestureRecognizer) {
+//        dismiss(animated: false, completion: nil)
+//    }
     
 
     func configureLayouts(){
         configureView(view: cellView)
-        configureLeftButton(button: cancelButton)
-        configureRightButton(button: signOutButton)
+
+        cancelButton.roundCorners(corners: [.topRight], radius: 10)
+        signOutButton.roundCorners(corners: [.topLeft], radius: 10)
+
     }
     
-    func configureLeftButton(button: UIButton){
-        button.roundCorners(corners: [.topRight], radius: 10)
-    }
-    
-    func configureRightButton(button: UIButton){
-        button.roundCorners(corners: [.topLeft], radius: 10)
-    }
+  
     
     func configureView(view: UIView){
         view.layer.cornerRadius = 15

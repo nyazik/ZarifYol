@@ -62,7 +62,7 @@ class ChangePasswordVC: UIViewController {
     }
     
     
-    @IBAction func udateButtonPressed(_ sender: UIButton) {
+    @IBAction func updateButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     

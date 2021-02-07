@@ -16,6 +16,7 @@ class BoutiqueProductListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         categoryCollectionView.dataSource = self
         categoryCollectionView.delegate = self
         

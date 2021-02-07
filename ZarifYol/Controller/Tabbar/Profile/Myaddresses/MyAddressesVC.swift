@@ -22,6 +22,13 @@ class MyAddressesVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func addAddressButtonPressed(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "EditAddressVC") as! EditAddressVC
+        vc.addAddress = true
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 
 }
 

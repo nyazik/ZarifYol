@@ -10,6 +10,7 @@ import UIKit
 class NotificationVC: UIViewController {
 
     @IBOutlet weak var notificationTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         notificationTableView.dataSource = self

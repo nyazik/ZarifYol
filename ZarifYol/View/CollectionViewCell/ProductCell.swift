@@ -31,12 +31,12 @@ class ProductCell: UICollectionViewCell {
         favView.layer.cornerRadius = favView.frame.height / 2
         favView.layer.backgroundColor = UIColor.white.cgColor
         favView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
-        
-        newView.layer.cornerRadius = 10
-        priceView.layer.cornerRadius = 10
-        
+
+        configureCornerRadius(view: newView)
+        configureCornerRadius(view: priceView)
+        configureCornerRadius(view: cellView)
+
         cellView.clipsToBounds = true
-        cellView.layer.cornerRadius = 10
         configureBorder(view: cellView)
         
         saleStackView.isHidden = true
@@ -49,5 +49,8 @@ class ProductCell: UICollectionViewCell {
         view.layer.borderWidth = 1
     }
     
+    func configureCornerRadius(view: UIView){
+        view.layer.cornerRadius = 10
+    }
    
 }

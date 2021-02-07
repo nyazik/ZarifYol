@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OrZ-bl-JGU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="GOTHIC.TTF">
+        <array key="CenturyGothic.ttf">
             <string>CenturyGothic</string>
         </array>
         <array key="gothicb.ttf">
@@ -31,34 +31,34 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAZ-Jc-V9b">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzG-ri-Y8V">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14Y-9t-kWN">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="859.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="849.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kayıt Ol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDd-Km-KFm">
-                                                <rect key="frame" x="30" y="135" width="354" height="32"/>
+                                                <rect key="frame" x="30" y="135" width="354" height="30.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DBP-u3-XJZ">
-                                                <rect key="frame" x="30" y="207" width="354" height="447.5"/>
+                                                <rect key="frame" x="30" y="205.5" width="354" height="440"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aTj-3u-3Ks">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="73.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="72"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad Soyad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8H-om-LGE">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="22.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="21"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wook Web" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OXz-w5-9bW">
-                                                                <rect key="frame" x="0.0" y="32.5" width="354" height="30"/>
+                                                                <rect key="frame" x="0.0" y="31" width="354" height="30"/>
                                                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="8EQ-To-GcZ"/>
@@ -68,7 +68,7 @@
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIs-Zc-e0m">
-                                                                <rect key="frame" x="0.0" y="72.5" width="354" height="1"/>
+                                                                <rect key="frame" x="0.0" y="71" width="354" height="1"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="zEu-g1-dtd"/>
@@ -77,16 +77,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gzm-Yr-ZJo">
-                                                        <rect key="frame" x="0.0" y="93.5" width="354" height="73.5"/>
+                                                        <rect key="frame" x="0.0" y="92" width="354" height="72"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cep Telefonu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zm-6d-Qu8">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="22.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="21"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wook Web" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WaC-Sd-M5h">
-                                                                <rect key="frame" x="0.0" y="32.5" width="354" height="30"/>
+                                                                <rect key="frame" x="0.0" y="31" width="354" height="30"/>
                                                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="cBu-72-gpW"/>
@@ -96,7 +96,7 @@
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lgd-gt-WY7">
-                                                                <rect key="frame" x="0.0" y="72.5" width="354" height="1"/>
+                                                                <rect key="frame" x="0.0" y="71" width="354" height="1"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="0Pj-RM-Q82"/>
@@ -105,16 +105,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aZE-s0-73Z">
-                                                        <rect key="frame" x="0.0" y="187" width="354" height="73.5"/>
+                                                        <rect key="frame" x="0.0" y="184" width="354" height="72"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E Mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f03-a8-17W">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="22.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="21"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wook Web" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dv7-BU-ewu">
-                                                                <rect key="frame" x="0.0" y="32.5" width="354" height="30"/>
+                                                                <rect key="frame" x="0.0" y="31" width="354" height="30"/>
                                                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="8y2-kD-3KM"/>
@@ -124,7 +124,7 @@
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prY-x8-bwx">
-                                                                <rect key="frame" x="0.0" y="72.5" width="354" height="1"/>
+                                                                <rect key="frame" x="0.0" y="71" width="354" height="1"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="97C-22-C6g"/>
@@ -133,16 +133,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Suq-cL-4GE">
-                                                        <rect key="frame" x="0.0" y="280.5" width="354" height="73.5"/>
+                                                        <rect key="frame" x="0.0" y="276" width="354" height="72"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITR-3b-9WQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="22.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="21"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wook Web" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqL-3G-ISn">
-                                                                <rect key="frame" x="0.0" y="32.5" width="354" height="30"/>
+                                                                <rect key="frame" x="0.0" y="31" width="354" height="30"/>
                                                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="VUa-SR-L9h"/>
@@ -152,7 +152,7 @@
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdw-x8-FIl">
-                                                                <rect key="frame" x="0.0" y="72.5" width="354" height="1"/>
+                                                                <rect key="frame" x="0.0" y="71" width="354" height="1"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="tP4-fZ-sQF"/>
@@ -161,16 +161,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ztx-c2-i5X">
-                                                        <rect key="frame" x="0.0" y="374" width="354" height="73.5"/>
+                                                        <rect key="frame" x="0.0" y="368" width="354" height="72"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre Tekrar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWd-t1-e9Q">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="22.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="21"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wook Web" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fHT-hY-qHt">
-                                                                <rect key="frame" x="0.0" y="32.5" width="354" height="30"/>
+                                                                <rect key="frame" x="0.0" y="31" width="354" height="30"/>
                                                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="498-ka-jPe"/>
@@ -180,7 +180,7 @@
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOk-tH-KdS">
-                                                                <rect key="frame" x="0.0" y="72.5" width="354" height="1"/>
+                                                                <rect key="frame" x="0.0" y="71" width="354" height="1"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="zIy-kU-Wi1"/>
@@ -191,7 +191,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sze-ep-7yb">
-                                                <rect key="frame" x="20" y="704.5" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="695.5" width="374" height="50"/>
                                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="beh-nb-F0B"/>
@@ -205,17 +205,17 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0Fk-hw-UF3">
-                                                <rect key="frame" x="20" y="774.5" width="374" height="35"/>
+                                                <rect key="frame" x="20" y="765.5" width="374" height="34"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bir hesabın var mı?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PYJ-LB-4Bb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="35"/>
-                                                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBM-DD-yRQ">
-                                                        <rect key="frame" x="189.5" y="0.0" width="184.5" height="35"/>
-                                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                        <rect key="frame" x="189.5" y="0.0" width="184.5" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <state key="normal" title=" Giriş Yap">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -402,6 +402,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="716" id="rPE-Dh-8KG"/>
                                 </constraints>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="yUJ-Nf-ngb">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wu-hX-6VD">
                                 <rect key="frame" x="0.0" y="796" width="414" height="100"/>
@@ -1154,22 +1159,22 @@
                                                                     <rect key="frame" x="170" y="10" width="224" height="159"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oduncu Gömlek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lie-Oc-TlP">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="146.5" height="30.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="131.5" height="29.5"/>
                                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xrQ-eA-2ui">
-                                                                            <rect key="frame" x="0.0" y="40.5" width="78" height="24"/>
+                                                                            <rect key="frame" x="0.0" y="39.5" width="76" height="23.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Renk:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIV-KG-6bb">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="37.5" height="24"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="36.5" height="23.5"/>
                                                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Siyah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rk-05-rQe">
-                                                                                    <rect key="frame" x="42.5" y="0.0" width="35.5" height="24"/>
+                                                                                    <rect key="frame" x="41.5" y="0.0" width="34.5" height="23.5"/>
                                                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -1177,16 +1182,16 @@
                                                                             </subviews>
                                                                         </stackView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2hN-Mp-qOq">
-                                                                            <rect key="frame" x="0.0" y="74.5" width="66.5" height="24"/>
+                                                                            <rect key="frame" x="0.0" y="73" width="62.5" height="23"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beden:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0B-c7-IdH">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="48.5" height="24"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="23"/>
                                                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlH-aj-x4o">
-                                                                                    <rect key="frame" x="53.5" y="0.0" width="13" height="24"/>
+                                                                                    <rect key="frame" x="50" y="0.0" width="12.5" height="23"/>
                                                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -1194,7 +1199,7 @@
                                                                             </subviews>
                                                                         </stackView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="76 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abd-FG-iNq">
-                                                                            <rect key="frame" x="0.0" y="108.5" width="49.5" height="50.5"/>
+                                                                            <rect key="frame" x="0.0" y="106" width="49.5" height="53"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                                             <color key="textColor" red="0.99607843137254903" green="0.44705882352941173" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -1298,16 +1303,16 @@
                                                 <rect key="frame" x="0.0" y="89.5" width="414" height="134.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xxd-0L-XOB">
-                                                        <rect key="frame" x="20" y="20" width="374" height="22.5"/>
+                                                        <rect key="frame" x="20" y="20" width="374" height="21"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ödenecek Tutar:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqt-pq-ZbZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="285" height="22.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="278.5" height="21"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="152 ₺" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqO-Na-29S">
-                                                                <rect key="frame" x="285" y="0.0" width="89" height="22.5"/>
+                                                                <rect key="frame" x="278.5" y="0.0" width="95.5" height="21"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1479,19 +1484,19 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LV3-5C-5rA">
-                                                            <rect key="frame" x="170" y="116" width="224" height="17.5"/>
+                                                            <rect key="frame" x="170" y="118.5" width="224" height="16.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="e3v-Ug-Uvs">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="108" height="17.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="108" height="16.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Renk:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nER-4S-ghd">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="54" height="17.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="54" height="16.5"/>
                                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Siyah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sed-ih-tJy">
-                                                                            <rect key="frame" x="54" y="0.0" width="54" height="17.5"/>
+                                                                            <rect key="frame" x="54" y="0.0" width="54" height="16.5"/>
                                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -1499,16 +1504,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dcw-nd-QWn">
-                                                                    <rect key="frame" x="116" y="0.0" width="108" height="17.5"/>
+                                                                    <rect key="frame" x="116" y="0.0" width="108" height="16.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beden:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjT-FZ-qdt">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="54" height="17.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="54" height="16.5"/>
                                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhO-cf-fGH">
-                                                                            <rect key="frame" x="54" y="0.0" width="54" height="17.5"/>
+                                                                            <rect key="frame" x="54" y="0.0" width="54" height="16.5"/>
                                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -1518,7 +1523,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nX1-wX-plf" customClass="CosmosView" customModule="Cosmos">
-                                                            <rect key="frame" x="170" y="36.5" width="224" height="74.5"/>
+                                                            <rect key="frame" x="170" y="36.5" width="224" height="77"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </view>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="F23-Wa-27R">
@@ -1560,7 +1565,7 @@
                                                             </constraints>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="76 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axr-5b-Tqu">
-                                                            <rect key="frame" x="170" y="138.5" width="224" height="29.5"/>
+                                                            <rect key="frame" x="170" y="140" width="224" height="28"/>
                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="24"/>
                                                             <color key="textColor" red="0.99607843139999996" green="0.44705882349999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -1643,7 +1648,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ana Sayfa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FU0-Xu-O0W">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="24" width="74.5" height="12"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1669,7 +1674,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCq-Yt-XQ4">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="24" width="75" height="12"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1700,7 +1705,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgW-zd-RwN">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="24" width="75" height="12"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="1" green="0.44705882352941173" blue="0.0" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1726,7 +1731,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesabım" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhc-mM-XD3">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="24" width="74.5" height="12"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1771,7 +1776,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sepetim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YW5-sm-M8D">
-                                                        <rect key="frame" x="2" y="27" width="46" height="12.5"/>
+                                                        <rect key="frame" x="2" y="27" width="46" height="12"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                         <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2023,7 +2028,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ana Sayfa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr4-9R-CDX">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="24" width="74.5" height="12"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313725490191" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2049,7 +2054,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CK-hg-qEm">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="24" width="75" height="12"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313725490191" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2080,7 +2085,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leH-wU-jaz">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="24" width="75" height="12"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313725490191" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2106,7 +2111,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesabım" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyW-00-FA4">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="24" width="74.5" height="12"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="1" green="0.44705882352941173" blue="0.0" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2151,7 +2156,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sepetim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tID-GP-Ib8">
-                                                        <rect key="frame" x="2" y="27" width="46" height="12.5"/>
+                                                        <rect key="frame" x="2" y="27" width="46" height="12"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                         <color key="textColor" red="0.60784313725490191" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2262,13 +2267,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ayarlar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qf-MN-vLi">
-                                <rect key="frame" x="20" y="110" width="374" height="22.5"/>
+                                <rect key="frame" x="20" y="110" width="374" height="21"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMS-ZY-OkK">
-                                <rect key="frame" x="0.0" y="142.5" width="414" height="753.5"/>
+                                <rect key="frame" x="0.0" y="141" width="414" height="755"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jj0-fn-HlY">
                                         <rect key="frame" x="20" y="20" width="374" height="287.5"/>
@@ -2431,16 +2436,16 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bildirim Ayarları" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYO-4R-UEb">
-                                <rect key="frame" x="20" y="110" width="374" height="22.5"/>
+                                <rect key="frame" x="20" y="110" width="374" height="21"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbK-ag-Ed5">
-                                <rect key="frame" x="0.0" y="142.5" width="414" height="753.5"/>
+                                <rect key="frame" x="0.0" y="141" width="414" height="755"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YQz-wv-Ev7">
-                                        <rect key="frame" x="0.0" y="10" width="414" height="743.5"/>
+                                        <rect key="frame" x="0.0" y="10" width="414" height="745"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="hnC-qg-f83" customClass="NotificationSettingsCell" customModule="ZarifYol" customModuleProvider="target">
@@ -2623,7 +2628,7 @@ Görükle</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="udateButtonPressed:" destination="4dY-fd-rrZ" eventType="touchUpInside" id="Ysj-vC-9gC"/>
+                                    <action selector="updateButtonPressed:" destination="4dY-fd-rrZ" eventType="touchUpInside" id="Ysj-vC-9gC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2685,6 +2690,16 @@ Görükle</string>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_LogoZarifYol" translatesAutoresizingMaskIntoConstraints="NO" id="VAh-Wh-MVY">
                                         <rect key="frame" x="136.5" y="57" width="141" height="33"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhs-1n-tIe">
+                                        <rect key="frame" x="287.5" y="57.5" width="106.5" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Adres Ekle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addAddressButtonPressed:" destination="Vaf-ci-QnZ" eventType="touchUpInside" id="Ghr-2t-Lmi"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
@@ -2693,9 +2708,12 @@ Görükle</string>
                                     <constraint firstAttribute="bottom" secondItem="VAh-Wh-MVY" secondAttribute="bottom" constant="10" id="FLd-UR-uzd"/>
                                     <constraint firstAttribute="height" constant="100" id="NkT-pW-FdQ"/>
                                     <constraint firstItem="VAh-Wh-MVY" firstAttribute="centerX" secondItem="hNR-OX-YbO" secondAttribute="centerX" id="PbB-uP-gc6"/>
+                                    <constraint firstItem="bhs-1n-tIe" firstAttribute="centerY" secondItem="VAh-Wh-MVY" secondAttribute="centerY" id="VFE-ZG-YHQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="bhs-1n-tIe" secondAttribute="trailing" constant="20" id="XTB-IS-6Hy"/>
                                     <constraint firstItem="iiB-UD-h2o" firstAttribute="centerY" secondItem="VAh-Wh-MVY" secondAttribute="centerY" id="b68-8A-QgF"/>
                                     <constraint firstItem="dJq-fm-mT0" firstAttribute="top" secondItem="hNR-OX-YbO" secondAttribute="top" id="bf5-It-7Yk"/>
                                     <constraint firstAttribute="bottom" secondItem="dJq-fm-mT0" secondAttribute="bottom" id="eBV-vG-b6q"/>
+                                    <constraint firstItem="bhs-1n-tIe" firstAttribute="leading" secondItem="VAh-Wh-MVY" secondAttribute="trailing" constant="10" id="vOI-ic-bcq"/>
                                     <constraint firstAttribute="trailing" secondItem="dJq-fm-mT0" secondAttribute="trailing" id="vaj-TI-QSH"/>
                                 </constraints>
                             </view>
@@ -2757,13 +2775,13 @@ Görükle</string>
                                                                     <rect key="frame" x="50" y="10" width="284" height="122"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Görükle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgG-AV-7hx">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="284" height="24"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="284" height="23.5"/>
                                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tahir Karakoç" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQg-Vj-9nn">
-                                                                            <rect key="frame" x="0.0" y="24" width="284" height="19.5"/>
+                                                                            <rect key="frame" x="0.0" y="23.5" width="284" height="20"/>
                                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -3275,6 +3293,16 @@ Görükle</string>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_LogoZarifYol" translatesAutoresizingMaskIntoConstraints="NO" id="uwK-Ec-7jm">
                                         <rect key="frame" x="136.5" y="57" width="141" height="33"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yiq-VG-h9f">
+                                        <rect key="frame" x="287.5" y="57.5" width="106.5" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Kart Ekle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addCreditCartButtonPRessed:" destination="zc7-Ak-NT3" eventType="touchUpInside" id="AiK-Nr-gm9"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
@@ -3282,10 +3310,13 @@ Görükle</string>
                                     <constraint firstItem="XTg-8W-wLp" firstAttribute="leading" secondItem="XO1-ty-3rQ" secondAttribute="leading" id="4Zc-7t-0QG"/>
                                     <constraint firstItem="XTg-8W-wLp" firstAttribute="top" secondItem="XO1-ty-3rQ" secondAttribute="top" id="5iM-kw-Lbt"/>
                                     <constraint firstAttribute="height" constant="100" id="6UP-ad-l3U"/>
+                                    <constraint firstItem="Yiq-VG-h9f" firstAttribute="centerY" secondItem="uwK-Ec-7jm" secondAttribute="centerY" id="AkA-s8-psv"/>
                                     <constraint firstItem="uwK-Ec-7jm" firstAttribute="centerX" secondItem="XO1-ty-3rQ" secondAttribute="centerX" id="Efv-aQ-ZV9"/>
                                     <constraint firstAttribute="bottom" secondItem="uwK-Ec-7jm" secondAttribute="bottom" constant="10" id="TTf-wc-QsH"/>
+                                    <constraint firstItem="Yiq-VG-h9f" firstAttribute="leading" secondItem="uwK-Ec-7jm" secondAttribute="trailing" constant="10" id="gQ7-D3-2kI"/>
                                     <constraint firstAttribute="trailing" secondItem="XTg-8W-wLp" secondAttribute="trailing" id="mqu-MM-vUp"/>
                                     <constraint firstAttribute="bottom" secondItem="XTg-8W-wLp" secondAttribute="bottom" id="x8p-pH-0jM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yiq-VG-h9f" secondAttribute="trailing" constant="20" id="xTf-9s-t2A"/>
                                     <constraint firstItem="HUk-UX-tIy" firstAttribute="leading" secondItem="XO1-ty-3rQ" secondAttribute="leading" constant="20" id="zMq-dH-GIi"/>
                                 </constraints>
                             </view>
@@ -3738,52 +3769,52 @@ kabul ediyorum.</string>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m16-ho-qU6">
-                                <rect key="frame" x="0.0" y="156" width="414" height="122"/>
+                                <rect key="frame" x="0.0" y="156" width="414" height="120.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sipariş No:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqX-y1-k6G">
-                                        <rect key="frame" x="10" y="10" width="88.5" height="22.5"/>
+                                        <rect key="frame" x="10" y="10" width="88.5" height="21"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                         <color key="textColor" red="1" green="0.44705882352941173" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="48483848" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5m-Ea-E6p">
-                                        <rect key="frame" x="108.5" y="10" width="80" height="22.5"/>
+                                        <rect key="frame" x="108.5" y="10" width="80" height="21"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sipariş Tarihi:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxy-Q0-2YU">
-                                        <rect key="frame" x="10" y="37.5" width="106.5" height="21.5"/>
+                                        <rect key="frame" x="10" y="36" width="106.5" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="1" green="0.44705882352941173" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25.02.2020 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uib-um-fbX">
-                                        <rect key="frame" x="126.5" y="37.5" width="97.5" height="21.5"/>
+                                        <rect key="frame" x="126.5" y="36" width="97.5" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sipariş Özeti: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VR-Nc-CDh">
-                                        <rect key="frame" x="10" y="64" width="110.5" height="21.5"/>
+                                        <rect key="frame" x="10" y="62.5" width="110.5" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="1" green="0.44705882352941173" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Teslimat, 4 Ürün" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsy-h2-G03">
-                                        <rect key="frame" x="130.5" y="64" width="146.5" height="21.5"/>
+                                        <rect key="frame" x="130.5" y="62.5" width="146.5" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toplam:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8L-3c-haX">
-                                        <rect key="frame" x="10" y="90.5" width="63.5" height="21.5"/>
+                                        <rect key="frame" x="10" y="89" width="63.5" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="1" green="0.44705882349999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="353.45 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZt-Io-1em">
-                                        <rect key="frame" x="83.5" y="90.5" width="73.5" height="21.5"/>
+                                        <rect key="frame" x="83.5" y="89" width="73.5" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -3812,7 +3843,7 @@ kabul ediyorum.</string>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SZc-iM-vrM">
-                                <rect key="frame" x="0.0" y="288" width="414" height="608"/>
+                                <rect key="frame" x="0.0" y="286.5" width="414" height="609.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="265" id="Cb5-ab-ENl" customClass="OrderDetailCell" customModule="ZarifYol" customModuleProvider="target">
@@ -4029,28 +4060,28 @@ Moleskin Seatle Gömlek</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kart Bilgileri Güncelle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YK-bX-z0M">
-                                <rect key="frame" x="20" y="110" width="374" height="22.5"/>
+                                <rect key="frame" x="20" y="110" width="374" height="21"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hesap Adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="at3-vE-UXI" customClass="MDCTextField">
-                                <rect key="frame" x="0.0" y="142.5" width="404" height="34"/>
+                                <rect key="frame" x="0.0" y="141" width="404" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Banka" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oqh-OU-Whx" customClass="MDCTextField">
-                                <rect key="frame" x="0.0" y="186.5" width="404" height="34"/>
+                                <rect key="frame" x="0.0" y="185" width="404" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hesap Numarası" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y3V-F0-DSu" customClass="MDCTextField">
-                                <rect key="frame" x="0.0" y="230.5" width="404" height="34"/>
+                                <rect key="frame" x="0.0" y="229" width="404" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sqa-fe-3l0">
-                                <rect key="frame" x="0.0" y="274.5" width="404" height="34"/>
+                                <rect key="frame" x="0.0" y="273" width="404" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="S.K.T." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02n-I5-eBn" customClass="MDCTextField">
                                         <rect key="frame" x="0.0" y="0.0" width="197" height="34"/>
@@ -4366,13 +4397,13 @@ Moleskin Seatle Gömlek</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tüm Yorumlar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8m7-en-tGC">
-                                <rect key="frame" x="20" y="110" width="374" height="22.5"/>
+                                <rect key="frame" x="20" y="110" width="374" height="21"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAc-C8-Sbf">
-                                <rect key="frame" x="10" y="196" width="167.5" height="47"/>
+                                <rect key="frame" x="10" y="194.5" width="167.5" height="47"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.9 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJT-Z1-4s6">
                                         <rect key="frame" x="0.0" y="0.0" width="52" height="47"/>
@@ -4406,7 +4437,7 @@ Moleskin Seatle Gömlek</string>
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KB9-6H-pAX">
-                                <rect key="frame" x="0.0" y="302.5" width="414" height="593.5"/>
+                                <rect key="frame" x="0.0" y="301" width="414" height="595"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="ynG-fa-lMC">
                                     <rect key="frame" x="0.0" y="216" width="414" height="80"/>
@@ -4525,7 +4556,7 @@ Moleskin Seatle Gömlek</string>
                                 </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xbr-En-qwg">
-                                <rect key="frame" x="193.5" y="142.5" width="210.5" height="150"/>
+                                <rect key="frame" x="193.5" y="141" width="210.5" height="150"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uay-ki-UWW">
                                         <rect key="frame" x="0.0" y="0.0" width="210.5" height="30"/>
@@ -4685,7 +4716,7 @@ Moleskin Seatle Gömlek</string>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9n-Vm-dFN">
-                                <rect key="frame" x="182.5" y="142.5" width="1" height="154"/>
+                                <rect key="frame" x="182.5" y="141" width="1" height="154"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="ddT-Dz-4Fd"/>
@@ -4785,6 +4816,9 @@ Moleskin Seatle Gömlek</string>
                                                         <state key="normal" title="Ekle/Düzenle">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="addOrEditDestinationAddressButtonPressed:" destination="kZF-WZ-mjQ" eventType="touchUpInside" id="aOq-cb-WWL"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upk-ii-GKe">
                                                         <rect key="frame" x="0.0" y="44" width="356" height="60.5"/>
@@ -4858,6 +4892,9 @@ Moleskin Seatle Gömlek</string>
                                                         <state key="normal" title="Başka Kart ile Öde">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="payWithAnotherCreditCardButtonPressed:" destination="kZF-WZ-mjQ" eventType="touchUpInside" id="BXr-EH-uVk"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOu-8v-ufu">
                                                         <rect key="frame" x="0.0" y="44" width="356" height="60.5"/>
@@ -5126,13 +5163,13 @@ Moleskin Seatle Gömlek</string>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yCF-Or-f9V">
-                                        <rect key="frame" x="20" y="170" width="374" height="274"/>
+                                        <rect key="frame" x="20" y="170" width="374" height="262"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ypn-uR-m91">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="27"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXW-Ub-xp0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                         <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="  Ana Sayfa" image="homekit" catalog="system">
@@ -5140,7 +5177,7 @@ Moleskin Seatle Gömlek</string>
                                                         </state>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDh-Zj-DRr">
-                                                        <rect key="frame" x="0.0" y="28" width="374" height="1"/>
+                                                        <rect key="frame" x="0.0" y="26" width="374" height="1"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="nRe-Pa-9yL"/>
@@ -5149,10 +5186,10 @@ Moleskin Seatle Gömlek</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gvD-ac-njW">
-                                                <rect key="frame" x="0.0" y="49" width="374" height="29"/>
+                                                <rect key="frame" x="0.0" y="47" width="374" height="27"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFw-Co-SwQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                         <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="  Kadın" image="homekit" catalog="system">
@@ -5160,7 +5197,7 @@ Moleskin Seatle Gömlek</string>
                                                         </state>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMt-FG-rrB">
-                                                        <rect key="frame" x="0.0" y="28" width="374" height="1"/>
+                                                        <rect key="frame" x="0.0" y="26" width="374" height="1"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="qdV-L7-aYH"/>
@@ -5169,10 +5206,10 @@ Moleskin Seatle Gömlek</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="O6U-Uc-TUn">
-                                                <rect key="frame" x="0.0" y="98" width="374" height="29"/>
+                                                <rect key="frame" x="0.0" y="94" width="374" height="27"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E52-Ue-YtF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                         <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="  Erkek" image="homekit" catalog="system">
@@ -5180,7 +5217,7 @@ Moleskin Seatle Gömlek</string>
                                                         </state>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHJ-El-4uO">
-                                                        <rect key="frame" x="0.0" y="28" width="374" height="1"/>
+                                                        <rect key="frame" x="0.0" y="26" width="374" height="1"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="ixc-pa-qcD"/>
@@ -5189,10 +5226,10 @@ Moleskin Seatle Gömlek</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RcG-6n-dze">
-                                                <rect key="frame" x="0.0" y="147" width="374" height="29"/>
+                                                <rect key="frame" x="0.0" y="141" width="374" height="27"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjz-RC-ZWG">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                         <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="  Elektronik" image="homekit" catalog="system">
@@ -5200,7 +5237,7 @@ Moleskin Seatle Gömlek</string>
                                                         </state>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76N-fq-RfB">
-                                                        <rect key="frame" x="0.0" y="28" width="374" height="1"/>
+                                                        <rect key="frame" x="0.0" y="26" width="374" height="1"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="gXF-FT-bjf"/>
@@ -5209,10 +5246,10 @@ Moleskin Seatle Gömlek</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ATx-is-ccF">
-                                                <rect key="frame" x="0.0" y="196" width="374" height="29"/>
+                                                <rect key="frame" x="0.0" y="188" width="374" height="27"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIQ-J8-FJW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                         <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="  Ev&amp;Yaşam" image="homekit" catalog="system">
@@ -5220,7 +5257,7 @@ Moleskin Seatle Gömlek</string>
                                                         </state>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4C-4Q-VK9">
-                                                        <rect key="frame" x="0.0" y="28" width="374" height="1"/>
+                                                        <rect key="frame" x="0.0" y="26" width="374" height="1"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="kkU-l0-zfA"/>
@@ -5229,10 +5266,10 @@ Moleskin Seatle Gömlek</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zuL-9P-sM6">
-                                                <rect key="frame" x="0.0" y="245" width="374" height="29"/>
+                                                <rect key="frame" x="0.0" y="235" width="374" height="27"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16Z-uc-fY6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                         <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="  Kozmetik &amp; Kişisel Bakım " image="homekit" catalog="system">
@@ -5240,7 +5277,7 @@ Moleskin Seatle Gömlek</string>
                                                         </state>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTb-UQ-yrA">
-                                                        <rect key="frame" x="0.0" y="28" width="374" height="1"/>
+                                                        <rect key="frame" x="0.0" y="26" width="374" height="1"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="BLU-o2-J6i"/>
@@ -5251,7 +5288,7 @@ Moleskin Seatle Gömlek</string>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLZ-ZW-d5S">
-                                        <rect key="frame" x="20" y="733" width="374" height="23"/>
+                                        <rect key="frame" x="20" y="735" width="374" height="21"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                         <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="  Çıkış Yap" image="homekit" catalog="system">
@@ -5259,7 +5296,7 @@ Moleskin Seatle Gömlek</string>
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wook Web" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jP-qP-u81">
-                                        <rect key="frame" x="140" y="87.5" width="254" height="25"/>
+                                        <rect key="frame" x="140" y="88.5" width="254" height="23.5"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -5544,7 +5581,7 @@ Moleskin Seatle Gömlek</string>
                                                     <action selector="backButtonPressed:" destination="eNb-3O-Ovg" eventType="touchUpInside" id="RyG-z6-bSR"/>
                                                 </connections>
                                             </button>
-                                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="wHA-rB-ABx">
+                                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Marka, ürün veya kategori ara" translatesAutoresizingMaskIntoConstraints="NO" id="wHA-rB-ABx">
                                                 <rect key="frame" x="31" y="0.0" width="343" height="56"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </searchBar>
@@ -5563,13 +5600,13 @@ Moleskin Seatle Gömlek</string>
                                 <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popüler Arama Sonuçları" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7u-qU-FK9">
-                                        <rect key="frame" x="20" y="10" width="374" height="22.5"/>
+                                        <rect key="frame" x="20" y="10" width="374" height="21"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                         <color key="textColor" red="0.36470588235294116" green="0.36470588235294116" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rys-TD-i96">
-                                        <rect key="frame" x="0.0" y="32.5" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="31" width="414" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="GHC-ch-0D6"/>
@@ -5635,7 +5672,7 @@ Moleskin Seatle Gömlek</string>
                                         </cells>
                                     </collectionView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Gg-fo-mOq">
-                                        <rect key="frame" x="0.0" y="135" width="414" height="621"/>
+                                        <rect key="frame" x="0.0" y="132" width="414" height="624"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="110" id="F1z-W3-quS" customClass="PreviousSearchResultCell" customModule="ZarifYol" customModuleProvider="target">
@@ -5676,7 +5713,7 @@ Moleskin Seatle Gömlek</string>
                                         </prototypes>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geçmiş Aramalarım" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFw-uj-efA">
-                                        <rect key="frame" x="20" y="102.5" width="374" height="22.5"/>
+                                        <rect key="frame" x="20" y="101" width="374" height="21"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                         <color key="textColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -6343,25 +6380,25 @@ Moleskin Seatle Gömlek</string>
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giriş Yap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STP-kB-ODy">
-                                                <rect key="frame" x="20" y="135" width="374" height="32"/>
-                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="26"/>
+                                                <rect key="frame" x="20" y="135" width="374" height="31.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6BV-nN-CgH">
-                                                <rect key="frame" x="20" y="207" width="374" height="167"/>
+                                                <rect key="frame" x="20" y="206.5" width="374" height="164"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YPA-eP-TIW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="73.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="72"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad Soyad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5Z-kI-nrx">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="22.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wook Web" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rpg-3n-xPL">
-                                                                <rect key="frame" x="0.0" y="32.5" width="374" height="30"/>
+                                                                <rect key="frame" x="0.0" y="31" width="374" height="30"/>
                                                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="AHg-Ht-lEE"/>
@@ -6371,7 +6408,7 @@ Moleskin Seatle Gömlek</string>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Buy-Fx-6RH">
-                                                                <rect key="frame" x="0.0" y="72.5" width="374" height="1"/>
+                                                                <rect key="frame" x="0.0" y="71" width="374" height="1"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="cbe-ux-wtS"/>
@@ -6380,16 +6417,16 @@ Moleskin Seatle Gömlek</string>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YrD-oA-7r9">
-                                                        <rect key="frame" x="0.0" y="93.5" width="374" height="73.5"/>
+                                                        <rect key="frame" x="0.0" y="92" width="374" height="72"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLx-qZ-j2v">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="22.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wook Web" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eTn-e4-WDh">
-                                                                <rect key="frame" x="0.0" y="32.5" width="374" height="30"/>
+                                                                <rect key="frame" x="0.0" y="31" width="374" height="30"/>
                                                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="7Xi-W6-evl"/>
@@ -6399,7 +6436,7 @@ Moleskin Seatle Gömlek</string>
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTK-C4-V7p">
-                                                                <rect key="frame" x="0.0" y="72.5" width="374" height="1"/>
+                                                                <rect key="frame" x="0.0" y="71" width="374" height="1"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="NKa-0N-BpM"/>
@@ -6410,12 +6447,12 @@ Moleskin Seatle Gömlek</string>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="So9-vN-xG1">
-                                                <rect key="frame" x="20" y="424" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="420.5" width="374" height="50"/>
                                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="hUy-kh-IRN"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="26"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                                 <state key="normal" title="GİRİŞ YAP">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -6424,10 +6461,10 @@ Moleskin Seatle Gömlek</string>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gRJ-63-XY6">
-                                                <rect key="frame" x="20" y="484" width="374" height="35"/>
+                                                <rect key="frame" x="20" y="480.5" width="374" height="33"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyN-pH-9u4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="35"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="33"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                         <state key="normal" title="Kayıt Ol">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6437,7 +6474,7 @@ Moleskin Seatle Gömlek</string>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQ7-UB-Tll">
-                                                        <rect key="frame" x="197" y="0.0" width="177" height="35"/>
+                                                        <rect key="frame" x="197" y="0.0" width="177" height="33"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                         <state key="normal" title="Şifreni mi Unuttun?">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6531,19 +6568,19 @@ Moleskin Seatle Gömlek</string>
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifreni mi Unuttun?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XW-uc-wBt">
-                                        <rect key="frame" x="20" y="135" width="374" height="32"/>
-                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="26"/>
+                                        <rect key="frame" x="20" y="135" width="374" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E postanı yaz ve gelen doğrulama linkine tıkla." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQP-Bq-wvx">
-                                        <rect key="frame" x="20" y="187" width="374" height="44.5"/>
+                                        <rect key="frame" x="20" y="186.5" width="374" height="21"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieq-wE-xYS">
-                                        <rect key="frame" x="20" y="375" width="374" height="50"/>
+                                        <rect key="frame" x="20" y="349.5" width="374" height="50"/>
                                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="kEf-5f-jBf"/>
@@ -6557,19 +6594,19 @@ Moleskin Seatle Gömlek</string>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="i2F-RT-5Aa">
-                                        <rect key="frame" x="20" y="251.5" width="374" height="73.5"/>
+                                        <rect key="frame" x="20" y="227.5" width="374" height="72"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Xz-4I-xd4">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="73.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="72"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E Posta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElD-LT-NUP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="22.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wook Web" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKs-hJ-WTe">
-                                                        <rect key="frame" x="0.0" y="32.5" width="374" height="30"/>
+                                                        <rect key="frame" x="0.0" y="31" width="374" height="30"/>
                                                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="lD6-xX-eXp"/>
@@ -6579,7 +6616,7 @@ Moleskin Seatle Gömlek</string>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8c-pD-bbW">
-                                                        <rect key="frame" x="0.0" y="72.5" width="374" height="1"/>
+                                                        <rect key="frame" x="0.0" y="71" width="374" height="1"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="9Oh-Hn-MVp"/>
@@ -6700,24 +6737,24 @@ Moleskin Seatle Gömlek</string>
                                 <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="fOZ-PW-OLn" customClass="NotificationCell" customModule="ZarifYol" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="69"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="fOZ-PW-OLn" customClass="NotificationCell" customModule="ZarifYol" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="66.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fOZ-PW-OLn" id="nd5-Lj-rFe">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rtn-fH-JEf">
-                                                    <rect key="frame" x="65" y="10" width="339" height="43"/>
+                                                    <rect key="frame" x="65" y="10" width="339" height="40.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9v-05-jg4">
-                                                            <rect key="frame" x="0.0" y="0.0" width="339" height="23"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="339" height="21.5"/>
                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1Q-SI-Gnf">
-                                                            <rect key="frame" x="0.0" y="28" width="339" height="15"/>
+                                                            <rect key="frame" x="0.0" y="26.5" width="339" height="14"/>
                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="12"/>
                                                             <color key="textColor" red="0.6705882352941176" green="0.69411764705882351" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -6725,14 +6762,14 @@ Moleskin Seatle Gömlek</string>
                                                     </subviews>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zU-KW-OMU">
-                                                    <rect key="frame" x="30" y="63" width="374" height="1"/>
+                                                    <rect key="frame" x="30" y="60.5" width="374" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="mg6-TM-ccF"/>
                                                     </constraints>
                                                 </view>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_notification-2" translatesAutoresizingMaskIntoConstraints="NO" id="qUs-Gw-yDN">
-                                                    <rect key="frame" x="30" y="16.5" width="25" height="30"/>
+                                                    <rect key="frame" x="30" y="15.5" width="25" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="BrP-Ic-48z"/>
                                                         <constraint firstAttribute="width" constant="25" id="o4u-9s-40J"/>
@@ -6923,7 +6960,7 @@ Moleskin Seatle Gömlek</string>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ana Sayfa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15P-MD-Efc">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="24" width="74.5" height="12"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -6949,7 +6986,7 @@ Moleskin Seatle Gömlek</string>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAV-Pn-gGj">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="24" width="75" height="12"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="1" green="0.44705882352941173" blue="0.0" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -6980,7 +7017,7 @@ Moleskin Seatle Gömlek</string>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX9-Cj-Ugx">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="24" width="75" height="12"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -7006,7 +7043,7 @@ Moleskin Seatle Gömlek</string>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesabım" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJq-2A-Mru">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="24" width="74.5" height="12"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -7051,7 +7088,7 @@ Moleskin Seatle Gömlek</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sepetim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv9-BY-paZ">
-                                                        <rect key="frame" x="2" y="27" width="46" height="12.5"/>
+                                                        <rect key="frame" x="2" y="27" width="46" height="12"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                         <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>

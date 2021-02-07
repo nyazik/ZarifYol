@@ -22,11 +22,6 @@ class AddAndEditCreditCardVC: UIViewController {
     
     var textFields: [UITextField] {
         return [accountNameTextField, nameOfTheBankTextField, accountNumberTextField, expirationDateTextField, CVCTextField]
-        if addCard == true{
-            titleLabel.text = "Kart Ekle"
-        }else{
-            titleLabel.text = "Kart Bilgileri Güncelle"
-        }
     }
     
     var accountNameController: MDCTextInputControllerOutlined?
@@ -42,6 +37,12 @@ class AddAndEditCreditCardVC: UIViewController {
         setupLayouts()
         hideKeyboardWhenTappedAround()
         textFields.forEach {$0.delegate = self}
+        
+        if addCard == true{
+            titleLabel.text = "Kart Ekle"
+        }else{
+            titleLabel.text = "Kart Bilgileri Güncelle"
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

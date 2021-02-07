@@ -16,7 +16,6 @@ class AddressesCell: UITableViewCell {
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
-    
     func setupLayouts(){
         configureView(view: cellView)
     }

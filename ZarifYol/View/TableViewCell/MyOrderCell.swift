@@ -13,10 +13,10 @@ protocol MyOrderCellDelegate {
 }
 
 class MyOrderCell: UITableViewCell {
-    @IBOutlet weak var ordersCollectonView: UICollectionView!
     
     var delegate: MyOrderCellDelegate?
-
+    
+    @IBOutlet weak var ordersCollectonView: UICollectionView!
     @IBOutlet weak var orderDetailButton: UIButton!
     @IBOutlet weak var dateOfOrderLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -53,7 +53,6 @@ extension MyOrderCell: UICollectionViewDataSource, UICollectionViewDelegate, UIC
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! OrderPreviewCell
-        
         cell.configureCell()
         return cell
     }
@@ -63,6 +62,6 @@ extension MyOrderCell: UICollectionViewDataSource, UICollectionViewDelegate, UIC
         return CGSize.init(width: 60, height: 60)
     }
     
-    
+  
     
 }

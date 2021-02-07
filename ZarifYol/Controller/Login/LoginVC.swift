@@ -19,11 +19,11 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         hideKeyboardWhenTappedAround()
-        
         textFields.forEach {$0.delegate = self}
-        
         setupLayouts()
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         addKeyboardObserver()

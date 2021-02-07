@@ -72,10 +72,13 @@ class ProfileVC: UIViewController {
     }
     
     func setupLayouts(){
-        configureRoundView(view: roundView)
-        configureRoundView(view: profileImageView)
-        configureRoundView(view: myCartTabbarView)
-        configureRoundView(view: myCartInsideView)
+        
+        myCartInsideView.layer.backgroundColor = UIColor.white.cgColor
+        roundView.layer.cornerRadius = roundView.frame.height / 2
+        profileImageView.layer.cornerRadius = profileImageView.frame.height / 2
+        myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
+        myCartInsideView.layer.cornerRadius = myCartInsideView.frame.height / 2
+
         myCartInsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
         
         tabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
@@ -83,10 +86,6 @@ class ProfileVC: UIViewController {
 
         profileNameSurnameLabel.text = "Wook Web"
         profileEmailLabel.text = "info@wookweb.com"
-    }
-    
-    func configureRoundView(view: UIView){
-        view.layer.cornerRadius = view.frame.height / 2
     }
     
     

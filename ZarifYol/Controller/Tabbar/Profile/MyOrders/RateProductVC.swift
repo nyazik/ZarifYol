@@ -16,7 +16,6 @@ class RateProductVC: UIViewController {
     @IBOutlet weak var commentTextView: UITextView!
     @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var productImageView: UIImageView!
-    
     @IBOutlet weak var productBrandLabel: UILabel!
     @IBOutlet weak var productDescriptionLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
@@ -48,7 +47,7 @@ class RateProductVC: UIViewController {
         configureView(view: priceView)
         commentTextView(textView: commentTextView)
         configureButton(button: sendButton)
-        commentTextView.text = "Yorum Yap"
+        commentTextView.text = "Ürün Yorumunuzu Giriniz"
         commentTextView.textColor = UIColor.lightGray
         commentTextView.padding()
     }
@@ -106,7 +105,7 @@ extension RateProductVC  : UITextViewDelegate {
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
-            textView.text = "Çekici Açıklamasını Giriniz"
+            textView.text = "Ürün Yorumunuzu Giriniz"
             textView.textColor = UIColor.lightGray
         }
     }

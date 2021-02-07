@@ -14,6 +14,8 @@ class PopularSearchResultCell: UICollectionViewCell {
 
     func configureLayouts(){
         cellView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
+        cellView.backgroundColor = UIColor.white
+        cellView.layer.cornerRadius = 10
     }
     
 }

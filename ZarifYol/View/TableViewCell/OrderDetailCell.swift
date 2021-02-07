@@ -21,17 +21,10 @@ class OrderDetailCell: UITableViewCell {
     
     
     func configureLayouts(){
-        configureCornerRadiusView(view: priceView)
-        configureCornerRadius(view: evaluateView)
+        priceView.layer.cornerRadius = 10
+        evaluateView.roundCorners(corners: [.topLeft, .bottomLeft], radius: 10)
     }
     
-    func configureCornerRadiusView(view: UIView){
-        view.layer.cornerRadius = 10
-    }
-    
-    func configureCornerRadius(view: UIView){
-        view.roundCorners(corners: [.topLeft, .bottomLeft], radius: 10)
-    }
-    
+
     
 }

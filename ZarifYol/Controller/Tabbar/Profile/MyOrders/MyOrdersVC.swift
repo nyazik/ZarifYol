@@ -13,6 +13,7 @@ class MyOrdersVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         myOrdersTableView.dataSource = self
         myOrdersTableView.delegate = self
     }

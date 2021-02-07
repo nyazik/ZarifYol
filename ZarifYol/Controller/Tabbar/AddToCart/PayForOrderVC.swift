@@ -30,34 +30,24 @@ class PayForOrderVC: UIViewController {
     }
     
     func setupLayouts(){
-        configureView(view: deliveryAddressView)
         configureBorderView(view: deliveryAddressBorderView)
         configureView(view: creditCardView)
-        configureBorderView(view: creditCardBorderView)
+        configureView(view: deliveryAddressView)
         configureView(view: creditOptionsView)
-        configureButton(button: approveAndPayButton)
-        configureShadow(view: bottomView)
+        configureBorderView(view: creditCardBorderView)
+        approveAndPayButton.roundCorners(corners: [.topLeft, .topRight], radius: approveAndPayButton.frame.height / 2)
+        bottomView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
         agreementButton.titleLabel?.adjustsFontSizeToFitWidth = true;
         totalPaymentLabel.text = "150₺"
+        bottomView.backgroundColor = UIColor.white
     }
-    
-    func configureButton(button: UIButton){
-        button.roundCorners(corners: [.topLeft, .topRight], radius: button.frame.height / 2)
-    }
+   
     
     func configureBorderView(view: UIView){
         view.layer.borderColor = UIColor.orange.cgColor
         view.layer.borderWidth = 1
         view.backgroundColor = UIColor.white
         view.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
-    }
-    
-    func configureShadow(view: UIView){
-        view.backgroundColor = UIColor.white
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOpacity = 0.5
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 5
     }
     
     
@@ -79,6 +69,20 @@ class PayForOrderVC: UIViewController {
             agreementButton.isSelected = true
         }
     }
+    
+    
+    @IBAction func addOrEditDestinationAddressButtonPressed(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "MyAddressesVC") as! MyAddressesVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
+    }
+    
+    @IBAction func payWithAnotherCreditCardButtonPressed(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "SavedCreditCardsVC") as! SavedCreditCardsVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
+    }
+    
     
     @IBAction func confirmAndPayButtonPressed (_ sender: UIButton) {
         let vc = PaymentSuccessfulVC(nibName: "PaymentSuccessfulVC", bundle: nil)

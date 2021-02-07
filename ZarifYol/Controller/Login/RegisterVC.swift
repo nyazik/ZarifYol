@@ -44,7 +44,7 @@ class RegisterVC: UIViewController {
         configurePlaceholderColor(textField: emailTextField)
         configurePlaceholderColor(textField: passwordTextField)
         configurePlaceholderColor(textField: passwordRepeatTextField)
-        congigureBlurView(view: backgroundView)
+        //congigureBlurView(view: backgroundView)
     }
     
     

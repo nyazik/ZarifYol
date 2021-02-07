@@ -23,6 +23,14 @@ class SavedCreditCardsVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    
+    @IBAction func addCreditCartButtonPRessed(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "AddAndEditCreditCardVC") as! AddAndEditCreditCardVC
+        vc.addCard = true
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }
 
 extension SavedCreditCardsVC: UITableViewDataSource, UITableViewDelegate{

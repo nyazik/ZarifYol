@@ -84,19 +84,16 @@ class MainPageVC: UIViewController {
     
     
     func setupLayouts(){
-        configureRoundView(view: myCartTabbarView)
-        configureRoundView(view: myCartInsideView)
+        myCartInsideView.layer.backgroundColor = UIColor.white.cgColor
+        myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
+        myCartInsideView.layer.cornerRadius = myCartInsideView.frame.height / 2
         myCartInsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
         tabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
         myCartTabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
 
     }
     
-    
-    func configureRoundView(view: UIView){
-        view.layer.cornerRadius = view.frame.height / 2
-    }
-    
+  
 
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
@@ -159,6 +156,8 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
         self.brandsTableView.reloadSections(IndexSet(0..<brandsTableView.numberOfSections), with: .fade)
 
         }
+    
+  
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return selectedIndex == section ? 3 : 0

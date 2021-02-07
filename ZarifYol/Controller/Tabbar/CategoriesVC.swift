@@ -21,7 +21,8 @@ class CategoriesVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        myCartInsideView.layer.backgroundColor = UIColor.white.cgColor
+
         categoryTableView.dataSource = self
         categoryTableView.delegate = self
         
@@ -72,30 +73,13 @@ class CategoriesVC: UIViewController {
     func setupLayouts(){
         myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
         myCartInsideView.layer.cornerRadius = myCartInsideView.frame.height / 2
-        configureShadow(view: myCartInsideView)
-        configureTabbarShadow(view: tabbarView)
-        configureTabbarShadow(view: myCartTabbarView)
+        myCartInsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
+        myCartTabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        tabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+
     }
 
-    func configureRoundView(view: UIView){
-    }
-    
-    func configureShadow(view: UIView){
-        view.backgroundColor = UIColor.white
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOpacity = 0.3
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 3
-    }
-    
-    func configureTabbarShadow(view: UIView){
-        view.backgroundColor = UIColor.white
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOpacity = 0.5
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 5
-    }
-    
+
     @IBAction func menuButtonPressed(_ sender: UIButton) {
         let menu = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as! SideMenuNavigationController
         settingsSetupSlide()

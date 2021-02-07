@@ -10,11 +10,9 @@ import UIKit
 class NotificationSettingsCell: UITableViewCell {
 
     @IBOutlet weak var cellView: UIView!
-    
     @IBOutlet weak var notificationSettingCellLabel: UILabel!
     @IBOutlet weak var switchButton: UIButton!
     @IBOutlet weak var notificaationSettingCellRuleLabel: UILabel!
-    
     
     
     func configureLayouts(){
@@ -23,7 +21,7 @@ class NotificationSettingsCell: UITableViewCell {
 
     func configureView(view: UIView){
         view.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
-        cellView.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.white
     }
     
     @IBAction func switchButtonPressed(_ sender: UIButton) {

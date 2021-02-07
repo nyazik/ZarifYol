@@ -23,11 +23,12 @@ class FavouriteProductsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         favouriteProductTableView.dataSource = self
         favouriteProductTableView.delegate = self
+        
         setupSideMenu()
         setupLayouts()
-        titleLabel.text = "Favorilerim (4 ürün)"
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.addToCart(_:)))
         myCartTabbarView.addGestureRecognizer(tap)
@@ -69,34 +70,22 @@ class FavouriteProductsVC: UIViewController {
     
     
     func setupLayouts(){
-        configureRoundView(view: myCartTabbarView)
-        configureRoundView(view: myCartInsideView)
-        configureShadow(view: myCartInsideView)
-        configureTabbarShadow(view: tabbarView)
-        configureTabbarShadow(view: myCartTabbarView)
+
+        myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
+        myCartInsideView.layer.cornerRadius = myCartInsideView.frame.height / 2
+        myCartInsideView.layer.backgroundColor = UIColor.white.cgColor
+
+        myCartInsideView.backgroundColor = UIColor.white
+        myCartInsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
+        
+
+        tabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        myCartTabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+
+        titleLabel.text = "Favorilerim (4 ürün)"
+
     }
 
-    
-    func configureRoundView(view: UIView){
-        view.layer.cornerRadius = view.frame.height / 2
-    }
-    
-    func configureShadow(view: UIView){
-        view.backgroundColor = UIColor.white
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOpacity = 0.3
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 3
-    }
-    
-    func configureTabbarShadow(view: UIView){
-        view.backgroundColor = UIColor.white
-        view.layer.shadowColor = UIColor.lightGray.cgColor
-        view.layer.shadowOpacity = 0.5
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 5
-    }
-    
 
     @IBAction func menuButtonPressed(_ sender: UIButton) {
         let menu = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as! SideMenuNavigationController
@@ -133,9 +122,6 @@ class FavouriteProductsVC: UIViewController {
 }
 
 extension FavouriteProductsVC: UITableViewDataSource, UITableViewDelegate{
-    
-
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
