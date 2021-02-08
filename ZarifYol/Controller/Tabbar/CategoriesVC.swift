@@ -9,6 +9,7 @@ import UIKit
 import SideMenu
 class CategoriesVC: UIViewController {
 
+    @IBOutlet weak var categoryNameLabel: UILabel!
     @IBOutlet weak var favouriteTabbarView: UIView!
     @IBOutlet weak var profileTabbarView: UIView!
     @IBOutlet weak var tabbarView: UIView!
@@ -122,6 +123,10 @@ extension CategoriesVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CategoryCell
         cell.categoryNameLabel.text = "Zarifyol Özel"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        categoryNameLabel.text = categoryNameLabel.text
     }
     
 }

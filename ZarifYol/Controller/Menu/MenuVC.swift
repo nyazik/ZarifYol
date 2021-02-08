@@ -19,7 +19,6 @@ class MenuVC: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.touchTapped(_:)))
         roundView.addGestureRecognizer(tap)
 
-        
     }
     
     @objc func touchTapped(_ sender: UITapGestureRecognizer) {
