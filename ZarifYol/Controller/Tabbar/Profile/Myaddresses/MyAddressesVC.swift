@@ -13,7 +13,7 @@ class MyAddressesVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //MARK:- DELEGATE
         addressesTableView.dataSource = self
         addressesTableView.delegate = self
     }
@@ -28,13 +28,12 @@ class MyAddressesVC: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
-    
 
 }
 
-extension MyAddressesVC: UITableViewDataSource, UITableViewDelegate{
+extension MyAddressesVC: UITableViewDataSource, UITableViewDelegate {
     
-    @objc func editAddress(_ sender: UITapGestureRecognizer){
+    @objc func editAddress(_ sender: UITapGestureRecognizer) {
         let vc = self.storyboard?.instantiateViewController(identifier: "EditAddressVC") as! EditAddressVC
         vc.addAddress = false
         vc.modalPresentationStyle = .fullScreen
@@ -47,13 +46,12 @@ extension MyAddressesVC: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!AddressesCell
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.editAddress(_:)))
+        cell.editAddressView.addGestureRecognizer(tapGesture)
         cell.cityNameLabel.text = "Görükle"
         cell.nameSurnameLabel.text = "Tahir Karakoç"
         cell.phoneNumberLabel.text = "0555 *** *** 55 "
         cell.addressLabel.text = "Dumlupınar mahallesi, dumlupınar cad. No:9/9  Görükle"
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.editAddress(_:)))
-            cell.editAddressView.addGestureRecognizer(tapGesture)
         cell.setupLayouts()
         return cell
     }

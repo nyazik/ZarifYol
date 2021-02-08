@@ -13,7 +13,7 @@ class MyOrdersVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //MARK:- DELEGATE
         myOrdersTableView.dataSource = self
         myOrdersTableView.delegate = self
     }
@@ -24,15 +24,13 @@ class MyOrdersVC: UIViewController {
     
 }
 
-
-extension MyOrdersVC: UITableViewDataSource, UITableViewDelegate, MyOrderCellDelegate{
+extension MyOrdersVC: UITableViewDataSource, UITableViewDelegate, MyOrderCellDelegate {
     
     func didOrderButtonPressed(tag: Int) {
         print(tag)
         let vc = self.storyboard?.instantiateViewController(identifier: "OrderDetailVC") as! OrderDetailVC
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

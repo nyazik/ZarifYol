@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kZF-WZ-mjQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="CenturyGothic.ttf">
+        <array key="GOTHIC.TTF">
             <string>CenturyGothic</string>
         </array>
         <array key="gothicb.ttf">
@@ -1073,8 +1073,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CategoryCollectionView" destination="3ys-HJ-nj6" id="D8W-Yb-X6B"/>
                         <outlet property="boutiqueNameLabel" destination="YfB-k3-Eb4" id="xL8-Q8-8Rm"/>
-                        <outlet property="categoryCollectionView" destination="3ys-HJ-nj6" id="D8W-Yb-X6B"/>
                         <outlet property="productCollectionView" destination="Jm3-H0-XrK" id="Ko2-ME-CHk"/>
                     </connections>
                 </viewController>

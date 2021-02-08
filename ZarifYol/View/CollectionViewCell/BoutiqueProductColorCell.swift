@@ -12,7 +12,7 @@ class BoutiqueProductColorCell: UICollectionViewCell {
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var productColorImageView: UIImageView!
     
-    func configureCell(){
+    func configureCell() {
         cellView.layer.cornerRadius = 5
         productColorImageView.layer.cornerRadius = 5
     }

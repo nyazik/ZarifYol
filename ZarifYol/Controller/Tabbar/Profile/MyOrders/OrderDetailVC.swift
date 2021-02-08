@@ -15,9 +15,10 @@ class OrderDetailVC: UIViewController {
     @IBOutlet weak var orderSummaryLabel: UILabel!
     @IBOutlet weak var totalPriceLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK:- DELEGATE
         orderDetailTableView.dataSource = self
         orderDetailTableView.delegate = self
         
@@ -27,7 +28,6 @@ class OrderDetailVC: UIViewController {
         totalPriceLabel.text = "353.45 ₺"
     }
     
-
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }

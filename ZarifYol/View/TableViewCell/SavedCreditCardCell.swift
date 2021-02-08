@@ -18,7 +18,7 @@ class SavedCreditCardCell: UITableViewCell {
         configureView(view: cellView)
     }
     
-    func configureView(view: UIView){
+    func configureView(view: UIView) {
         view.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
         view.layer.backgroundColor = UIColor.white.cgColor
     }

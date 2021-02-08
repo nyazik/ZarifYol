@@ -23,43 +23,44 @@ class PayForOrderVC: UIViewController {
     @IBOutlet weak var credirCardInfoLabel: UILabel!
     @IBOutlet weak var totalPaymentLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayouts()
     }
     
-    func setupLayouts(){
+    func setupLayouts() {
         configureBorderView(view: deliveryAddressBorderView)
-        configureView(view: creditCardView)
-        configureView(view: deliveryAddressView)
-        configureView(view: creditOptionsView)
+        deliveryAddressBorderView.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
+
         configureBorderView(view: creditCardBorderView)
+        creditCardBorderView.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
+        
+        creditCardView.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
+        creditCardView.layer.backgroundColor = UIColor.white.cgColor
+        
+        deliveryAddressView.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
+        deliveryAddressView.layer.backgroundColor = UIColor.white.cgColor
+        
+        creditOptionsView.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
+        creditOptionsView.layer.backgroundColor = UIColor.white.cgColor
+        
         approveAndPayButton.roundCorners(corners: [.topLeft, .topRight], radius: approveAndPayButton.frame.height / 2)
         bottomView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        bottomView.backgroundColor = UIColor.white
+
         agreementButton.titleLabel?.adjustsFontSizeToFitWidth = true;
         totalPaymentLabel.text = "150₺"
-        bottomView.backgroundColor = UIColor.white
     }
    
-    
-    func configureBorderView(view: UIView){
+    func configureBorderView(view: UIView) {
         view.layer.borderColor = UIColor.orange.cgColor
         view.layer.borderWidth = 1
         view.backgroundColor = UIColor.white
-        view.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
     }
     
-    
-    func configureView(view: UIView){
-        view.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
-        view.layer.backgroundColor = UIColor.white.cgColor
-    }
-
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    
     
     @IBAction func agreementButtonPressed(_ sender: UIButton) {
         if agreementButton.isSelected {
@@ -69,7 +70,6 @@ class PayForOrderVC: UIViewController {
             agreementButton.isSelected = true
         }
     }
-    
     
     @IBAction func addOrEditDestinationAddressButtonPressed(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(identifier: "MyAddressesVC") as! MyAddressesVC
@@ -82,7 +82,6 @@ class PayForOrderVC: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: false, completion: nil)
     }
-    
     
     @IBAction func confirmAndPayButtonPressed (_ sender: UIButton) {
         let vc = PaymentSuccessfulVC(nibName: "PaymentSuccessfulVC", bundle: nil)

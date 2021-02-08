@@ -255,54 +255,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D5DE4ACE-3E35-4C74-9384-2DD05B2D5DA4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ZarifYol/Controller/Tabbar/Profile/ProfileVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "favouriteProduct(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D5DE4ACE-3E35-4C74-9384-2DD05B2D5DA4 - 24b596b4c5d87b05"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ZarifYol.ProfileVC.addToCart(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "ZarifYol"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Tabbar/Profile/ProfileVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "106">
-               </Location>
-               <Location
-                  uuid = "D5DE4ACE-3E35-4C74-9384-2DD05B2D5DA4 - 24b596b4c5d87b05"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ZarifYol.ProfileVC.addToCart(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "ZarifYol"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Tabbar/Profile/ProfileVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "794">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "334ABD54-AC6B-46DA-88FB-AE26B6903860"
             shouldBeEnabled = "No"
             ignoreCount = "0"

@@ -25,7 +25,8 @@ class MainPageVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //DELEGATE
+        
+        //MARK:- DELEGATES
         categoriesCollectionTableView.dataSource = self
         categoriesCollectionTableView.delegate = self
         
@@ -36,6 +37,7 @@ class MainPageVC: UIViewController {
         
         setupSideMenu()
         
+        //MARK:- GESTURE RECOGNIZER
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.addToCart(_:)))
         myCartTabbarView.addGestureRecognizer(tap)
         
@@ -48,14 +50,10 @@ class MainPageVC: UIViewController {
         let forthTap = UITapGestureRecognizer(target: self, action: #selector(self.favouriteProduct(_:)))
         favouriteTabbarView.addGestureRecognizer(forthTap)
         
+        //MARK:- REGISTER NIB
+        brandsTableView.register(UINib(nibName: "MainPageProductView", bundle: nil), forHeaderFooterViewReuseIdentifier: "cell")
         brandsTableView.register(UINib(nibName: "MainPageProductCell", bundle: nil), forCellReuseIdentifier: "cell")
-        
-        
-        let headerNib = UINib.init(nibName: "MainPageProductView", bundle: Bundle.main)
-        brandsTableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "cell")
-        
     }
-    
     
     
     @objc func favouriteProduct(_ sender: UITapGestureRecognizer) {
@@ -83,18 +81,17 @@ class MainPageVC: UIViewController {
     }
     
     
-    func setupLayouts(){
+    func setupLayouts() {
         myCartInsideView.layer.backgroundColor = UIColor.white.cgColor
-        myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
         myCartInsideView.layer.cornerRadius = myCartInsideView.frame.height / 2
         myCartInsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
+        
         tabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        
         myCartTabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
 
     }
-    
-  
-
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(identifier: "SearchVC") as! SearchVC
@@ -120,18 +117,15 @@ class MainPageVC: UIViewController {
         settingsSetupSlide()
     }
     
-    
     //menuDissolveIn
     func settingsSetupSlide() {
         // Enable gestures
         SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: view, forMenu: .left)
         var settings = SideMenuSettings()
-        //var settings2 = MenuViewController()
         settings.blurEffectStyle = .light
         settings.presentationStyle = .menuSlideIn
         settings.pushStyle = .preserveAndHideBackButton
         settings.statusBarEndAlpha = 0
-        //        settings.presentationStyle.backgroundColor = UIColor.blue
         settings.presentationStyle.presentingEndAlpha = 0.7
         settings.presentationStyle.onTopShadowOpacity = 0.5
         settings.menuWidth = self.view.frame.width - self.view.frame.width * 0.3
@@ -145,27 +139,36 @@ class MainPageVC: UIViewController {
 extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     
     @objc func tapSection(sender: UIButton) {
-//        self.arrayHeader[sender.tag] = (self.arrayHeader[sender.tag] == 1) ? 0 : 1
-//        self.selectedIndex = sender.tag
+        //        self.arrayHeader[sender.tag] = (self.arrayHeader[sender.tag] == 1) ? 0 : 1
+        //        self.selectedIndex = sender.tag
         if self.selectedIndex == sender.tag {
-        self.selectedIndex = nil
+            self.selectedIndex = nil
         } else {
-        self.selectedIndex = sender.tag
+            self.selectedIndex = sender.tag
         }
-//        self.brandsTableView.reloadSections(indexSet,  with: .fade)
+        //        self.brandsTableView.reloadSections(indexSet,  with: .fade)
         self.brandsTableView.reloadSections(IndexSet(0..<brandsTableView.numberOfSections), with: .fade)
-
-        }
-    
-  
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return selectedIndex == section ? 3 : 0
 //        return (self.arrayHeader[section] == 0) ? 0 : 3
     }
     
+    @objc func addToCartTapped(_ sender: UITapGestureRecognizer){
+        
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MainPageProductCell
+        cell.productDescriptionLabel.text = "Erkek Ultra Hafif Kışlık Mont"
+        cell.previousPriceLabel.text = "120₺"
+        cell.priceLabel.text = "90,50₺"
+        cell.salePersentageLabel.text = "-%20"
+        cell.productStatus.text = "YENİ"
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.addToCartTapped(_:)))
+        cell.addToCellOutsideView.addGestureRecognizer(tapGesture)
         cell.configureCell()
         return cell
     }
@@ -186,9 +189,7 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     internal func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
    
         if let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "cell") as? MainPageProductView {
-            
             headerView.configureCell()
-            headerView.startShoppingButton.backgroundColor = .white
             headerView.startShoppingButton.tag = section
             headerView.startShoppingButton.addTarget(self, action: #selector(tapSection(sender:)), for: .touchUpInside)
             return headerView
@@ -202,12 +203,10 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        
         return 5
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        
         return UIView()
     }
     

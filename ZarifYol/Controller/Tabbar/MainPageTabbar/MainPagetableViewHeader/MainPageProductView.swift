@@ -20,8 +20,9 @@ class MainPageProductView: UITableViewHeaderFooterView {
         return String(describing: self)
     }
     
-    func configureCell(){
+    func configureCell() {
         startShoppingButton.roundCorners(corners: [.topLeft, .topRight], radius: 10)
+        startShoppingButton.backgroundColor = UIColor.white
     }
     
 }

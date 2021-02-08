@@ -8,7 +8,7 @@
 import UIKit
 
 class NotificationSettingsVC: UIViewController {
-
+    
     @IBOutlet weak var notificationSettingsTableView: UITableView!
     
     var notificationSettingArray = ["E-Mail", "SMS", "Bildirim"]
@@ -17,12 +17,12 @@ class NotificationSettingsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK:- DELEGATE
         notificationSettingsTableView.dataSource = self
         notificationSettingsTableView.delegate = self
         
     }
     
-
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
@@ -34,7 +34,6 @@ extension NotificationSettingsVC: UITableViewDelegate, UITableViewDataSource{
         return notificationSettingArray.count
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NotificationSettingsCell
         cell.configureLayouts()
@@ -42,8 +41,5 @@ extension NotificationSettingsVC: UITableViewDelegate, UITableViewDataSource{
         cell.notificaationSettingCellRuleLabel.text = notificaationSettingRuleArray[indexPath.row]
         return cell
     }
-    
-    
-    
     
 }

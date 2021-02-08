@@ -18,14 +18,11 @@ class CartCell: UITableViewCell {
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var productSizeLabel: UILabel!
     
-    func configureLayouts(){
-        configureImageView(view: productImageView)
-    }
-    
-    func configureImageView(view: UIView){
-        view.layer.cornerRadius = 10
+    func configureLayouts() {
+        productImageView.layer.cornerRadius = 10
         stepper.buttonsFont = UIFont(name: "Century Gothic", size: 15.0)!
         stepper.labelFont = UIFont(name: "Century Gothic", size: 15.0)!
     }
+    
     
 }

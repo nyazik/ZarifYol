@@ -20,7 +20,7 @@ class OrderDetailCell: UITableViewCell {
     @IBOutlet weak var productDescriptionLabel: UILabel!
     
     
-    func configureLayouts(){
+    func configureLayouts() {
         priceView.layer.cornerRadius = 10
         evaluateView.roundCorners(corners: [.topLeft, .bottomLeft], radius: 10)
     }

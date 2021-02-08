@@ -9,7 +9,6 @@ import UIKit
 
 class AllCommentsVC: UIViewController {
 
-    
     @IBOutlet weak var addToCartButton: UIButton!
     @IBOutlet weak var allCommentsTableView: UITableView!
     @IBOutlet weak var generalPointLabel: UILabel!
@@ -28,8 +27,9 @@ class AllCommentsVC: UIViewController {
         setupLayouts()
     }
     
-    func setupLayouts(){
+    func setupLayouts() {
         addToCartButton.roundCorners(corners: [.topLeft, .topRight], radius: addToCartButton.frame.height / 2)
+        
         generalPointLabel.text = "3.9"
         quantityOfPoints.text = "2343 puan"
         quantityOfComments.text = "2343 yorum"
@@ -39,7 +39,6 @@ class AllCommentsVC: UIViewController {
         quantityOfTwoPoints.text = "2345"
         quantityOfOnePoints.text = "2345"
     }
-    
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
@@ -52,9 +51,7 @@ class AllCommentsVC: UIViewController {
     
 }
 
-
-
-extension AllCommentsVC: UITableViewDataSource, UITableViewDelegate{
+extension AllCommentsVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }

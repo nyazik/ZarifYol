@@ -10,10 +10,9 @@ import UIKit
 class BoutiqueCategoryCell: UICollectionViewCell {
     
     @IBOutlet weak var cellView: UIView!
-    
     @IBOutlet weak var categoryNameLabel: UILabel!
     
-    func configureView(){
+    func configureCell() {
         cellView.layer.cornerRadius = 10
         cellView.layer.backgroundColor = UIColor.white.cgColor
         cellView.layer.borderWidth = 1

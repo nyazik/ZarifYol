@@ -19,13 +19,11 @@ class PersonalInformationVC: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var saveButton: UIButton!
     
-    
     var nameSurnameController: MDCTextInputControllerOutlined?
     var phoneNumberController: MDCTextInputControllerOutlined?
     var emailController: MDCTextInputControllerOutlined?
     var genderController: MDCTextInputControllerOutlined?
     var dateOfBirthoController: MDCTextInputControllerOutlined?
-    
     
     var textFields: [UITextField] {
         return [nameSurnameTextField, phoneNumberTextField, emailTextField, genderTextField, dateOfBirthTextField]
@@ -34,7 +32,9 @@ class PersonalInformationVC: UIViewController, UIImagePickerControllerDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+        
         textFields.forEach {$0.delegate = self}
+        
         setupLayouts()
         
     }
@@ -48,6 +48,7 @@ class PersonalInformationVC: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     func setupLayouts() {
+        
         nameSurnameController = MDCTextInputControllerOutlined(textInput: nameSurnameTextField)
         configureTextView(container: nameSurnameController)
         
@@ -63,8 +64,8 @@ class PersonalInformationVC: UIViewController, UIImagePickerControllerDelegate, 
         dateOfBirthoController = MDCTextInputControllerOutlined(textInput: dateOfBirthTextField)
         configureTextView(container: dateOfBirthoController)
         
-        configureRoundView(view: roundView)
-        configureRoundView(view: profileImageView)
+        roundView.layer.cornerRadius = roundView.frame.height / 2
+        profileImageView.layer.cornerRadius = profileImageView.frame.height / 2
         
         saveButton.roundCorners(corners: [.topLeft, .topRight], radius: saveButton.frame.height / 2)
         
@@ -73,11 +74,8 @@ class PersonalInformationVC: UIViewController, UIImagePickerControllerDelegate, 
         
     }
     
-    func configureRoundView(view: UIView){
-        view.layer.cornerRadius = view.frame.height / 2
-    }
     
-    func configureTextView(container: MDCTextInputControllerOutlined?){
+    func configureTextView(container: MDCTextInputControllerOutlined?) {
         
         container?.borderRadius = 15
         container?.roundedCorners = [.topRight, .bottomRight]
@@ -131,9 +129,6 @@ class PersonalInformationVC: UIViewController, UIImagePickerControllerDelegate, 
     }
     
 }
-
-
-
 
 extension PersonalInformationVC : UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

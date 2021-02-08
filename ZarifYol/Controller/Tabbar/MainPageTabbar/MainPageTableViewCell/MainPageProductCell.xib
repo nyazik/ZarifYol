@@ -156,6 +156,12 @@
                 <outlet property="addToCellInsideView" destination="bsu-vv-OEX" id="xFM-NZ-uJX"/>
                 <outlet property="addToCellOutsideView" destination="W7W-HK-q8x" id="tFg-ic-ifD"/>
                 <outlet property="cellView" destination="dpm-DI-3e8" id="BPf-rd-lt8"/>
+                <outlet property="previousPriceLabel" destination="Kof-u8-z3E" id="vpc-8v-kDx"/>
+                <outlet property="priceLabel" destination="R6l-La-hGe" id="Z9F-Kj-fwa"/>
+                <outlet property="productDescriptionLabel" destination="dxF-br-o31" id="1Z7-pI-vwt"/>
+                <outlet property="productImageView" destination="9Ig-9O-zFE" id="wUS-vV-QIA"/>
+                <outlet property="productStatus" destination="J9m-Zx-Yhf" id="gqw-Vz-WSs"/>
+                <outlet property="salePersentageLabel" destination="H2J-xc-LKT" id="eC1-zK-Sv1"/>
             </connections>
             <point key="canvasLocation" x="226.81159420289856" y="96.09375"/>
         </tableViewCell>

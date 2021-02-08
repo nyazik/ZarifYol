@@ -19,12 +19,11 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         hideKeyboardWhenTappedAround()
         textFields.forEach {$0.delegate = self}
         setupLayouts()
-        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         addKeyboardObserver()
     }
@@ -32,27 +31,21 @@ class LoginVC: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         removeKeyboardObserver()
     }
-
+    
     func setupLayouts() {
-        configureButton(button: signInButton)
+        signInButton.layer.borderColor = UIColor(red:123/255, green:119/255, blue:115/255, alpha: 1).cgColor
+        signInButton.layer.borderWidth = 5
+        signInButton.backgroundColor = UIColor.clear
+        
         configurePlaceholderColor(textField: nameSurnameTextField)
         configurePlaceholderColor(textField: passwordTextField)
     }
     
-    func configurePlaceholderColor(textField: UITextField){
+    func configurePlaceholderColor(textField: UITextField) {
         let color = UIColor.white
-        let placeholder = textField.placeholder ?? "" //There should be a placeholder set in storyboard or elsewhere string or pass empty
+        let placeholder = textField.placeholder ?? ""
         textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor : color])
         textField.backgroundColor = UIColor.clear
-
-    }
-    
-    func configureButton(button: UIButton){
-        button.layer.borderColor = UIColor(red:123/255, green:119/255, blue:115/255, alpha: 1).cgColor
-//        button.layer.opacity = 0.5
-        button.layer.borderWidth = 5
-        button.backgroundColor = UIColor.clear
-
     }
     
     @IBAction func forgotPasswordButtonPressed(_ sender: UIButton) {
@@ -67,16 +60,13 @@ class LoginVC: UIViewController {
         self.present(vc, animated: false, completion: nil)
     }
     
-    
     @IBAction func signInButtonPressed(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(identifier: "MainPageVC") as! MainPageVC
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
     
-    
 }
-
 
 extension LoginVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

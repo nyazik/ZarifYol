@@ -15,11 +15,11 @@ class NotificationSettingsCell: UITableViewCell {
     @IBOutlet weak var notificaationSettingCellRuleLabel: UILabel!
     
     
-    func configureLayouts(){
+    func configureLayouts() {
         configureView(view: cellView)
     }
 
-    func configureView(view: UIView){
+    func configureView(view: UIView) {
         view.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
         view.backgroundColor = UIColor.white
     }

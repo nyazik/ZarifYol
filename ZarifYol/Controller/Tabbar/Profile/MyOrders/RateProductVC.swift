@@ -21,17 +21,18 @@ class RateProductVC: UIViewController {
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var rateProductCosmosView: CosmosView!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupLayouts()
+        
         commentTextView.delegate = self
+        
         hideKeyboardWhenTappedAround()
+        
         productBrandLabel.text =  "KARAKOÇ GİYİM"
         productDescriptionLabel.text = "Moleskin Seatle Gömlek"
         productPriceLabel.text = "90,50₺"
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,29 +43,20 @@ class RateProductVC: UIViewController {
         removeKeyboardObserver()
     }
     
-    
-    func setupLayouts(){
-        configureView(view: priceView)
-        commentTextView(textView: commentTextView)
-        configureButton(button: sendButton)
+    func setupLayouts() {
+        priceView.layer.cornerRadius = 15
+        
+        sendButton.roundCorners(corners: [.topRight, .topLeft], radius:   sendButton.frame.height / 2)
+        
         commentTextView.text = "Ürün Yorumunuzu Giriniz"
         commentTextView.textColor = UIColor.lightGray
         commentTextView.padding()
-    }
+        commentTextView.layer.cornerRadius = 15
 
-    func configureView(view: UIView){
-        view.layer.cornerRadius = 15
-    }
-    
-    func commentTextView(textView: UITextView){
-        textView.layer.cornerRadius = 15
-    }
-    
-    func configureButton(button: UIButton){
-        button.roundCorners(corners: [.topRight, .topLeft], radius:   button.frame.height / 2)
     }
     
     @IBAction func showNameUnderCommentsButtonButtonPressed(_ sender: UIButton) {
+        
         if showNameUnderCommentsButton.isSelected {
             showNameUnderCommentsButton.isSelected = false
         }
@@ -88,13 +80,13 @@ class RateProductVC: UIViewController {
     
     @IBAction func sendCommentAndRateButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
-
+        
     }
     
 }
 
-
 extension RateProductVC  : UITextViewDelegate {
+    
     func textViewDidBeginEditing(_ textView: UITextView) {
         
         if textView.textColor == UIColor.lightGray {

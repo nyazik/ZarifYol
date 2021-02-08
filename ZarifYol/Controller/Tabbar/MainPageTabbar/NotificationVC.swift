@@ -8,24 +8,24 @@
 import UIKit
 
 class NotificationVC: UIViewController {
-
+    
     @IBOutlet weak var notificationTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        notificationTableView.dataSource = self
+        //MARK:- DELEGATE
         notificationTableView.delegate = self
+        notificationTableView.dataSource = self
     }
     
-
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
-  
 }
 
-extension NotificationVC: UITableViewDelegate, UITableViewDataSource{
+extension NotificationVC: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }

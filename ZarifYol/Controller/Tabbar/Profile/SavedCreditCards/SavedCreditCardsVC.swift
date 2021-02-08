@@ -13,7 +13,7 @@ class SavedCreditCardsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //MARK:- DELEGATE
         savesCreditCardTableView.dataSource = self
         savesCreditCardTableView.delegate = self
         
@@ -22,7 +22,6 @@ class SavedCreditCardsVC: UIViewController {
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    
     
     @IBAction func addCreditCartButtonPRessed(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(identifier: "AddAndEditCreditCardVC") as! AddAndEditCreditCardVC
@@ -54,6 +53,5 @@ extension SavedCreditCardsVC: UITableViewDataSource, UITableViewDelegate{
         cell.setupLayouts()
         return cell
     }
-    
     
 }

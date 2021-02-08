@@ -17,7 +17,6 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var passwordRepeatTextField: UITextField!
     @IBOutlet weak var saveButton: UIButton!
     
-    
     var textFields: [UITextField] {
         return [nameSurnameTextField, phoneNumberTextField, emailTextField, passwordTextField, passwordRepeatTextField]
     }
@@ -38,17 +37,18 @@ class RegisterVC: UIViewController {
     }
     
     func setupLayouts() {
-        configureButton(button: saveButton)
+        saveButton.layer.borderColor = UIColor(red:123/255, green:119/255, blue:115/255, alpha: 1).cgColor
+        saveButton.layer.borderWidth = 5
+        saveButton.backgroundColor = UIColor.clear
+        
         configurePlaceholderColor(textField: nameSurnameTextField)
         configurePlaceholderColor(textField: phoneNumberTextField)
         configurePlaceholderColor(textField: emailTextField)
         configurePlaceholderColor(textField: passwordTextField)
         configurePlaceholderColor(textField: passwordRepeatTextField)
-        //congigureBlurView(view: backgroundView)
     }
     
-    
-    func congigureBlurView(view: UIView){
+    func congigureBlurView(view: UIView) {
         let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.systemUltraThinMaterial)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.bounds
@@ -56,18 +56,11 @@ class RegisterVC: UIViewController {
         backgroundView.addSubview(blurEffectView)
     }
     
-    func configurePlaceholderColor(textField: UITextField){
+    func configurePlaceholderColor(textField: UITextField) {
         let color = UIColor.white
         let placeholder = textField.placeholder ?? ""
         textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor : color])
         textField.backgroundColor = UIColor.clear
-        
-    }
-    
-    func configureButton(button: UIButton){
-        button.layer.borderColor = UIColor(red:123/255, green:119/255, blue:115/255, alpha: 1).cgColor
-        button.layer.borderWidth = 5
-        button.backgroundColor = UIColor.clear
     }
     
     @IBAction func signInButtonPressed(_ sender: UIButton) {
@@ -82,9 +75,7 @@ class RegisterVC: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
-    
 }
-
 
 extension RegisterVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

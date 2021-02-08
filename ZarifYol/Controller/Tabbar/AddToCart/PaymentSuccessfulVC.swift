@@ -15,34 +15,27 @@ class PaymentSuccessfulVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //MARK:- DELEGATE
         listOfOrdersTableView.dataSource = self
         listOfOrdersTableView.delegate = self
         
+        //MARK:- REGISTER NIB
         self.listOfOrdersTableView.register(UINib.init(nibName: "SuccessfulPaymentCell", bundle: nil), forCellReuseIdentifier: "cell")
         
+        //MARK:- GESTURE RECOGNIZER
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.touchTapped(_:)))
         backgroundView.addGestureRecognizer(tap)
         
-        configureLayouts()
-        
+        closePopupButton.layer.cornerRadius = 15
     }
     
     @objc func touchTapped(_ sender: UITapGestureRecognizer) {
         dismiss(animated: false, completion: nil)
     }
-    
-    func configureLayouts(){
-        closePopupButton.layer.cornerRadius = 15
-
-    }
-
-  
-    
+ 
     @IBAction func closePopupButtonPressed(_ sender: UIButton) {
         dismiss(animated: false, completion: nil)
     }
-    
 
 }
 
@@ -52,11 +45,9 @@ extension PaymentSuccessfulVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = listOfOrdersTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SuccessfulPaymentCell
         return cell
         
     }
-    
     
 }

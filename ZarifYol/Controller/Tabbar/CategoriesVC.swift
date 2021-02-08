@@ -9,7 +9,6 @@ import UIKit
 import SideMenu
 class CategoriesVC: UIViewController {
 
-    
     @IBOutlet weak var favouriteTabbarView: UIView!
     @IBOutlet weak var profileTabbarView: UIView!
     @IBOutlet weak var tabbarView: UIView!
@@ -21,8 +20,7 @@ class CategoriesVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        myCartInsideView.layer.backgroundColor = UIColor.white.cgColor
-
+        //MARK:- DELEGATE
         categoryTableView.dataSource = self
         categoryTableView.delegate = self
         
@@ -32,7 +30,7 @@ class CategoriesVC: UIViewController {
         setupLayouts()
         
         setupSideMenu()
-        
+        //MARK:- GESTURE RECOGNIZER
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.addToCart(_:)))
         myCartTabbarView.addGestureRecognizer(tap)
         
@@ -44,6 +42,7 @@ class CategoriesVC: UIViewController {
         
         let forthTap = UITapGestureRecognizer(target: self, action: #selector(self.mainPage(_:)))
         mainPageTabbarView.addGestureRecognizer(forthTap)
+        
     }
     
     @objc func mainPage(_ sender: UITapGestureRecognizer) {
@@ -70,13 +69,16 @@ class CategoriesVC: UIViewController {
         self.present(vc, animated: false, completion: nil)
     }
     
-    func setupLayouts(){
+    func setupLayouts() {
+        
+        myCartTabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
         myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
+        
         myCartInsideView.layer.cornerRadius = myCartInsideView.frame.height / 2
         myCartInsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
-        myCartTabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
-        tabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        myCartInsideView.layer.backgroundColor = UIColor.white.cgColor
 
+        tabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
     }
 
 
@@ -92,18 +94,15 @@ class CategoriesVC: UIViewController {
         settingsSetupSlide()
     }
     
-    
     //menuDissolveIn
     func settingsSetupSlide() {
         // Enable gestures
         SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: view, forMenu: .left)
         var settings = SideMenuSettings()
-        //var settings2 = MenuViewController()
         settings.blurEffectStyle = .light
         settings.presentationStyle = .menuSlideIn
         settings.pushStyle = .preserveAndHideBackButton
         settings.statusBarEndAlpha = 0
-//        settings.presentationStyle.backgroundColor = UIColor.blue
         settings.presentationStyle.presentingEndAlpha = 0.7
         settings.presentationStyle.onTopShadowOpacity = 0.5
         settings.menuWidth = self.view.frame.width - self.view.frame.width * 0.3
@@ -114,6 +113,7 @@ class CategoriesVC: UIViewController {
 }
 
 extension CategoriesVC: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -124,11 +124,10 @@ extension CategoriesVC: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    
 }
 
 
-extension CategoriesVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+extension CategoriesVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -142,9 +141,7 @@ extension CategoriesVC: UICollectionViewDataSource, UICollectionViewDelegate, UI
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize.init(width: 50, height: 50)
         return CGSize.init(width: (UIScreen.main.bounds.width - 160) / 2, height: (UIScreen.main.bounds.width - 100) / 2)
     }
 
-    
 }

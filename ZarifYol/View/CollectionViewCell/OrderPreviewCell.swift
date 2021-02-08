@@ -12,7 +12,7 @@ class OrderPreviewCell: UICollectionViewCell {
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var productImageView: UIImageView!
     
-    func configureCell(){
+    func configureCell() {
         cellView.layer.cornerRadius = 10
         productImageView.layer.cornerRadius = 10
     }

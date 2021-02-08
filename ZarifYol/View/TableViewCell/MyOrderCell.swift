@@ -23,7 +23,7 @@ class MyOrderCell: UITableViewCell {
     @IBOutlet weak var orderStatus: UILabel!
     
     
-    func configureCell(){
+    func configureCell() {
         orderDetailButton.roundCorners(corners: [.topLeft, .bottomLeft], radius: 10)
     }
     

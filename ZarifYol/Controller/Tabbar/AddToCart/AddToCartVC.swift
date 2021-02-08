@@ -19,14 +19,16 @@ class AddToCartVC: UIViewController {
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var totalPriceToPayLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK:- DELEGATE
         cartTableView.dataSource = self
         cartTableView.delegate = self
+        
         setupLayouts()
-        titleLabel.text = "Sepetim (2 ürün)"
+        
         hideKeyboardWhenTappedAround()
+        titleLabel.text = "Sepetim (2 ürün)"
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,7 +40,7 @@ class AddToCartVC: UIViewController {
     }
     
     
-    func setupLayouts(){
+    func setupLayouts() {
         payButton.roundCorners(corners: [.topLeft, .topRight], radius: payButton.frame.height / 2)
         bottomView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
         priceView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
@@ -48,7 +50,7 @@ class AddToCartVC: UIViewController {
 
         saleCodeTextField.setRightPaddingPoints(10)
         saleCodeTextField.setLeftPaddingPoints(10)
-        saleCodeTextField.text = "34567890"
+        saleCodeTextField.placeholder = "Indırım Kodu Giriniz"
         totalPriceToPayLabel.text = "152 ₺"
     }
     
@@ -72,6 +74,7 @@ class AddToCartVC: UIViewController {
 }
 
 extension AddToCartVC: UITableViewDataSource, UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }

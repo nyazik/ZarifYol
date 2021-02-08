@@ -21,7 +21,7 @@ class FavouriteProductCell: UITableViewCell {
     @IBOutlet weak var productSizeLabel: UILabel!
     
     
-    func setupLayouts(){
+    func setupLayouts() {
         chooseSizeDropDown.layer.cornerRadius = 10
         productImageView.layer.cornerRadius = 10
         chooseSizeDropDown.setLeftPaddingPoints(10)

@@ -30,12 +30,13 @@ class AddAndEditCreditCardVC: UIViewController {
     var expirationDateController: MDCTextInputControllerOutlined?
     var CVCController: MDCTextInputControllerOutlined?
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupLayouts()
+        
         hideKeyboardWhenTappedAround()
+        
         textFields.forEach {$0.delegate = self}
         
         if addCard == true{
@@ -54,6 +55,7 @@ class AddAndEditCreditCardVC: UIViewController {
     }
     
     func setupLayouts() {
+        
         accountNameController = MDCTextInputControllerOutlined(textInput: accountNameTextField)
         configureTextView(container: accountNameController)
         
@@ -72,7 +74,7 @@ class AddAndEditCreditCardVC: UIViewController {
         saveButton.roundCorners(corners: [.topLeft, .topRight], radius: saveButton.frame.height / 2)
     }
     
-    func configureTextView(container: MDCTextInputControllerOutlined?){
+    func configureTextView(container: MDCTextInputControllerOutlined?) {
         container?.borderRadius = 15
         container?.roundedCorners = [.topRight, .bottomRight]
         container?.borderStrokeColor = UIColor.lightGray
@@ -81,7 +83,6 @@ class AddAndEditCreditCardVC: UIViewController {
         container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
     }
 
-    
     @IBAction func saveButtonPressed(_ sender: UIButton) {
         if addCard == false{
             dismiss(animated: true, completion: nil)
@@ -94,7 +95,6 @@ class AddAndEditCreditCardVC: UIViewController {
     }
     
 }
-
 
 extension AddAndEditCreditCardVC : UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

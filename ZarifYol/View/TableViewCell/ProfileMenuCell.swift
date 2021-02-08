@@ -13,7 +13,7 @@ class ProfileMenuCell: UITableViewCell {
     @IBOutlet weak var menuTextLabel: UILabel!
     @IBOutlet weak var prifileImageView: UIImageView!
     
-    func configureLayouts(){
+    func configureLayouts() {
         cellView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
         cellView.layer.cornerRadius = 10
         cellView.backgroundColor = UIColor.white

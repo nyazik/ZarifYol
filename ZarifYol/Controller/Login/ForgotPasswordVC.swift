@@ -14,33 +14,25 @@ class ForgotPasswordVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         hideKeyboardWhenTappedAround()
         setupLayouts()
-
     }
 
     func setupLayouts() {
-        configureButton(button: sendPasswordButton)
+        sendPasswordButton.layer.borderColor = UIColor(red:123/255, green:119/255, blue:115/255, alpha: 1).cgColor
+        sendPasswordButton.layer.borderWidth = 5
+        sendPasswordButton.backgroundColor = UIColor.clear
+        
         configurePlaceholderColor(textField: emailTextField)
     }
 
-    func configurePlaceholderColor(textField: UITextField){
+    func configurePlaceholderColor(textField: UITextField) {
         let color = UIColor.white
-        let placeholder = textField.placeholder ?? "" //There should be a placeholder set in storyboard or elsewhere string or pass empty
+        let placeholder = textField.placeholder ?? ""
         textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor : color])
         textField.backgroundColor = UIColor.clear
-
     }
     
-    func configureButton(button: UIButton){
-        button.layer.borderColor = UIColor(red:123/255, green:119/255, blue:115/255, alpha: 1).cgColor
-//        button.layer.opacity = 0.5
-        button.layer.borderWidth = 5
-        button.backgroundColor = UIColor.clear
-
-    }
-
     @IBAction func sendButtonPressed(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(identifier: "MainPageVC") as! MainPageVC
         vc.modalPresentationStyle = .fullScreen

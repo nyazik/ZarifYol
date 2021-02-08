@@ -13,7 +13,7 @@ class FilteringCategoryVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //MARK:- DELEGATE
         filteringCategoryTableView.dataSource = self
         filteringCategoryTableView.delegate = self
     }
@@ -24,7 +24,8 @@ class FilteringCategoryVC: UIViewController {
     
 }
 
-extension FilteringCategoryVC: UITableViewDataSource, UITableViewDelegate{
+extension FilteringCategoryVC: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }

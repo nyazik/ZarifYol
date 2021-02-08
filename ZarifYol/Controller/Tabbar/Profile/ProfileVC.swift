@@ -22,18 +22,20 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var profileNameSurnameLabel: UILabel!
     @IBOutlet weak var profileEmailLabel: UILabel!
     
-    
     var accountDetailArray = ["Kişisel Bilgiler", "Siparişlerim", "Adreslerim", "Ödeme Bilgilerim", "Ayarlarım"]
+    
     let images = [UIImage(named: "ic_profil"), UIImage(named: "ic_orders"),  UIImage(named: "ic_fav"), UIImage(named: "ic_card"), UIImage(named: "ic_settings") ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK:- DELEGATES
         profileMenuTableView.dataSource = self
         profileMenuTableView.delegate = self
+        
         setupLayouts()
         setupSideMenu()
         
-        
+        //MARK:- GESTURE RECOGNIZER
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.addToCart(_:)))
         myCartTabbarView.addGestureRecognizer(tap)
         
@@ -45,6 +47,7 @@ class ProfileVC: UIViewController {
         
         let forthTap = UITapGestureRecognizer(target: self, action: #selector(self.mainPage(_:)))
         mainPageTabbarView.addGestureRecognizer(forthTap)
+        
     }
     
     @objc func mainPage(_ sender: UITapGestureRecognizer) {
@@ -71,23 +74,24 @@ class ProfileVC: UIViewController {
         self.present(vc, animated: false, completion: nil)
     }
     
-    func setupLayouts(){
+    func setupLayouts() {
         
-        myCartInsideView.layer.backgroundColor = UIColor.white.cgColor
-        roundView.layer.cornerRadius = roundView.frame.height / 2
-        profileImageView.layer.cornerRadius = profileImageView.frame.height / 2
-        myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
         myCartInsideView.layer.cornerRadius = myCartInsideView.frame.height / 2
-
         myCartInsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
+        myCartInsideView.layer.backgroundColor = UIColor.white.cgColor
         
-        tabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        roundView.layer.cornerRadius = roundView.frame.height / 2
+        
+        profileImageView.layer.cornerRadius = profileImageView.frame.height / 2
+        
+        myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
         myCartTabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+
+        tabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
 
         profileNameSurnameLabel.text = "Wook Web"
         profileEmailLabel.text = "info@wookweb.com"
     }
-    
     
     @IBAction func menuButtonPressed(_ sender: UIButton) {
         let menu = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as! SideMenuNavigationController
@@ -101,18 +105,15 @@ class ProfileVC: UIViewController {
         settingsSetupSlide()
     }
     
-    
     //menuDissolveIn
     func settingsSetupSlide() {
         // Enable gestures
         SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: view, forMenu: .left)
         var settings = SideMenuSettings()
-        //var settings2 = MenuViewController()
         settings.blurEffectStyle = .light
         settings.presentationStyle = .menuSlideIn
         settings.pushStyle = .preserveAndHideBackButton
         settings.statusBarEndAlpha = 0
-//        settings.presentationStyle.backgroundColor = UIColor.blue
         settings.presentationStyle.presentingEndAlpha = 0.7
         settings.presentationStyle.onTopShadowOpacity = 0.5
         settings.menuWidth = self.view.frame.width - self.view.frame.width * 0.3
@@ -120,10 +121,10 @@ class ProfileVC: UIViewController {
         SideMenuPresentationStyle.menuSlideIn.backgroundColor = UIColor.yellow
     }
     
-    
 }
 
-extension ProfileVC: UITableViewDataSource, UITableViewDelegate{
+extension ProfileVC: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return accountDetailArray.count
     }
@@ -135,7 +136,6 @@ extension ProfileVC: UITableViewDataSource, UITableViewDelegate{
         cell.prifileImageView.image = images[indexPath.row]
         return cell
     }
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0{

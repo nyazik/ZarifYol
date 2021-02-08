@@ -8,7 +8,6 @@
 import UIKit
 
 class SignOutVC: UIViewController {
-
     
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var signOutButton: UIButton!
@@ -19,28 +18,21 @@ class SignOutVC: UIViewController {
         super.viewDidLoad()
         configureLayouts()
         
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(self.quitPopup(_:)))
-//        backgroundView.addGestureRecognizer(tap)
+        //        let tap = UITapGestureRecognizer(target: self, action: #selector(self.quitPopup(_:)))
+        //        backgroundView.addGestureRecognizer(tap)
     }
-
-//    @objc func quitPopup(_ sender: UITapGestureRecognizer) {
-//        dismiss(animated: false, completion: nil)
-//    }
     
-
-    func configureLayouts(){
-        configureView(view: cellView)
-
+    //    @objc func quitPopup(_ sender: UITapGestureRecognizer) {
+    //        dismiss(animated: false, completion: nil)
+    //    }
+    
+    func configureLayouts() {
+        cellView.layer.cornerRadius = 15
+        cellView.clipsToBounds = true
+        
         cancelButton.roundCorners(corners: [.topRight], radius: 10)
         signOutButton.roundCorners(corners: [.topLeft], radius: 10)
-
-    }
-    
-  
-    
-    func configureView(view: UIView){
-        view.layer.cornerRadius = 15
-        view.clipsToBounds = true
+        
     }
     
     @IBAction func cancelButtonPressed(_ sender: UIButton) {

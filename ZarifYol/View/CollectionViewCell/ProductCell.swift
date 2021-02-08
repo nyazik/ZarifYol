@@ -26,31 +26,24 @@ class ProductCell: UICollectionViewCell {
     @IBOutlet weak var numberOfBoughtProductLabel: UILabel!
     @IBOutlet weak var rateProductCosmosView: CosmosView!
     
-    func setupLayouts(){
+    func setupLayouts() {
         
         favView.layer.cornerRadius = favView.frame.height / 2
         favView.layer.backgroundColor = UIColor.white.cgColor
         favView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
 
-        configureCornerRadius(view: newView)
-        configureCornerRadius(view: priceView)
-        configureCornerRadius(view: cellView)
-
+        newView.layer.cornerRadius = 10
+        priceView.layer.cornerRadius = 10
+        
+        cellView.layer.cornerRadius = 10
         cellView.clipsToBounds = true
-        configureBorder(view: cellView)
+        cellView.layer.borderColor = UIColor.lightGray.cgColor
+        cellView.layer.borderWidth = 1
         
         saleStackView.isHidden = true
         newProductView.isHidden = false
     }
     
     
-    func configureBorder(view: UIView){
-        view.layer.borderColor = UIColor.lightGray.cgColor
-        view.layer.borderWidth = 1
-    }
-    
-    func configureCornerRadius(view: UIView){
-        view.layer.cornerRadius = 10
-    }
    
 }

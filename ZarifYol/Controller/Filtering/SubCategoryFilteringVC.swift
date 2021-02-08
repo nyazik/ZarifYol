@@ -14,20 +14,18 @@ class SubCategoryFilteringVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //MARK:- DELEGATE
         subCategoryFilteringTableView.dataSource = self
         subCategoryFilteringTableView.delegate = self
-        
     }
     
-   
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
 }
 
-extension SubCategoryFilteringVC: UITableViewDataSource, UITableViewDelegate{
+extension SubCategoryFilteringVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
@@ -35,6 +33,10 @@ extension SubCategoryFilteringVC: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SubCategoryFilteringCell
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
     
     

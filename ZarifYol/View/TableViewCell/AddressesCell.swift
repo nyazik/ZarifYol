@@ -16,11 +16,11 @@ class AddressesCell: UITableViewCell {
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
-    func setupLayouts(){
+    func setupLayouts() {
         configureView(view: cellView)
     }
     
-    func configureView(view: UIView){
+    func configureView(view: UIView) {
         view.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
         view.layer.backgroundColor = UIColor.white.cgColor
     }

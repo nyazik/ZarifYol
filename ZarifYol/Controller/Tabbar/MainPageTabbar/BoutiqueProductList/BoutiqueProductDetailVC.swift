@@ -29,15 +29,14 @@ class BoutiqueProductDetailVC: UIViewController {
     @IBOutlet weak var addToCartButton: UIButton!
     @IBOutlet weak var bottomView: UIView!
     
-    
     var imgArray = [UIImage(named: "ic_registerBackground"),
                     UIImage(named: "ic_registerBackground"),
                     UIImage(named: "ic_registerBackground"),
                     UIImage(named: "ic_registerBackground")]
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK:- DELEGATE
         boutiqueProductDetailImageCollectionView.dataSource = self
         boutiqueProductDetailImageCollectionView.delegate = self
         
@@ -51,8 +50,6 @@ class BoutiqueProductDetailVC: UIViewController {
         productCommentTableView.delegate = self
         
         setupLayouts()
-        
-        
     }
     
     override func viewDidLayoutSubviews() {
@@ -62,18 +59,20 @@ class BoutiqueProductDetailVC: UIViewController {
         commentTableViewHeightConstraint.constant = self.productCommentTableView.contentSize.height
     }
     
-    func setupLayouts(){
+    func setupLayouts() {
         productColorCollectionView.isScrollEnabled = true
         pageIndicatorPageControl.numberOfPages = imgArray.count
         
         chooseSizeDropDown.setLeftPaddingPoints(10)
         chooseQuantityDropDown.setLeftPaddingPoints(10)
         
-        confifureDropDown(dropDown: chooseSizeDropDown)
-        confifureDropDown(dropDown: chooseQuantityDropDown)
+        chooseSizeDropDown.layer.cornerRadius = 10
+        chooseQuantityDropDown.layer.cornerRadius = 10
         
         priceView.layer.cornerRadius = 10
+        
         addToCartButton.roundCorners(corners: [.topLeft, .topRight], radius: addToCartButton.frame.height / 2)
+        
         bottomView.addShadow(color: .lightGray, opacity: 0.5, radius: 10)
         bottomView.backgroundColor = UIColor.white
         
@@ -83,12 +82,6 @@ class BoutiqueProductDetailVC: UIViewController {
         allCommentsButton.titleLabel?.text = "Tümünü Gör (324)"
         previousPriceLabel.text = "120₺"
         priceLabel.text = "90,50 ₺"
-    }
-    
-      
-
-    func confifureDropDown(dropDown: DropDown){
-        dropDown.layer.cornerRadius = 10
     }
     
     
@@ -108,7 +101,7 @@ class BoutiqueProductDetailVC: UIViewController {
     
 }
 
-extension BoutiqueProductDetailVC: UICollectionViewDataSource, UICollectionViewDelegate{
+extension BoutiqueProductDetailVC: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == boutiqueProductDetailImageCollectionView{
@@ -141,12 +134,12 @@ extension BoutiqueProductDetailVC: UICollectionViewDataSource, UICollectionViewD
         }
         
     }
-
+    
 }
 
 
-extension BoutiqueProductDetailVC: UICollectionViewDelegateFlowLayout{
-   
+extension BoutiqueProductDetailVC: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == boutiqueProductDetailImageCollectionView{
             let size  = collectionView.frame.size
@@ -158,14 +151,12 @@ extension BoutiqueProductDetailVC: UICollectionViewDelegateFlowLayout{
         }
         
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if collectionView == boutiqueProductDetailImageCollectionView{
             return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }else if collectionView == productColorCollectionView{
-
-        
-        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+            let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
             let cellWidth: CGFloat = flowLayout.itemSize.width
             let cellSpacing: CGFloat = flowLayout.minimumInteritemSpacing
             var cellCount = CGFloat(collectionView.numberOfItems(inSection: section))
@@ -178,7 +169,7 @@ extension BoutiqueProductDetailVC: UICollectionViewDelegateFlowLayout{
                 totalWidth = cellWidth * cellCount + cellSpacing * (cellCount - 1)
                 cellCount -= 1
             } while totalWidth >= collectionWidth
-
+            
             if (totalWidth > 0) {
                 let edgeInset = (collectionWidth - totalWidth) / 2
                 return UIEdgeInsets.init(top: flowLayout.sectionInset.top, left: edgeInset, bottom: flowLayout.sectionInset.bottom, right: edgeInset)
@@ -188,27 +179,24 @@ extension BoutiqueProductDetailVC: UICollectionViewDelegateFlowLayout{
         }else{
             return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         }
-            
-
+        
         
     }
-
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
-
-
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
     
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        
         let center = CGPoint(x: scrollView.contentOffset.x + (scrollView.frame.width / 2), y: (scrollView.frame.height / 2))
         if let ip = boutiqueProductDetailImageCollectionView.indexPathForItem(at: center) {
-                self.pageIndicatorPageControl.currentPage = ip.row
+            self.pageIndicatorPageControl.currentPage = ip.row
         }
     }
     
@@ -217,7 +205,7 @@ extension BoutiqueProductDetailVC: UICollectionViewDelegateFlowLayout{
 
 
 
-extension BoutiqueProductDetailVC: UITableViewDataSource, UITableViewDelegate{
+extension BoutiqueProductDetailVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10

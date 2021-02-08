@@ -38,17 +38,18 @@ class EditAddressVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupLayouts()
         hideKeyboardWhenTappedAround()
         
         textFields.forEach {$0.delegate = self}
-        if addAddress == true{
+        
+        if addAddress == true {
             titleLabel.text = "Adres Ekle"
         }else{
             titleLabel.text = "Adres Düzenle"
         }
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         addKeyboardObserver()
@@ -58,7 +59,8 @@ class EditAddressVC: UIViewController {
         removeKeyboardObserver()
     }
     
-    func setupLayouts(){
+    func setupLayouts() {
+        
         nameSurnameController = MDCTextInputControllerOutlined(textInput: nameSurnameTextField)
         configureTextView(container: nameSurnameController)
         
@@ -82,9 +84,7 @@ class EditAddressVC: UIViewController {
         saveButton.roundCorners(corners: [.topLeft, .topRight], radius: saveButton.frame.height / 2)
     }
 
- 
-    
-    func configureTextView(container: MDCTextInputControllerOutlined?){
+    func configureTextView(container: MDCTextInputControllerOutlined?) {
         container?.borderRadius = 15
         container?.roundedCorners = [.topRight, .bottomRight]
         container?.borderStrokeColor = UIColor.lightGray
@@ -92,7 +92,6 @@ class EditAddressVC: UIViewController {
         container?.activeColor = UIColor(named: "color_orange")
         container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
     }
-    
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {
         if addAddress == false{

@@ -15,7 +15,6 @@ class ChangePasswordVC: UIViewController {
     @IBOutlet weak var newPasswordAgainTextField: MDCTextField!
     @IBOutlet weak var updateButton: UIButton!
     
-    
     var currentPasswordController: MDCTextInputControllerOutlined?
     var newPasswordController: MDCTextInputControllerOutlined?
     var newPasswordAgainController: MDCTextInputControllerOutlined?
@@ -61,7 +60,6 @@ class ChangePasswordVC: UIViewController {
         container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
     }
     
-    
     @IBAction func updateButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
@@ -71,7 +69,6 @@ class ChangePasswordVC: UIViewController {
     }
     
 }
-
 
 extension ChangePasswordVC : UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

@@ -10,7 +10,6 @@ import SideMenu
 
 class FavouriteProductsVC: UIViewController {
     
-    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var profileTabbarView: UIView!
     @IBOutlet weak var favouriteTabbarView: UIView!
@@ -23,13 +22,15 @@ class FavouriteProductsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //MARK:- DELEGATE
         favouriteProductTableView.dataSource = self
         favouriteProductTableView.delegate = self
         
         setupSideMenu()
+        
         setupLayouts()
         
+        //MARK:- GESTURE RECOGNIZER
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.addToCart(_:)))
         myCartTabbarView.addGestureRecognizer(tap)
         
@@ -48,7 +49,6 @@ class FavouriteProductsVC: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: false, completion: nil)
     }
-    
     
     @objc func profileProduct(_ sender: UITapGestureRecognizer) {
         let vc = self.storyboard?.instantiateViewController(identifier: "ProfileVC") as! ProfileVC
@@ -69,21 +69,19 @@ class FavouriteProductsVC: UIViewController {
     }
     
     
-    func setupLayouts(){
-
+    func setupLayouts() {
+        
         myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
+        myCartTabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+
         myCartInsideView.layer.cornerRadius = myCartInsideView.frame.height / 2
         myCartInsideView.layer.backgroundColor = UIColor.white.cgColor
-
         myCartInsideView.backgroundColor = UIColor.white
         myCartInsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
         
-
         tabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
-        myCartTabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
 
         titleLabel.text = "Favorilerim (4 ürün)"
-
     }
 
 
@@ -105,12 +103,10 @@ class FavouriteProductsVC: UIViewController {
         // Enable gestures
         SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: view, forMenu: .left)
         var settings = SideMenuSettings()
-        //var settings2 = MenuViewController()
         settings.blurEffectStyle = .light
         settings.presentationStyle = .menuSlideIn
         settings.pushStyle = .preserveAndHideBackButton
         settings.statusBarEndAlpha = 0
-//        settings.presentationStyle.backgroundColor = UIColor.blue
         settings.presentationStyle.presentingEndAlpha = 0.7
         settings.presentationStyle.onTopShadowOpacity = 0.5
         settings.menuWidth = self.view.frame.width - self.view.frame.width * 0.3
@@ -121,7 +117,7 @@ class FavouriteProductsVC: UIViewController {
     
 }
 
-extension FavouriteProductsVC: UITableViewDataSource, UITableViewDelegate{
+extension FavouriteProductsVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -145,9 +141,6 @@ extension FavouriteProductsVC: UITableViewDataSource, UITableViewDelegate{
         cell.setupLayouts()
         return cell
     }
-    
-    
-    
     
     
 }
