@@ -37,27 +37,20 @@ class LoginVC: UIViewController {
         signInButton.layer.borderWidth = 5
         signInButton.backgroundColor = UIColor.clear
         
-        configurePlaceholderColor(textField: nameSurnameTextField)
-        configurePlaceholderColor(textField: passwordTextField)
-    }
-    
-    func configurePlaceholderColor(textField: UITextField) {
-        let color = UIColor.white
-        let placeholder = textField.placeholder ?? ""
-        textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor : color])
-        textField.backgroundColor = UIColor.clear
+        nameSurnameTextField.layer.backgroundColor = UIColor.clear.cgColor
+        passwordTextField.layer.backgroundColor = UIColor.clear.cgColor
     }
     
     @IBAction func forgotPasswordButtonPressed(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(identifier: "ForgotPasswordVC") as! ForgotPasswordVC
         vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
+        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(identifier: "RegisterVC") as! RegisterVC
         vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
+        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func signInButtonPressed(_ sender: UIButton) {

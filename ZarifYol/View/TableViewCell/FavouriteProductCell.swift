@@ -26,7 +26,9 @@ class FavouriteProductCell: UITableViewCell {
         productImageView.layer.cornerRadius = 10
         chooseSizeDropDown.setLeftPaddingPoints(10)
         addtoToCardView.roundCorners(corners: [.topLeft, .bottomLeft], radius: 10)
-
+        chooseSizeDropDown.optionArray = ["qwer", "34567"]
+        chooseSizeDropDown.arrowColor = .orange
+        chooseSizeDropDown.checkMarkEnabled = false
     }
     
     

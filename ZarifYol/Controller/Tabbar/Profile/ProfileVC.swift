@@ -35,45 +35,44 @@ class ProfileVC: UIViewController {
         setupLayouts()
         setupSideMenu()
         
-        //MARK:- GESTURE RECOGNIZER
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.addToCart(_:)))
-        myCartTabbarView.addGestureRecognizer(tap)
-        
-        let secondTap = UITapGestureRecognizer(target: self, action: #selector(self.favouriteProduct(_:)))
-        favouriteTabbarView.addGestureRecognizer(secondTap)
-        
-        let thirdTap = UITapGestureRecognizer(target: self, action: #selector(self.categories(_:)))
-        myCategoriesTabbarView.addGestureRecognizer(thirdTap)
-        
-        let forthTap = UITapGestureRecognizer(target: self, action: #selector(self.mainPage(_:)))
-        mainPageTabbarView.addGestureRecognizer(forthTap)
-        
+
+        addGestureRecognizer(view: myCartTabbarView)
+        addGestureRecognizer(view: favouriteTabbarView)
+        addGestureRecognizer(view: myCategoriesTabbarView)
+        addGestureRecognizer(view: mainPageTabbarView)
+
     }
     
-    @objc func mainPage(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "MainPageVC") as! MainPageVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
+    func addGestureRecognizer(view: UIView) {
+        view.isUserInteractionEnabled = true
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(self.gestureRecognizerMethods(_:)))
+        view.addGestureRecognizer(gesture)
     }
     
-    @objc func favouriteProduct(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "FavouriteProductsVC") as! FavouriteProductsVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
+    @objc func gestureRecognizerMethods(_ sender: UITapGestureRecognizer) {
+        switch sender.view {
+        case myCartTabbarView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "AddToCartVC") as! AddToCartVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        case favouriteTabbarView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "FavouriteProductsVC") as! FavouriteProductsVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        case myCategoriesTabbarView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "CategoriesVC") as! CategoriesVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        case mainPageTabbarView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "MainPageVC") as! MainPageVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        default:
+            break
+        }
     }
     
-    @objc func addToCart(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "AddToCartVC") as! AddToCartVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
-    }
-    
-    @objc func categories(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "CategoriesVC") as! CategoriesVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
-    }
-    
+
     func setupLayouts() {
         
         myCartInsideView.layer.cornerRadius = myCartInsideView.frame.height / 2

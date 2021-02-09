@@ -42,7 +42,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4E-c8-Cid">
                     <rect key="frame" x="10" y="94" width="394" height="618"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_successfulPayment" translatesAutoresizingMaskIntoConstraints="NO" id="sAo-gz-htK">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_successBackground" translatesAutoresizingMaskIntoConstraints="NO" id="sAo-gz-htK">
                             <rect key="frame" x="0.0" y="0.0" width="394" height="618"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </imageView>
@@ -118,6 +118,6 @@
     </objects>
     <resources>
         <image name="ic_aim" width="136" height="126"/>
-        <image name="ic_successfulPayment" width="685" height="683.5"/>
+        <image name="ic_successBackground" width="348" height="556"/>
     </resources>
 </document>

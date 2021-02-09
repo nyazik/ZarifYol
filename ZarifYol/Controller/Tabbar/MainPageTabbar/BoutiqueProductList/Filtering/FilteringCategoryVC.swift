@@ -10,15 +10,26 @@ import UIKit
 class FilteringCategoryVC: UIViewController {
 
     @IBOutlet weak var filteringCategoryTableView: UITableView!
+    @IBOutlet weak var listAllProductsButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //MARK:- DELEGATE
         filteringCategoryTableView.dataSource = self
         filteringCategoryTableView.delegate = self
+        listAllProductsButton.roundCorners(corners: [.topLeft, .topRight], radius: listAllProductsButton.frame.height / 2)
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func clearFiltersButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func listAllProductsButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     

@@ -13,10 +13,11 @@ class SavedCreditCardsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //MARK:- DELEGATE
         savesCreditCardTableView.dataSource = self
         savesCreditCardTableView.delegate = self
-        
+
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
@@ -52,6 +53,13 @@ extension SavedCreditCardsVC: UITableViewDataSource, UITableViewDelegate{
             cell.editCreditCardView.addGestureRecognizer(tapGesture)
         cell.setupLayouts()
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "AddAndEditCreditCardVC") as! AddAndEditCreditCardVC
+        vc.addCard = false
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
     }
     
 }

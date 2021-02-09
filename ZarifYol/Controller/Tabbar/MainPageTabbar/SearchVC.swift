@@ -32,6 +32,7 @@ class SearchVC: UIViewController {
 }
 
 extension SearchVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -60,6 +61,5 @@ extension SearchVC: UITableViewDataSource, UITableViewDelegate {
         cell.previousSearchResultLabel.text = "Parfüm"
         return cell
     }
-    
     
 }

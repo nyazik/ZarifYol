@@ -29,13 +29,13 @@ class MainPageProductCell: UITableViewCell {
     }
     
     func configureCell() {
-        cellView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        cellView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
 
         configureRoundView(view: addToCellOutsideView)
-        addToCellOutsideView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        addToCellOutsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
 
         configureRoundView(view: addToCellInsideView)
-        addToCellInsideView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        addToCellInsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
     }
     
     func configureRoundView(view: UIView){

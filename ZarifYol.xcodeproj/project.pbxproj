@@ -23,7 +23,6 @@
 		CD29D07225C3FD4300CC7BAD /* Century Gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD29D06925C3FD4200CC7BAD /* Century Gothic.ttf */; };
 		CD29D07325C3FD4300CC7BAD /* GOTHIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CD29D06A25C3FD4200CC7BAD /* GOTHIC.TTF */; };
 		CD29D07425C3FD4300CC7BAD /* GOTHICB0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CD29D06B25C3FD4200CC7BAD /* GOTHICB0.TTF */; };
-		CD29D07525C3FD4300CC7BAD /* gothici.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD29D06C25C3FD4200CC7BAD /* gothici.ttf */; };
 		CD29D07625C3FD4300CC7BAD /* CenturyGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD29D06D25C3FD4200CC7BAD /* CenturyGothic.ttf */; };
 		CD29D07725C3FD4300CC7BAD /* gothicb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD29D06E25C3FD4200CC7BAD /* gothicb.ttf */; };
 		CD29D07825C3FD4300CC7BAD /* GOTHICB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CD29D06F25C3FD4300CC7BAD /* GOTHICB.TTF */; };
@@ -71,6 +70,8 @@
 		CD5C45C125CDE385009667A9 /* MainPageProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C45BF25CDE385009667A9 /* MainPageProductCell.swift */; };
 		CD5C45C425CDE7AC009667A9 /* MainPageProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5C45C325CDE7AC009667A9 /* MainPageProductView.xib */; };
 		CD5C45C725CDE7EB009667A9 /* MainPageProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C45C625CDE7EB009667A9 /* MainPageProductView.swift */; };
+		CD6125E425D302820034AF85 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD6125E225D302820034AF85 /* HeaderCell.xib */; };
+		CD6125E525D302820034AF85 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6125E325D302820034AF85 /* HeaderCell.swift */; };
 		CD7C2F9725C5B75200FB4DE4 /* AddToCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C2F9625C5B75200FB4DE4 /* AddToCartVC.swift */; };
 		CD7C2F9A25C5B7D700FB4DE4 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C2F9925C5B7D700FB4DE4 /* CartCell.swift */; };
 		CD7C2FA325C5E5A900FB4DE4 /* FavouriteProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C2FA225C5E5A900FB4DE4 /* FavouriteProductsVC.swift */; };
@@ -116,7 +117,6 @@
 		CD29D06925C3FD4200CC7BAD /* Century Gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Century Gothic.ttf"; sourceTree = "<group>"; };
 		CD29D06A25C3FD4200CC7BAD /* GOTHIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GOTHIC.TTF; sourceTree = "<group>"; };
 		CD29D06B25C3FD4200CC7BAD /* GOTHICB0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GOTHICB0.TTF; sourceTree = "<group>"; };
-		CD29D06C25C3FD4200CC7BAD /* gothici.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gothici.ttf; sourceTree = "<group>"; };
 		CD29D06D25C3FD4200CC7BAD /* CenturyGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CenturyGothic.ttf; sourceTree = "<group>"; };
 		CD29D06E25C3FD4200CC7BAD /* gothicb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gothicb.ttf; sourceTree = "<group>"; };
 		CD29D06F25C3FD4300CC7BAD /* GOTHICB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GOTHICB.TTF; sourceTree = "<group>"; };
@@ -166,6 +166,8 @@
 		CD5C45BF25CDE385009667A9 /* MainPageProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageProductCell.swift; sourceTree = "<group>"; };
 		CD5C45C325CDE7AC009667A9 /* MainPageProductView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageProductView.xib; sourceTree = "<group>"; };
 		CD5C45C625CDE7EB009667A9 /* MainPageProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageProductView.swift; sourceTree = "<group>"; };
+		CD6125E225D302820034AF85 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		CD6125E325D302820034AF85 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		CD7C2F9625C5B75200FB4DE4 /* AddToCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartVC.swift; sourceTree = "<group>"; };
 		CD7C2F9925C5B7D700FB4DE4 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		CD7C2FA225C5E5A900FB4DE4 /* FavouriteProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteProductsVC.swift; sourceTree = "<group>"; };
@@ -233,7 +235,6 @@
 				CD1136E425C7FCAE00E26130 /* TRCenturyGothicRegular.ttf */,
 				CD29D06B25C3FD4200CC7BAD /* GOTHICB0.TTF */,
 				CD29D07025C3FD4300CC7BAD /* GOTHICBI.TTF */,
-				CD29D06C25C3FD4200CC7BAD /* gothici.ttf */,
 				CD29D06825C3FD4200CC7BAD /* GOTHICI.TTF */,
 			);
 			path = Fonts;
@@ -243,10 +244,11 @@
 			isa = PBXGroup;
 			children = (
 				CDAED5C625C1B4C4000D090C /* MainPageVC.swift */,
-				CDC8465625C58674004FC67F /* SearchVC.swift */,
-				CDC8465D25C5AAC8004FC67F /* NotificationVC.swift */,
+				CD6125E725D31A620034AF85 /* MainPageProductCellFirstCell */,
 				CD43B19425CF285900098F44 /* MainPageTableViewCell */,
 				CD43B19125CF283400098F44 /* MainPagetableViewHeader */,
+				CDC8465625C58674004FC67F /* SearchVC.swift */,
+				CDC8465D25C5AAC8004FC67F /* NotificationVC.swift */,
 				CD43B18F25CF279200098F44 /* BoutiqueProductList */,
 			);
 			path = MainPageTabbar;
@@ -325,7 +327,6 @@
 			isa = PBXGroup;
 			children = (
 				CD36D50325C1A460003CF2D0 /* Login */,
-				CDC8465325C540E5004FC67F /* Filtering */,
 				CD7C2FA025C5E58000FB4DE4 /* Tabbar */,
 				CD34965225C6F04600E76CD0 /* Menu */,
 			);
@@ -380,6 +381,7 @@
 			children = (
 				CDAED5D225C1CCC2000D090C /* BoutiqueProductListVC.swift */,
 				CD4BA42B25C9D959007E9C97 /* BoutiqueProductDetailVC.swift */,
+				CDC8465325C540E5004FC67F /* Filtering */,
 				CD1136F625C8980D00E26130 /* AllCommentsVC.swift */,
 			);
 			path = BoutiqueProductList;
@@ -401,6 +403,15 @@
 				CD5C45BF25CDE385009667A9 /* MainPageProductCell.swift */,
 			);
 			path = MainPageTableViewCell;
+			sourceTree = "<group>";
+		};
+		CD6125E725D31A620034AF85 /* MainPageProductCellFirstCell */ = {
+			isa = PBXGroup;
+			children = (
+				CD6125E325D302820034AF85 /* HeaderCell.swift */,
+				CD6125E225D302820034AF85 /* HeaderCell.xib */,
+			);
+			path = MainPageProductCellFirstCell;
 			sourceTree = "<group>";
 		};
 		CD7C2FA025C5E58000FB4DE4 /* Tabbar */ = {
@@ -575,9 +586,9 @@
 				CD5C45C025CDE385009667A9 /* MainPageProductCell.xib in Resources */,
 				CD29D07725C3FD4300CC7BAD /* gothicb.ttf in Resources */,
 				CD29D07125C3FD4300CC7BAD /* GOTHICI.TTF in Resources */,
-				CD29D07525C3FD4300CC7BAD /* gothici.ttf in Resources */,
 				CD29D07625C3FD4300CC7BAD /* CenturyGothic.ttf in Resources */,
 				CD5AC74B25C93FFB005A267B /* PaymentSuccessfulVC.xib in Resources */,
+				CD6125E425D302820034AF85 /* HeaderCell.xib in Resources */,
 				CD36D4DD25C1A1F8003CF2D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,6 +648,7 @@
 				CD5AC74C25C93FFB005A267B /* PaymentSuccessfulVC.swift in Sources */,
 				CDC8465E25C5AAC8004FC67F /* NotificationVC.swift in Sources */,
 				CDC8465725C58674004FC67F /* SearchVC.swift in Sources */,
+				CD6125E525D302820034AF85 /* HeaderCell.swift in Sources */,
 				CD462D3F25C7CDE100544C36 /* OrderDetailCell.swift in Sources */,
 				CD086AAD25CFCC2000379630 /* PreviousSearchResultCell.swift in Sources */,
 				CD949BA425CD1BD2003DB828 /* AddAndEditCreditCardVC.swift in Sources */,

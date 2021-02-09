@@ -8,7 +8,7 @@
 import UIKit
 
 class OrderPreviewCell: UICollectionViewCell {
-    
+
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var productImageView: UIImageView!
     

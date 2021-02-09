@@ -41,32 +41,26 @@ class RegisterVC: UIViewController {
         saveButton.layer.borderWidth = 5
         saveButton.backgroundColor = UIColor.clear
         
-        configurePlaceholderColor(textField: nameSurnameTextField)
-        configurePlaceholderColor(textField: phoneNumberTextField)
-        configurePlaceholderColor(textField: emailTextField)
-        configurePlaceholderColor(textField: passwordTextField)
-        configurePlaceholderColor(textField: passwordRepeatTextField)
+        nameSurnameTextField.layer.backgroundColor = UIColor.clear.cgColor
+        phoneNumberTextField.layer.backgroundColor = UIColor.clear.cgColor
+        emailTextField.layer.backgroundColor = UIColor.clear.cgColor
+        passwordTextField.layer.backgroundColor = UIColor.clear.cgColor
+        passwordRepeatTextField.layer.backgroundColor = UIColor.clear.cgColor
+
     }
     
-    func congigureBlurView(view: UIView) {
-        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.systemUltraThinMaterial)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = view.bounds
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        backgroundView.addSubview(blurEffectView)
-    }
-    
-    func configurePlaceholderColor(textField: UITextField) {
-        let color = UIColor.white
-        let placeholder = textField.placeholder ?? ""
-        textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor : color])
-        textField.backgroundColor = UIColor.clear
-    }
+//    func congigureBlurView(view: UIView) {
+//        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.systemUltraThinMaterial)
+//        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+//        blurEffectView.frame = view.bounds
+//        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//        backgroundView.addSubview(blurEffectView)
+//    }
     
     @IBAction func signInButtonPressed(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(identifier: "LoginVC") as! LoginVC
         vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
+        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {

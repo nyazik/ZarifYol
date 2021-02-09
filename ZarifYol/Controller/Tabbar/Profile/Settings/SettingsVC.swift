@@ -8,45 +8,49 @@
 import UIKit
 
 class SettingsVC: UIViewController {
-    
-    @IBOutlet weak var notificationSettingsView: UIView!
-    @IBOutlet weak var changePasswordView: UIView!
+
     @IBOutlet weak var changePasswordCellView: UIView!
     @IBOutlet weak var notificationSettingsCellView: UIView!
     @IBOutlet weak var signOutCellView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupLayouts()
         
-        //MARK:- GESTURE RECOGNIZER
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.touchTapped(_:)))
-        signOutCellView.addGestureRecognizer(tap)
-        
-        let secondTap = UITapGestureRecognizer(target: self, action: #selector(self.secondTouchTapped(_:)))
-        notificationSettingsView.addGestureRecognizer(secondTap)
-        
-        let thirdTap = UITapGestureRecognizer(target: self, action: #selector(self.thirdTapped(_:)))
-        changePasswordView.addGestureRecognizer(thirdTap)
+        addGestureRecognizer(view: notificationSettingsCellView)
+        addGestureRecognizer(view: signOutCellView)
+        addGestureRecognizer(view: changePasswordCellView)
+    
+    }
+
+    func addGestureRecognizer(view: UIView) {
+        view.isUserInteractionEnabled = true
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(self.gestureRecognizerMethods(_:)))
+        view.addGestureRecognizer(gesture)
     }
     
-    @objc func touchTapped(_ sender: UITapGestureRecognizer) {
-        let vc = SignOutVC(nibName: "SignOutVC", bundle: nil)
-        vc.modalPresentationStyle = .overCurrentContext
-        self.present(vc, animated: false, completion: nil)
+    @objc func gestureRecognizerMethods(_ sender: UITapGestureRecognizer) {
+        switch sender.view {
+        case changePasswordCellView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "ChangePasswordVC") as! ChangePasswordVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+            print("asdfghjk")
+        case notificationSettingsCellView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "NotificationSettingsVC") as! NotificationSettingsVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        case signOutCellView:
+            let vc = SignOutVC(nibName: "SignOutVC", bundle: nil)
+            vc.modalPresentationStyle = .overCurrentContext
+            self.present(vc, animated: false, completion: nil)
+        default:
+            break
+        }
     }
     
-    @objc func secondTouchTapped(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "NotificationSettingsVC") as! NotificationSettingsVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
-    }
     
-    @objc func thirdTapped(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "ChangePasswordVC") as! ChangePasswordVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
-    }
     
     func setupLayouts() {
         

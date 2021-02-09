@@ -17,7 +17,7 @@ class ProductsYouMayLikeCell: UICollectionViewCell {
     
     func configureCell() {
         productView.layer.cornerRadius = 10
-        productView.addShadow(color: .lightGray, opacity: 0.5, radius: 5.0)
+        productView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
         productView.backgroundColor = .white
     }
     

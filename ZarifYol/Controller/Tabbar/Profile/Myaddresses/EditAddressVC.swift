@@ -85,12 +85,22 @@ class EditAddressVC: UIViewController {
     }
 
     func configureTextView(container: MDCTextInputControllerOutlined?) {
-        container?.borderRadius = 15
-        container?.roundedCorners = [.topRight, .bottomRight]
-        container?.borderStrokeColor = UIColor.lightGray
-        container?.inlinePlaceholderColor = UIColor.lightGray
-        container?.activeColor = UIColor(named: "color_orange")
-        container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
+        if container == provinceController{
+            container?.borderRadius = 15
+            container?.roundedCorners = [.allCorners]
+            container?.borderStrokeColor = UIColor.lightGray
+            container?.inlinePlaceholderColor = UIColor.lightGray
+            container?.activeColor = UIColor(named: "color_orange")
+            container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
+        } else {
+            container?.borderRadius = 15
+            container?.roundedCorners = [.topRight, .bottomRight]
+            container?.borderStrokeColor = UIColor.lightGray
+            container?.inlinePlaceholderColor = UIColor.lightGray
+            container?.activeColor = UIColor(named: "color_orange")
+            container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
+        }
+        
     }
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {

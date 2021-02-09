@@ -12,7 +12,6 @@ class ProductCell: UICollectionViewCell {
     
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var newView: UIView!
-    @IBOutlet weak var favView: UIView!
     @IBOutlet weak var priceView: UIView!
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var saleStackView: UIStackView!
@@ -25,12 +24,13 @@ class ProductCell: UICollectionViewCell {
     @IBOutlet weak var commentQuantityLabel: UILabel!
     @IBOutlet weak var numberOfBoughtProductLabel: UILabel!
     @IBOutlet weak var rateProductCosmosView: CosmosView!
-    
+    @IBOutlet weak var favButton: UIButton!
+
     func setupLayouts() {
         
-        favView.layer.cornerRadius = favView.frame.height / 2
-        favView.layer.backgroundColor = UIColor.white.cgColor
-        favView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
+        favButton.layer.cornerRadius = favButton.frame.height / 2
+        favButton.layer.backgroundColor = UIColor.white.cgColor
+        favButton.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
 
         newView.layer.cornerRadius = 10
         priceView.layer.cornerRadius = 10
@@ -45,5 +45,13 @@ class ProductCell: UICollectionViewCell {
     }
     
     
-   
+    @IBAction func favButtonPressed(_ sender: UIButton) {
+        if favButton.isSelected {
+            favButton.isSelected = false
+        }
+        else {
+            favButton.isSelected = true
+        }
+    }
+    
 }

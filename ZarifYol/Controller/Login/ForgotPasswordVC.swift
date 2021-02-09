@@ -23,14 +23,7 @@ class ForgotPasswordVC: UIViewController {
         sendPasswordButton.layer.borderWidth = 5
         sendPasswordButton.backgroundColor = UIColor.clear
         
-        configurePlaceholderColor(textField: emailTextField)
-    }
-
-    func configurePlaceholderColor(textField: UITextField) {
-        let color = UIColor.white
-        let placeholder = textField.placeholder ?? ""
-        textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor : color])
-        textField.backgroundColor = UIColor.clear
+        emailTextField.layer.backgroundColor = UIColor.clear.cgColor
     }
     
     @IBAction func sendButtonPressed(_ sender: UIButton) {
@@ -40,7 +33,7 @@ class ForgotPasswordVC: UIViewController {
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
-        dismiss(animated: false, completion: nil)
+        dismiss(animated: true, completion: nil)
 
     }
     

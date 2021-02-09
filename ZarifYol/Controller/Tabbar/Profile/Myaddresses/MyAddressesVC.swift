@@ -60,5 +60,11 @@ extension MyAddressesVC: UITableViewDataSource, UITableViewDelegate {
         return 150
     }
  
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "EditAddressVC") as! EditAddressVC
+        vc.addAddress = false
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
     
 }

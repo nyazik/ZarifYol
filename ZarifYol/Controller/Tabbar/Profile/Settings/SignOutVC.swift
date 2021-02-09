@@ -18,14 +18,8 @@ class SignOutVC: UIViewController {
         super.viewDidLoad()
         configureLayouts()
         
-        //        let tap = UITapGestureRecognizer(target: self, action: #selector(self.quitPopup(_:)))
-        //        backgroundView.addGestureRecognizer(tap)
     }
-    
-    //    @objc func quitPopup(_ sender: UITapGestureRecognizer) {
-    //        dismiss(animated: false, completion: nil)
-    //    }
-    
+ 
     func configureLayouts() {
         cellView.layer.cornerRadius = 15
         cellView.clipsToBounds = true

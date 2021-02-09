@@ -64,10 +64,16 @@ class BoutiqueProductDetailVC: UIViewController {
         pageIndicatorPageControl.numberOfPages = imgArray.count
         
         chooseSizeDropDown.setLeftPaddingPoints(10)
-        chooseQuantityDropDown.setLeftPaddingPoints(10)
-        
         chooseSizeDropDown.layer.cornerRadius = 10
+        chooseSizeDropDown.optionArray = ["qwer", "34567"]
+        chooseSizeDropDown.arrowColor = .orange
+        chooseSizeDropDown.checkMarkEnabled = false
+        
+        chooseQuantityDropDown.setLeftPaddingPoints(10)
         chooseQuantityDropDown.layer.cornerRadius = 10
+        chooseQuantityDropDown.optionArray = ["qwer", "34567"]
+        chooseQuantityDropDown.arrowColor = .orange
+        chooseQuantityDropDown.checkMarkEnabled = false
         
         priceView.layer.cornerRadius = 10
         
@@ -103,6 +109,22 @@ class BoutiqueProductDetailVC: UIViewController {
 
 extension BoutiqueProductDetailVC: UICollectionViewDataSource, UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == boutiqueProductDetailImageCollectionView{
+            let vc = self.storyboard?.instantiateViewController(identifier: "BoutiqueProductDetailVC") as! BoutiqueProductDetailVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }else if collectionView == productsYouMayLikeCollectionView{
+            let vc = self.storyboard?.instantiateViewController(identifier: "BoutiqueProductDetailVC") as! BoutiqueProductDetailVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }else{
+            
+        }
+        
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == boutiqueProductDetailImageCollectionView{
             return imgArray.count
@@ -134,6 +156,8 @@ extension BoutiqueProductDetailVC: UICollectionViewDataSource, UICollectionViewD
         }
         
     }
+    
+    
     
 }
 

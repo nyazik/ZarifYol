@@ -11,6 +11,7 @@ class MenuVC: UIViewController {
     
     @IBOutlet weak var roundView: UIView!
     @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var nameSurnameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -383,5 +383,177 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69FAE1BD-B221-42E1-85BA-74305A13493E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/Controller/Tabbar/CategoriesVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9EA45D1-2314-4E3C-BC2C-EF5F42BF31CD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/Controller/Tabbar/Profile/MyOrders/OrderDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "552ACF77-10E5-4788-913C-025C65CB2155"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/Controller/Tabbar/MainPageTabbar/BoutiqueProductList/AllCommentsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "AllCommentsVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "552ACF77-10E5-4788-913C-025C65CB2155 - 23458b061cd46360"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.AllCommentsVC.quantityOfPoints.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Tabbar/MainPageTabbar/BoutiqueProductList/AllCommentsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "552ACF77-10E5-4788-913C-025C65CB2155 - 37984cb8defe8f54"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.AllCommentsVC.quantityOfPoints.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Tabbar/MainPageTabbar/BoutiqueProductList/AllCommentsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "552ACF77-10E5-4788-913C-025C65CB2155 - 7341caa0ad659e74"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.AllCommentsVC.quantityOfPoints.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Tabbar/MainPageTabbar/BoutiqueProductList/AllCommentsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "552ACF77-10E5-4788-913C-025C65CB2155 - 573e9c1d8a4cad20"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.AllCommentsVC.quantityOfPoints.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Tabbar/MainPageTabbar/BoutiqueProductList/AllCommentsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "552ACF77-10E5-4788-913C-025C65CB2155 - 5cf662f04dea8ad4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.AllCommentsVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ZarifYol.AllCommentsVC"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Tabbar/MainPageTabbar/BoutiqueProductList/AllCommentsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "738">
+               </Location>
+               <Location
+                  uuid = "552ACF77-10E5-4788-913C-025C65CB2155 - befdf1ccd745343e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZarifYol.AllCommentsVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ZarifYol.AllCommentsVC&gt;"
+                  moduleName = "ZarifYol"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/ZarifYol/ZarifYol/Controller/Tabbar/MainPageTabbar/BoutiqueProductList/AllCommentsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "679">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE4E391D-D84B-40FB-8471-2C265573AA2A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/Controller/Tabbar/MainPageTabbar/MainPageVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9D4EB82-FDDF-430E-AE4B-2C535DB87810"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZarifYol/Controller/Tabbar/MainPageTabbar/MainPageVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

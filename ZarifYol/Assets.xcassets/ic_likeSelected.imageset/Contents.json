@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Mask Group 1021.png",
+      "filename" : "Icon ionic-ios-heart.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Mask Group 1021@2x.png",
+      "filename" : "Icon ionic-ios-heart@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Mask Group 1021@3x.png",
+      "filename" : "Icon ionic-ios-heart@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

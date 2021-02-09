@@ -7,6 +7,7 @@
 
 import UIKit
 import MaterialComponents
+import iOSDropDown
 
 class AddAndEditCreditCardVC: UIViewController {
     
@@ -18,10 +19,12 @@ class AddAndEditCreditCardVC: UIViewController {
     @IBOutlet weak var CVCTextField: MDCTextField!
     @IBOutlet weak var saveButton: UIButton!
     
+    
     var addCard = false
     
     var textFields: [UITextField] {
         return [accountNameTextField, nameOfTheBankTextField, accountNumberTextField, expirationDateTextField, CVCTextField]
+        
     }
     
     var accountNameController: MDCTextInputControllerOutlined?
@@ -75,12 +78,22 @@ class AddAndEditCreditCardVC: UIViewController {
     }
     
     func configureTextView(container: MDCTextInputControllerOutlined?) {
-        container?.borderRadius = 15
-        container?.roundedCorners = [.topRight, .bottomRight]
-        container?.borderStrokeColor = UIColor.lightGray
-        container?.inlinePlaceholderColor = UIColor.lightGray
-        container?.activeColor = UIColor(named: "color_orange")
-        container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
+        if container == CVCTextField {
+            container?.borderRadius = 15
+            container?.roundedCorners = [.allCorners]
+            container?.borderStrokeColor = UIColor.lightGray
+            container?.inlinePlaceholderColor = UIColor.lightGray
+            container?.activeColor = UIColor(named: "color_orange")
+            container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
+        } else {
+            container?.borderRadius = 15
+            container?.roundedCorners = [.topRight, .bottomRight]
+            container?.borderStrokeColor = UIColor.lightGray
+            container?.inlinePlaceholderColor = UIColor.lightGray
+            container?.activeColor = UIColor(named: "color_orange")
+            container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
+        }
+        
     }
 
     @IBAction func saveButtonPressed(_ sender: UIButton) {

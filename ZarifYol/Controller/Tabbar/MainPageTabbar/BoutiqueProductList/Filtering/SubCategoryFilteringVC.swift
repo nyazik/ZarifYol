@@ -9,19 +9,33 @@ import UIKit
 
 class SubCategoryFilteringVC: UIViewController {
     
-    @IBOutlet weak var searchFilterSearchBar: UISearchBar!
     @IBOutlet weak var subCategoryFilteringTableView: UITableView!
+    @IBOutlet weak var applyFiltersButton: UIButton!
+    @IBOutlet weak var searchFilterSearchBar: UISearchBar!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //MARK:- DELEGATE
         subCategoryFilteringTableView.dataSource = self
         subCategoryFilteringTableView.delegate = self
+        
+        applyFiltersButton.roundCorners(corners: [.topLeft, .topRight], radius: applyFiltersButton.frame.height / 2)
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func clearFiltersButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func applyFiltersButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+
     
 }
 

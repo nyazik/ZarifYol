@@ -30,45 +30,43 @@ class FavouriteProductsVC: UIViewController {
         
         setupLayouts()
         
-        //MARK:- GESTURE RECOGNIZER
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.addToCart(_:)))
-        myCartTabbarView.addGestureRecognizer(tap)
-        
-        let secondTap = UITapGestureRecognizer(target: self, action: #selector(self.profileProduct(_:)))
-        profileTabbarView.addGestureRecognizer(secondTap)
-        
-        let thirdTap = UITapGestureRecognizer(target: self, action: #selector(self.categories(_:)))
-        myCategoriesTabbarView.addGestureRecognizer(thirdTap)
-        
-        let forthTap = UITapGestureRecognizer(target: self, action: #selector(self.mainPage(_:)))
-        mainPageTabbarView.addGestureRecognizer(forthTap)
-    }
-    
-    @objc func mainPage(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "MainPageVC") as! MainPageVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
-    }
-    
-    @objc func profileProduct(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "ProfileVC") as! ProfileVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
-    }
-    
-    @objc func addToCart(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "AddToCartVC") as! AddToCartVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
-    }
-    
-    @objc func categories(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "CategoriesVC") as! CategoriesVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
+        addGestureRecognizer(view: myCartTabbarView)
+        addGestureRecognizer(view: profileTabbarView)
+        addGestureRecognizer(view: myCategoriesTabbarView)
+        addGestureRecognizer(view: mainPageTabbarView)
     }
     
     
+    func addGestureRecognizer(view: UIView) {
+        view.isUserInteractionEnabled = true
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(self.gestureRecognizerMethods(_:)))
+        view.addGestureRecognizer(gesture)
+    }
+    
+    @objc func gestureRecognizerMethods(_ sender: UITapGestureRecognizer) {
+        switch sender.view {
+        case myCartTabbarView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "AddToCartVC") as! AddToCartVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        case profileTabbarView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "ProfileVC") as! ProfileVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        case myCategoriesTabbarView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "CategoriesVC") as! CategoriesVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        case mainPageTabbarView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "MainPageVC") as! MainPageVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        default:
+            break
+        }
+    }
+    
+
     func setupLayouts() {
         
         myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
@@ -142,6 +140,31 @@ extension FavouriteProductsVC: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            print("Deleted")
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+        tableView.reloadData()
+    }
+    
+//    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+//            return true
+//        }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteButton = UITableViewRowAction(style: .normal, title: "Delete") { (action, indexPath) in
+                return
+            }
+            deleteButton.backgroundColor = UIColor.clear
+            return [deleteButton]
+        }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "BoutiqueProductDetailVC") as! BoutiqueProductDetailVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
     
 }
 

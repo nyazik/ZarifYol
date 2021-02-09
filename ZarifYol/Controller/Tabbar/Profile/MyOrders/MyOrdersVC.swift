@@ -7,8 +7,9 @@
 
 import UIKit
 
-class MyOrdersVC: UIViewController {
 
+class MyOrdersVC: UIViewController {
+    
     @IBOutlet weak var myOrdersTableView: UITableView!
     
     override func viewDidLoad() {

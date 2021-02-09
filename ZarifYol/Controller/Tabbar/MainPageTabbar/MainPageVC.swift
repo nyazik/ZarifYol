@@ -38,47 +38,47 @@ class MainPageVC: UIViewController {
         setupSideMenu()
         
         //MARK:- GESTURE RECOGNIZER
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.addToCart(_:)))
-        myCartTabbarView.addGestureRecognizer(tap)
+        addGestureRecognizer(view: myCartTabbarView)
+        addGestureRecognizer(view: favouriteTabbarView)
+        addGestureRecognizer(view: myCategoriesTabbarView)
+        addGestureRecognizer(view: profileTabbarView)
         
-        let secondTap = UITapGestureRecognizer(target: self, action: #selector(self.profileProduct(_:)))
-        profileTabbarView.addGestureRecognizer(secondTap)
-        
-        let thirdTap = UITapGestureRecognizer(target: self, action: #selector(self.categories(_:)))
-        myCategoriesTabbarView.addGestureRecognizer(thirdTap)
-        
-        let forthTap = UITapGestureRecognizer(target: self, action: #selector(self.favouriteProduct(_:)))
-        favouriteTabbarView.addGestureRecognizer(forthTap)
         
         //MARK:- REGISTER NIB
         brandsTableView.register(UINib(nibName: "MainPageProductView", bundle: nil), forHeaderFooterViewReuseIdentifier: "cell")
         brandsTableView.register(UINib(nibName: "MainPageProductCell", bundle: nil), forCellReuseIdentifier: "cell")
+        brandsTableView.register(UINib(nibName: "HeaderCell", bundle: nil), forCellReuseIdentifier: "headerCell")
     }
     
-    
-    @objc func favouriteProduct(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "FavouriteProductsVC") as! FavouriteProductsVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
+    func addGestureRecognizer(view: UIView) {
+        view.isUserInteractionEnabled = true
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(self.gestureRecognizerMethods(_:)))
+        view.addGestureRecognizer(gesture)
     }
     
-    @objc func profileProduct(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "ProfileVC") as! ProfileVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
+    @objc func gestureRecognizerMethods(_ sender: UITapGestureRecognizer) {
+        switch sender.view {
+        case myCartTabbarView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "AddToCartVC") as! AddToCartVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        case favouriteTabbarView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "FavouriteProductsVC") as! FavouriteProductsVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        case myCategoriesTabbarView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "CategoriesVC") as! CategoriesVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        case profileTabbarView:
+            let vc = self.storyboard?.instantiateViewController(identifier: "ProfileVC") as! ProfileVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        default:
+            break
+        }
     }
     
-    @objc func addToCart(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "AddToCartVC") as! AddToCartVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
-    }
-    
-    @objc func categories(_ sender: UITapGestureRecognizer) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "CategoriesVC") as! CategoriesVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
-    }
     
     
     func setupLayouts() {
@@ -90,7 +90,7 @@ class MainPageVC: UIViewController {
         
         myCartTabbarView.addShadow(color: .lightGray, opacity: 0.5, radius: 5)
         myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
-
+        
     }
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
@@ -136,7 +136,14 @@ class MainPageVC: UIViewController {
 }
 
 
-extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
+extension MainPageVC: UITableViewDataSource, UITableViewDelegate, SeeAllProductsCellDelegate{
+    
+    func didSeeAllProductsButtonPressed(tag: Int) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "BoutiqueProductListVC") as! BoutiqueProductListVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     
     @objc func tapSection(sender: UIButton) {
         //        self.arrayHeader[sender.tag] = (self.arrayHeader[sender.tag] == 1) ? 0 : 1
@@ -152,8 +159,8 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return selectedIndex == section ? 3 : 0
-//        return (self.arrayHeader[section] == 0) ? 0 : 3
+        return selectedIndex == section ? 4 : 0
+        //        return (self.arrayHeader[section] == 0) ? 0 : 3
     }
     
     @objc func addToCartTapped(_ sender: UITapGestureRecognizer){
@@ -161,24 +168,44 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MainPageProductCell
-        cell.productDescriptionLabel.text = "Erkek Ultra Hafif Kışlık Mont"
-        cell.previousPriceLabel.text = "120₺"
-        cell.priceLabel.text = "90,50₺"
-        cell.salePersentageLabel.text = "-%20"
-        cell.productStatus.text = "YENİ"
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.addToCartTapped(_:)))
-        cell.addToCellOutsideView.addGestureRecognizer(tapGesture)
-        cell.configureCell()
-        return cell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as! HeaderCell
+            cell.delegate = self
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MainPageProductCell
+            cell.productDescriptionLabel.text = "Erkek Ultra Hafif Kışlık Mont"
+            cell.previousPriceLabel.text = "120₺"
+            cell.priceLabel.text = "90,50₺"
+            cell.salePersentageLabel.text = "-%20"
+            cell.productStatus.text = "YENİ"
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.addToCartTapped(_:)))
+            cell.addToCellOutsideView.addGestureRecognizer(tapGesture)
+            cell.configureCell()
+            return cell
+        }
+        
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "BoutiqueProductDetailVC") as! BoutiqueProductDetailVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        if indexPath.row == 0 {
+            return 50
+        } else {
+            return 140
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 140
+        return 120
     }
     
     // 5
@@ -187,7 +214,7 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     internal func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-   
+        
         if let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "cell") as? MainPageProductView {
             headerView.configureCell()
             headerView.startShoppingButton.tag = section
@@ -199,9 +226,6 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
         
     }
     
-    
-    
-    
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 5
     }
@@ -209,6 +233,8 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()
     }
+    
+    
     
 }
 
@@ -220,8 +246,15 @@ extension MainPageVC: UICollectionViewDataSource, UICollectionViewDelegate, UICo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CategoriesCell
         cell.categoryNameLabel.text = "erkek"
+        cell.configureCell()
         return cell
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize.init(width: 100, height: 50)
+        
+        
+    }
     
 }
