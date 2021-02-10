@@ -79,8 +79,6 @@ class MainPageVC: UIViewController {
         }
     }
     
-    
-    
     func setupLayouts() {
         
         myCartInsideView.layer.backgroundColor = UIColor.white.cgColor
@@ -147,18 +145,27 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate, SeeAllProducts
     
     @objc func tapSection(sender: UIButton) {
         //        self.arrayHeader[sender.tag] = (self.arrayHeader[sender.tag] == 1) ? 0 : 1
-        //        self.selectedIndex = sender.tag
+//                self.selectedIndex = sender.tag
+//        self.selectedIndex == 0 ? 0 : 1
+//        self.selectedIndex = sender.tag
         if self.selectedIndex == sender.tag {
             self.selectedIndex = nil
         } else {
             self.selectedIndex = sender.tag
         }
-        //        self.brandsTableView.reloadSections(indexSet,  with: .fade)
-        self.brandsTableView.reloadSections(IndexSet(0..<brandsTableView.numberOfSections), with: .fade)
         
+        self.brandsTableView.reloadSections([sender.tag], with: .fade)
+
+//                self.brandsTableView.reloadSections(indexSet,  with: .fade)
+//        self.brandsTableView.reloadSections(IndexSet(0..<brandsTableView.numberOfSections), with: .fade)
+//        let sectionToReload = [selectedIndex!]
+        //let indexSet: IndexSet = sectionToReload
+
+//        self.brandsTableView.reloadSections(IndexSet(sectionToReload), with: .automatic)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return selectedIndex == section ? 4 : 0
         //        return (self.arrayHeader[section] == 0) ? 0 : 3
     }
