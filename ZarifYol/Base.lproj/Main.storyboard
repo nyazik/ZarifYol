@@ -4209,7 +4209,6 @@ Moleskin Seatle Gömlek</string>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="ASO-um-p5m" secondAttribute="bottom" id="5rD-9n-PTQ"/>
-                                    <constraint firstAttribute="height" constant="100" id="CAW-bu-bNs"/>
                                     <constraint firstAttribute="trailing" secondItem="ASO-um-p5m" secondAttribute="trailing" id="Md7-DS-E9g"/>
                                     <constraint firstItem="KYA-ZF-GBo" firstAttribute="centerX" secondItem="wZg-oV-a9l" secondAttribute="centerX" id="PrZ-m0-Q8X"/>
                                     <constraint firstItem="gx2-fA-jvK" firstAttribute="centerY" secondItem="KYA-ZF-GBo" secondAttribute="centerY" id="XfR-mi-Q4S"/>
@@ -4286,6 +4285,7 @@ Moleskin Seatle Gömlek</string>
                             <constraint firstItem="mmw-qg-imo" firstAttribute="trailing" secondItem="Sqa-fe-3l0" secondAttribute="trailing" constant="10" id="HkS-aQ-JgW"/>
                             <constraint firstItem="B3E-Su-J5P" firstAttribute="leading" secondItem="xUl-hy-iTR" secondAttribute="leading" id="MgV-T7-aJh"/>
                             <constraint firstItem="8YK-bX-z0M" firstAttribute="top" secondItem="wZg-oV-a9l" secondAttribute="bottom" constant="10" id="NW9-fg-Blw"/>
+                            <constraint firstItem="wZg-oV-a9l" firstAttribute="height" secondItem="xUl-hy-iTR" secondAttribute="height" multiplier="0.111607" id="NvV-rq-DAD"/>
                             <constraint firstItem="Y3V-F0-DSu" firstAttribute="leading" secondItem="mmw-qg-imo" secondAttribute="leading" id="O3f-n7-0ui"/>
                             <constraint firstItem="Sqa-fe-3l0" firstAttribute="leading" secondItem="mmw-qg-imo" secondAttribute="leading" id="QHA-O5-mlF"/>
                             <constraint firstItem="at3-vE-UXI" firstAttribute="top" secondItem="8YK-bX-z0M" secondAttribute="bottom" constant="10" id="Yzd-gv-yGs"/>

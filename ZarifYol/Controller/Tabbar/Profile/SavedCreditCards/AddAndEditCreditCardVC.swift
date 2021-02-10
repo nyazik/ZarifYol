@@ -78,7 +78,7 @@ class AddAndEditCreditCardVC: UIViewController {
     }
     
     func configureTextView(container: MDCTextInputControllerOutlined?) {
-        if container == CVCTextField {
+        if container == CVCController {
             container?.borderRadius = 15
             container?.roundedCorners = [.allCorners]
             container?.borderStrokeColor = UIColor.lightGray
