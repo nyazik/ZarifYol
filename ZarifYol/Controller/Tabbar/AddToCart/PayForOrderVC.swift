@@ -63,6 +63,7 @@ class PayForOrderVC: UIViewController {
     }
     
     @IBAction func agreementButtonPressed(_ sender: UIButton) {
+        
         if agreementButton.isSelected {
             agreementButton.isSelected = false
         }

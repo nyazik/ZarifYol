@@ -382,7 +382,6 @@
                                     <constraint firstItem="8Jb-Cq-mPk" firstAttribute="leading" secondItem="Bd9-bm-T29" secondAttribute="trailing" constant="20" id="MZx-wE-VN0"/>
                                     <constraint firstItem="zlT-J9-mBd" firstAttribute="centerY" secondItem="D2J-RM-7lu" secondAttribute="centerY" id="cgF-Wn-3Gj"/>
                                     <constraint firstAttribute="trailing" secondItem="8Jb-Cq-mPk" secondAttribute="trailing" constant="20" id="iDI-HH-Pla"/>
-                                    <constraint firstAttribute="height" constant="100" id="mOC-FM-dVW"/>
                                     <constraint firstAttribute="bottom" secondItem="D2J-RM-7lu" secondAttribute="bottom" constant="10" id="mil-4c-kj5"/>
                                     <constraint firstItem="Bd9-bm-T29" firstAttribute="centerY" secondItem="D2J-RM-7lu" secondAttribute="centerY" id="qaW-nw-3VK"/>
                                     <constraint firstAttribute="bottom" secondItem="rlZ-ot-LUd" secondAttribute="bottom" id="qat-24-6dB"/>
@@ -412,13 +411,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="NGc-nA-jXs">
-                                                                <rect key="frame" x="2" y="2" width="74.5" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="74.5" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="88e-iL-rdI"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ana Sayfa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJX-eU-ad5">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="74.5" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="1" green="0.44705882352941173" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -430,7 +429,7 @@
                                                             <constraint firstAttribute="trailing" secondItem="sJX-eU-ad5" secondAttribute="trailing" constant="2" id="MrY-CS-c5s"/>
                                                             <constraint firstAttribute="trailing" secondItem="NGc-nA-jXs" secondAttribute="trailing" constant="2" id="P6E-xA-dH1"/>
                                                             <constraint firstItem="NGc-nA-jXs" firstAttribute="leading" secondItem="DeE-uV-zez" secondAttribute="leading" constant="2" id="aVO-Ta-Mm9"/>
-                                                            <constraint firstItem="NGc-nA-jXs" firstAttribute="top" secondItem="DeE-uV-zez" secondAttribute="top" constant="2" id="mt6-8b-V5J"/>
+                                                            <constraint firstItem="NGc-nA-jXs" firstAttribute="top" secondItem="DeE-uV-zez" secondAttribute="top" constant="6" id="mt6-8b-V5J"/>
                                                             <constraint firstItem="sJX-eU-ad5" firstAttribute="top" secondItem="NGc-nA-jXs" secondAttribute="bottom" constant="2" id="scv-Is-AHO"/>
                                                         </constraints>
                                                     </view>
@@ -438,13 +437,13 @@
                                                         <rect key="frame" x="78.5" y="0.0" width="79" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_category" translatesAutoresizingMaskIntoConstraints="NO" id="3dR-UC-R6V">
-                                                                <rect key="frame" x="2" y="2" width="75" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="75" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="PMO-Cy-Haa"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="du9-0X-gdp">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="75" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -456,7 +455,7 @@
                                                             <constraint firstItem="du9-0X-gdp" firstAttribute="top" secondItem="3dR-UC-R6V" secondAttribute="bottom" constant="2" id="J5F-Iz-xcH"/>
                                                             <constraint firstAttribute="trailing" secondItem="3dR-UC-R6V" secondAttribute="trailing" constant="2" id="Ofc-2C-sFK"/>
                                                             <constraint firstItem="du9-0X-gdp" firstAttribute="leading" secondItem="eTD-XM-V70" secondAttribute="leading" constant="2" id="SiO-lh-ple"/>
-                                                            <constraint firstItem="3dR-UC-R6V" firstAttribute="top" secondItem="eTD-XM-V70" secondAttribute="top" constant="2" id="UgV-9J-BuF"/>
+                                                            <constraint firstItem="3dR-UC-R6V" firstAttribute="top" secondItem="eTD-XM-V70" secondAttribute="top" constant="6" id="UgV-9J-BuF"/>
                                                             <constraint firstItem="3dR-UC-R6V" firstAttribute="leading" secondItem="eTD-XM-V70" secondAttribute="leading" constant="2" id="hgt-9D-Ndj"/>
                                                         </constraints>
                                                     </view>
@@ -469,13 +468,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="79" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favTabbar" translatesAutoresizingMaskIntoConstraints="NO" id="xrM-ub-MBb">
-                                                                <rect key="frame" x="2" y="2" width="75" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="75" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="6pq-tW-SDh"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5l-lj-3gs">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="75" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -488,20 +487,20 @@
                                                             <constraint firstItem="B5l-lj-3gs" firstAttribute="leading" secondItem="hC9-Nz-EIl" secondAttribute="leading" constant="2" id="QtF-Tm-pgB"/>
                                                             <constraint firstAttribute="trailing" secondItem="B5l-lj-3gs" secondAttribute="trailing" constant="2" id="T3h-Te-fSw"/>
                                                             <constraint firstItem="B5l-lj-3gs" firstAttribute="top" secondItem="xrM-ub-MBb" secondAttribute="bottom" constant="2" id="cOo-tq-Npf"/>
-                                                            <constraint firstItem="xrM-ub-MBb" firstAttribute="top" secondItem="hC9-Nz-EIl" secondAttribute="top" constant="2" id="y51-xd-6FB"/>
+                                                            <constraint firstItem="xrM-ub-MBb" firstAttribute="top" secondItem="hC9-Nz-EIl" secondAttribute="top" constant="6" id="y51-xd-6FB"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJq-AF-hxy">
                                                         <rect key="frame" x="79" y="0.0" width="78.5" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_person" translatesAutoresizingMaskIntoConstraints="NO" id="4l7-ub-nRA">
-                                                                <rect key="frame" x="2" y="2" width="74.5" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="74.5" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="Tvc-L3-xv9"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesabım" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHj-pU-2RW">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="74.5" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -514,7 +513,7 @@
                                                             <constraint firstAttribute="trailing" secondItem="mHj-pU-2RW" secondAttribute="trailing" constant="2" id="SUl-Jo-Keb"/>
                                                             <constraint firstItem="mHj-pU-2RW" firstAttribute="top" secondItem="4l7-ub-nRA" secondAttribute="bottom" constant="2" id="TLT-wP-acc"/>
                                                             <constraint firstItem="4l7-ub-nRA" firstAttribute="leading" secondItem="oJq-AF-hxy" secondAttribute="leading" constant="2" id="V0r-77-kMM"/>
-                                                            <constraint firstItem="4l7-ub-nRA" firstAttribute="top" secondItem="oJq-AF-hxy" secondAttribute="top" constant="2" id="iF3-AJ-9aC"/>
+                                                            <constraint firstItem="4l7-ub-nRA" firstAttribute="top" secondItem="oJq-AF-hxy" secondAttribute="top" constant="6" id="iF3-AJ-9aC"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -652,6 +651,7 @@
                             <constraint firstItem="SHy-aj-3FY" firstAttribute="leading" secondItem="U9j-z7-xLK" secondAttribute="leading" id="6ML-79-szi"/>
                             <constraint firstItem="SHy-aj-3FY" firstAttribute="top" secondItem="I7p-fQ-nez" secondAttribute="bottom" id="8mh-w7-iSr"/>
                             <constraint firstItem="I7p-fQ-nez" firstAttribute="top" secondItem="NH8-XX-L6L" secondAttribute="top" id="BgW-7p-rN4"/>
+                            <constraint firstItem="I7p-fQ-nez" firstAttribute="height" secondItem="NH8-XX-L6L" secondAttribute="height" multiplier="0.111607" id="F3B-wr-qzK"/>
                             <constraint firstAttribute="bottom" secondItem="4Po-qF-Eli" secondAttribute="bottom" id="HRX-Yi-vQe"/>
                             <constraint firstItem="7Wu-hX-6VD" firstAttribute="trailing" secondItem="U9j-z7-xLK" secondAttribute="trailing" id="NIf-Ab-Z9h"/>
                             <constraint firstItem="U9j-z7-xLK" firstAttribute="trailing" secondItem="4Po-qF-Eli" secondAttribute="trailing" id="PIS-qP-m7H"/>
@@ -1071,7 +1071,6 @@
                                     <constraint firstItem="CFj-De-eOJ" firstAttribute="centerY" secondItem="Wzk-jA-yzY" secondAttribute="centerY" id="5Jk-e4-Ytr"/>
                                     <constraint firstAttribute="trailing" secondItem="7sM-G0-smm" secondAttribute="trailing" id="68j-MX-Ufj"/>
                                     <constraint firstItem="CFj-De-eOJ" firstAttribute="leading" secondItem="r5C-XN-Gxk" secondAttribute="trailing" constant="10" id="7h6-TO-cZq"/>
-                                    <constraint firstAttribute="height" constant="100" id="C6g-N9-ay4"/>
                                     <constraint firstAttribute="bottom" secondItem="Wzk-jA-yzY" secondAttribute="bottom" constant="10" id="FvJ-L4-8St"/>
                                     <constraint firstItem="r5C-XN-Gxk" firstAttribute="centerY" secondItem="Wzk-jA-yzY" secondAttribute="centerY" id="GBZ-jb-grZ"/>
                                     <constraint firstItem="Rfz-tt-AW9" firstAttribute="centerY" secondItem="Wzk-jA-yzY" secondAttribute="centerY" id="IfT-G4-2RV"/>
@@ -1096,6 +1095,7 @@
                             <constraint firstItem="vVW-Gw-alP" firstAttribute="trailing" secondItem="vCb-Gh-eSR" secondAttribute="trailing" id="Qhl-hs-in2"/>
                             <constraint firstItem="Jm3-H0-XrK" firstAttribute="trailing" secondItem="vVW-Gw-alP" secondAttribute="trailing" id="Zf9-XV-ZNa"/>
                             <constraint firstItem="vCb-Gh-eSR" firstAttribute="leading" secondItem="KNo-Da-VIy" secondAttribute="leading" id="akW-kO-rwe"/>
+                            <constraint firstItem="vCb-Gh-eSR" firstAttribute="height" secondItem="KNo-Da-VIy" secondAttribute="height" multiplier="0.111607" id="dfP-US-6D6"/>
                             <constraint firstItem="3ys-HJ-nj6" firstAttribute="leading" secondItem="KNo-Da-VIy" secondAttribute="leading" id="ftQ-MK-8ED"/>
                             <constraint firstItem="vVW-Gw-alP" firstAttribute="trailing" secondItem="YfB-k3-Eb4" secondAttribute="trailing" constant="50" id="mAC-Qn-UtG"/>
                             <constraint firstAttribute="bottom" secondItem="Jm3-H0-XrK" secondAttribute="bottom" id="qPx-Bw-ZOn"/>
@@ -1154,7 +1154,6 @@
                                     <constraint firstAttribute="bottom" secondItem="rpJ-t0-jJf" secondAttribute="bottom" constant="10" id="V85-2Z-i5Y"/>
                                     <constraint firstItem="1Zi-tu-GNd" firstAttribute="leading" secondItem="lo8-PA-1Hb" secondAttribute="leading" id="YaW-Cc-Ep6"/>
                                     <constraint firstAttribute="trailing" secondItem="1Zi-tu-GNd" secondAttribute="trailing" id="YjP-aX-R4Q"/>
-                                    <constraint firstAttribute="height" constant="100" id="dfU-Qj-LOU"/>
                                     <constraint firstItem="fsS-WT-bxR" firstAttribute="centerY" secondItem="rpJ-t0-jJf" secondAttribute="centerY" id="pca-dT-XkP"/>
                                     <constraint firstItem="rpJ-t0-jJf" firstAttribute="centerX" secondItem="lo8-PA-1Hb" secondAttribute="centerX" id="rpr-Et-NCO"/>
                                     <constraint firstItem="fsS-WT-bxR" firstAttribute="leading" secondItem="lo8-PA-1Hb" secondAttribute="leading" constant="20" id="uK8-xB-Z4Q"/>
@@ -1331,7 +1330,7 @@
                                                 <rect key="frame" x="237" y="15" width="157" height="39"/>
                                                 <color key="backgroundColor" red="1" green="0.44705882352941173" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
-                                                <inset key="contentEdgeInsets" minX="20" minY="5" maxX="20" maxY="5"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
                                                 <state key="normal" title="İndirim Kuponu">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -1340,19 +1339,19 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8t-EL-ldN">
-                                                <rect key="frame" x="0.0" y="74" width="414" height="105"/>
+                                                <rect key="frame" x="0.0" y="64" width="414" height="115"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xxd-0L-XOB">
-                                                        <rect key="frame" x="20" y="10" width="374" height="32.5"/>
+                                                        <rect key="frame" x="20" y="10" width="374" height="37.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ödenecek Tutar:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqt-pq-ZbZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="285" height="32.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="285" height="37.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="152 ₺" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqO-Na-29S">
-                                                                <rect key="frame" x="285" y="0.0" width="89" height="32.5"/>
+                                                                <rect key="frame" x="285" y="0.0" width="89" height="37.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1360,7 +1359,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpk-uA-vrM">
-                                                        <rect key="frame" x="0.0" y="52.5" width="414" height="52.5"/>
+                                                        <rect key="frame" x="0.0" y="57.5" width="414" height="57.5"/>
                                                         <color key="backgroundColor" red="1" green="0.44705882352941173" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="20"/>
                                                         <state key="normal" title="Sepeti Onayla">
@@ -1394,7 +1393,7 @@
                                             <constraint firstItem="oqj-KT-AuX" firstAttribute="height" secondItem="sco-KG-MrO" secondAttribute="height" multiplier="0.22" id="eyU-JH-cLj"/>
                                             <constraint firstItem="eZx-2m-sll" firstAttribute="leading" secondItem="oqj-KT-AuX" secondAttribute="trailing" constant="10" id="fjb-Nc-WL1"/>
                                             <constraint firstItem="oqj-KT-AuX" firstAttribute="width" secondItem="sco-KG-MrO" secondAttribute="width" multiplier="0.5" id="p3F-um-ual"/>
-                                            <constraint firstItem="V8t-EL-ldN" firstAttribute="top" secondItem="oqj-KT-AuX" secondAttribute="bottom" constant="20" id="se5-Ze-xwt"/>
+                                            <constraint firstItem="V8t-EL-ldN" firstAttribute="top" secondItem="oqj-KT-AuX" secondAttribute="bottom" constant="10" id="se5-Ze-xwt"/>
                                             <constraint firstItem="eZx-2m-sll" firstAttribute="height" secondItem="sco-KG-MrO" secondAttribute="height" multiplier="0.22" id="v8d-pT-AQ3"/>
                                             <constraint firstItem="eZx-2m-sll" firstAttribute="top" secondItem="sco-KG-MrO" secondAttribute="top" constant="15" id="vBu-KR-rsC"/>
                                             <constraint firstItem="oqj-KT-AuX" firstAttribute="leading" secondItem="sco-KG-MrO" secondAttribute="leading" constant="20" id="yf0-rB-qHu"/>
@@ -1421,6 +1420,7 @@
                             <constraint firstItem="lo8-PA-1Hb" firstAttribute="top" secondItem="0lQ-ZM-OJC" secondAttribute="top" id="7xI-dm-6Ue"/>
                             <constraint firstItem="ufd-gd-UVb" firstAttribute="trailing" secondItem="dzx-hI-EJK" secondAttribute="trailing" constant="20" id="8nt-IS-EHt"/>
                             <constraint firstItem="ufd-gd-UVb" firstAttribute="trailing" secondItem="xA3-Yl-XqT" secondAttribute="trailing" id="GXQ-Ec-GvM"/>
+                            <constraint firstItem="lo8-PA-1Hb" firstAttribute="height" secondItem="0lQ-ZM-OJC" secondAttribute="height" multiplier="0.111607" id="IES-hi-bTH"/>
                             <constraint firstAttribute="trailing" secondItem="lo8-PA-1Hb" secondAttribute="trailing" id="QPS-ps-NM9"/>
                             <constraint firstItem="dzx-hI-EJK" firstAttribute="top" secondItem="lo8-PA-1Hb" secondAttribute="bottom" constant="10" id="TvB-eO-0oz"/>
                             <constraint firstItem="dzx-hI-EJK" firstAttribute="leading" secondItem="ufd-gd-UVb" secondAttribute="leading" constant="20" id="k90-hs-hAa"/>
@@ -1485,7 +1485,6 @@
                                     <constraint firstItem="B2E-vC-hyx" firstAttribute="leading" secondItem="Qjb-aK-ROz" secondAttribute="leading" id="LHO-Og-dGh"/>
                                     <constraint firstAttribute="trailing" secondItem="B2E-vC-hyx" secondAttribute="trailing" id="TET-ti-yeb"/>
                                     <constraint firstItem="wED-8D-c80" firstAttribute="centerX" secondItem="Qjb-aK-ROz" secondAttribute="centerX" id="UeW-bb-Kjw"/>
-                                    <constraint firstAttribute="height" constant="100" id="VeB-Ux-teJ"/>
                                     <constraint firstItem="AYt-Qg-6rx" firstAttribute="centerY" secondItem="wED-8D-c80" secondAttribute="centerY" id="huf-oC-fEo"/>
                                     <constraint firstItem="B2E-vC-hyx" firstAttribute="top" secondItem="Qjb-aK-ROz" secondAttribute="top" id="jGN-xT-eOn"/>
                                 </constraints>
@@ -1692,13 +1691,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_HomeUnselected" translatesAutoresizingMaskIntoConstraints="NO" id="TO4-3E-LYE">
-                                                                <rect key="frame" x="2" y="2" width="74.5" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="74.5" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="C3k-Hu-9Hh"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ana Sayfa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FU0-Xu-O0W">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="74.5" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1709,7 +1708,7 @@
                                                             <constraint firstAttribute="trailing" secondItem="TO4-3E-LYE" secondAttribute="trailing" constant="2" id="44E-xu-QXq"/>
                                                             <constraint firstItem="TO4-3E-LYE" firstAttribute="leading" secondItem="NFG-Is-yYo" secondAttribute="leading" constant="2" id="IkN-UB-S2Z"/>
                                                             <constraint firstItem="FU0-Xu-O0W" firstAttribute="top" secondItem="TO4-3E-LYE" secondAttribute="bottom" constant="2" id="NjO-JB-LLi"/>
-                                                            <constraint firstItem="TO4-3E-LYE" firstAttribute="top" secondItem="NFG-Is-yYo" secondAttribute="top" constant="2" id="WNO-eb-tp9"/>
+                                                            <constraint firstItem="TO4-3E-LYE" firstAttribute="top" secondItem="NFG-Is-yYo" secondAttribute="top" constant="6" id="WNO-eb-tp9"/>
                                                             <constraint firstAttribute="trailing" secondItem="FU0-Xu-O0W" secondAttribute="trailing" constant="2" id="bEu-ux-4TK"/>
                                                             <constraint firstItem="FU0-Xu-O0W" firstAttribute="leading" secondItem="NFG-Is-yYo" secondAttribute="leading" constant="2" id="eec-dG-OPM"/>
                                                         </constraints>
@@ -1718,13 +1717,13 @@
                                                         <rect key="frame" x="78.5" y="0.0" width="79" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_category" translatesAutoresizingMaskIntoConstraints="NO" id="Hlk-Yx-Rpb">
-                                                                <rect key="frame" x="2" y="2" width="75" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="75" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="imy-rw-dc4"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCq-Yt-XQ4">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="75" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1732,7 +1731,7 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="Hlk-Yx-Rpb" firstAttribute="top" secondItem="fwr-zU-exW" secondAttribute="top" constant="2" id="4yf-AB-QXW"/>
+                                                            <constraint firstItem="Hlk-Yx-Rpb" firstAttribute="top" secondItem="fwr-zU-exW" secondAttribute="top" constant="6" id="4yf-AB-QXW"/>
                                                             <constraint firstItem="XCq-Yt-XQ4" firstAttribute="top" secondItem="Hlk-Yx-Rpb" secondAttribute="bottom" constant="2" id="5ff-X0-Fjv"/>
                                                             <constraint firstItem="XCq-Yt-XQ4" firstAttribute="leading" secondItem="fwr-zU-exW" secondAttribute="leading" constant="2" id="9rJ-bH-Oop"/>
                                                             <constraint firstItem="Hlk-Yx-Rpb" firstAttribute="leading" secondItem="fwr-zU-exW" secondAttribute="leading" constant="2" id="LkF-oy-08K"/>
@@ -1749,13 +1748,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="79" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favSelected" translatesAutoresizingMaskIntoConstraints="NO" id="XLN-JT-AiQ">
-                                                                <rect key="frame" x="2" y="2" width="75" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="75" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="Zmr-OM-eYJ"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgW-zd-RwN">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="75" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="1" green="0.44705882352941173" blue="0.0" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1763,7 +1762,7 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="XLN-JT-AiQ" firstAttribute="top" secondItem="G2t-UZ-9DX" secondAttribute="top" constant="2" id="0ex-uu-xPV"/>
+                                                            <constraint firstItem="XLN-JT-AiQ" firstAttribute="top" secondItem="G2t-UZ-9DX" secondAttribute="top" constant="6" id="0ex-uu-xPV"/>
                                                             <constraint firstAttribute="trailing" secondItem="UgW-zd-RwN" secondAttribute="trailing" constant="2" id="3p5-Y8-tKs"/>
                                                             <constraint firstItem="UgW-zd-RwN" firstAttribute="top" secondItem="XLN-JT-AiQ" secondAttribute="bottom" constant="2" id="7Jz-V2-9wQ"/>
                                                             <constraint firstItem="UgW-zd-RwN" firstAttribute="leading" secondItem="G2t-UZ-9DX" secondAttribute="leading" constant="2" id="gZX-Cf-ifc"/>
@@ -1775,13 +1774,13 @@
                                                         <rect key="frame" x="79" y="0.0" width="78.5" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_person" translatesAutoresizingMaskIntoConstraints="NO" id="2EB-VD-XgJ">
-                                                                <rect key="frame" x="2" y="2" width="74.5" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="74.5" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="5yY-Nk-Guo"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesabım" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhc-mM-XD3">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="74.5" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1790,7 +1789,7 @@
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="Jhc-mM-XD3" firstAttribute="top" secondItem="2EB-VD-XgJ" secondAttribute="bottom" constant="2" id="Nhf-B7-c5c"/>
-                                                            <constraint firstItem="2EB-VD-XgJ" firstAttribute="top" secondItem="Tg0-Wp-acf" secondAttribute="top" constant="2" id="TT3-lc-gv6"/>
+                                                            <constraint firstItem="2EB-VD-XgJ" firstAttribute="top" secondItem="Tg0-Wp-acf" secondAttribute="top" constant="6" id="TT3-lc-gv6"/>
                                                             <constraint firstAttribute="trailing" secondItem="Jhc-mM-XD3" secondAttribute="trailing" constant="2" id="ajw-SA-XDE"/>
                                                             <constraint firstItem="2EB-VD-XgJ" firstAttribute="leading" secondItem="Tg0-Wp-acf" secondAttribute="leading" constant="2" id="heb-O5-bpT"/>
                                                             <constraint firstAttribute="trailing" secondItem="2EB-VD-XgJ" secondAttribute="trailing" constant="2" id="qPs-z3-guO"/>
@@ -1881,6 +1880,7 @@
                             <constraint firstItem="jzp-vi-mHK" firstAttribute="top" secondItem="xeU-Tj-7Zh" secondAttribute="bottom" constant="10" id="dTZ-Op-7Wb"/>
                             <constraint firstAttribute="trailing" secondItem="SfW-Rl-XwM" secondAttribute="trailing" id="dmv-sF-RjN"/>
                             <constraint firstItem="rKb-oF-jjN" firstAttribute="trailing" secondItem="Qjb-aK-ROz" secondAttribute="trailing" id="ext-vH-s1G"/>
+                            <constraint firstItem="Qjb-aK-ROz" firstAttribute="height" secondItem="onp-cE-cIK" secondAttribute="height" multiplier="0.111607" id="hWf-Hx-zKA"/>
                             <constraint firstItem="xeU-Tj-7Zh" firstAttribute="top" secondItem="Qjb-aK-ROz" secondAttribute="bottom" constant="10" id="iC3-TP-4hZ"/>
                             <constraint firstAttribute="trailing" secondItem="xeU-Tj-7Zh" secondAttribute="trailing" constant="20" id="jXZ-Qs-pEg"/>
                             <constraint firstAttribute="bottom" secondItem="gLb-Sr-me1" secondAttribute="bottom" id="liY-0t-fUf"/>
@@ -1901,7 +1901,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGI-nZ-BYx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6838" y="765"/>
+            <point key="canvasLocation" x="6837.68115942029" y="764.73214285714278"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="eK0-0X-QON">
@@ -2057,7 +2057,6 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstItem="it4-f7-rZ9" firstAttribute="leading" secondItem="QyX-FW-c5F" secondAttribute="leading" constant="20" id="8va-6o-L6V"/>
-                                    <constraint firstAttribute="height" constant="100" id="VXj-Rd-oc0"/>
                                     <constraint firstItem="SwO-Lr-AEM" firstAttribute="centerX" secondItem="QyX-FW-c5F" secondAttribute="centerX" id="Wqr-ZQ-hJj"/>
                                     <constraint firstItem="oRG-bt-Ouc" firstAttribute="leading" secondItem="QyX-FW-c5F" secondAttribute="leading" id="asl-dB-4fx"/>
                                     <constraint firstItem="it4-f7-rZ9" firstAttribute="centerY" secondItem="SwO-Lr-AEM" secondAttribute="centerY" id="gnW-oH-y3E"/>
@@ -2080,13 +2079,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_HomeUnselected" translatesAutoresizingMaskIntoConstraints="NO" id="2rh-Zy-JE3">
-                                                                <rect key="frame" x="2" y="2" width="74.5" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="74.5" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="U3j-Vl-uem"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ana Sayfa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr4-9R-CDX">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="74.5" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313725490191" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2096,9 +2095,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="fr4-9R-CDX" secondAttribute="trailing" constant="2" id="2ci-Lk-GD2"/>
                                                             <constraint firstAttribute="trailing" secondItem="2rh-Zy-JE3" secondAttribute="trailing" constant="2" id="6II-GT-HVk"/>
+                                                            <constraint firstItem="2rh-Zy-JE3" firstAttribute="top" secondItem="pv9-D3-QMZ" secondAttribute="top" constant="6" id="9yy-yh-gcE"/>
                                                             <constraint firstItem="fr4-9R-CDX" firstAttribute="leading" secondItem="pv9-D3-QMZ" secondAttribute="leading" constant="2" id="JVq-Al-InT"/>
                                                             <constraint firstItem="fr4-9R-CDX" firstAttribute="top" secondItem="2rh-Zy-JE3" secondAttribute="bottom" constant="2" id="Qpz-dX-FrF"/>
-                                                            <constraint firstItem="2rh-Zy-JE3" firstAttribute="top" secondItem="pv9-D3-QMZ" secondAttribute="top" constant="2" id="gz4-S1-fpu"/>
                                                             <constraint firstItem="2rh-Zy-JE3" firstAttribute="leading" secondItem="pv9-D3-QMZ" secondAttribute="leading" constant="2" id="s9p-rz-epM"/>
                                                         </constraints>
                                                     </view>
@@ -2106,13 +2105,13 @@
                                                         <rect key="frame" x="78.5" y="0.0" width="79" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_category" translatesAutoresizingMaskIntoConstraints="NO" id="ZCJ-ve-ODO">
-                                                                <rect key="frame" x="2" y="2" width="75" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="75" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="qGA-hG-Srt"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CK-hg-qEm">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="75" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313725490191" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2121,7 +2120,7 @@
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="6CK-hg-qEm" secondAttribute="trailing" constant="2" id="0hw-oC-cha"/>
-                                                            <constraint firstItem="ZCJ-ve-ODO" firstAttribute="top" secondItem="oE1-ji-WWc" secondAttribute="top" constant="2" id="A2r-uZ-5rT"/>
+                                                            <constraint firstItem="ZCJ-ve-ODO" firstAttribute="top" secondItem="oE1-ji-WWc" secondAttribute="top" constant="6" id="A2r-uZ-5rT"/>
                                                             <constraint firstItem="ZCJ-ve-ODO" firstAttribute="leading" secondItem="oE1-ji-WWc" secondAttribute="leading" constant="2" id="YkM-F3-6Xe"/>
                                                             <constraint firstAttribute="trailing" secondItem="ZCJ-ve-ODO" secondAttribute="trailing" constant="2" id="nNR-3k-e7q"/>
                                                             <constraint firstItem="6CK-hg-qEm" firstAttribute="top" secondItem="ZCJ-ve-ODO" secondAttribute="bottom" constant="2" id="vCL-VJ-7Xm"/>
@@ -2137,13 +2136,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="79" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favTabbar" translatesAutoresizingMaskIntoConstraints="NO" id="MqG-NY-w7V">
-                                                                <rect key="frame" x="2" y="2" width="75" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="75" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="Oxo-2I-ZWE"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leH-wU-jaz">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="75" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313725490191" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2155,7 +2154,7 @@
                                                             <constraint firstAttribute="trailing" secondItem="MqG-NY-w7V" secondAttribute="trailing" constant="2" id="MZS-69-hy1"/>
                                                             <constraint firstItem="leH-wU-jaz" firstAttribute="top" secondItem="MqG-NY-w7V" secondAttribute="bottom" constant="2" id="Xg3-yU-jg4"/>
                                                             <constraint firstItem="MqG-NY-w7V" firstAttribute="leading" secondItem="MbR-Ru-FKK" secondAttribute="leading" constant="2" id="bxa-hF-IhJ"/>
-                                                            <constraint firstItem="MqG-NY-w7V" firstAttribute="top" secondItem="MbR-Ru-FKK" secondAttribute="top" constant="2" id="byS-Qo-xUJ"/>
+                                                            <constraint firstItem="MqG-NY-w7V" firstAttribute="top" secondItem="MbR-Ru-FKK" secondAttribute="top" constant="6" id="byS-Qo-xUJ"/>
                                                             <constraint firstItem="leH-wU-jaz" firstAttribute="leading" secondItem="MbR-Ru-FKK" secondAttribute="leading" constant="2" id="jw8-ge-reG"/>
                                                         </constraints>
                                                     </view>
@@ -2163,13 +2162,13 @@
                                                         <rect key="frame" x="79" y="0.0" width="78.5" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profilSelected" translatesAutoresizingMaskIntoConstraints="NO" id="70D-8r-ddP">
-                                                                <rect key="frame" x="2" y="2" width="74.5" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="74.5" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="GLv-F8-ZsC"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesabım" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyW-00-FA4">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="74.5" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="1" green="0.44705882352941173" blue="0.0" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2182,7 +2181,7 @@
                                                             <constraint firstItem="YyW-00-FA4" firstAttribute="leading" secondItem="XjZ-Sa-pbc" secondAttribute="leading" constant="2" id="UKP-3D-lkH"/>
                                                             <constraint firstAttribute="trailing" secondItem="YyW-00-FA4" secondAttribute="trailing" constant="2" id="cGR-Rh-ZFK"/>
                                                             <constraint firstItem="70D-8r-ddP" firstAttribute="leading" secondItem="XjZ-Sa-pbc" secondAttribute="leading" constant="2" id="gQv-mA-yBT"/>
-                                                            <constraint firstItem="70D-8r-ddP" firstAttribute="top" secondItem="XjZ-Sa-pbc" secondAttribute="top" constant="2" id="shv-od-3Nd"/>
+                                                            <constraint firstItem="70D-8r-ddP" firstAttribute="top" secondItem="XjZ-Sa-pbc" secondAttribute="top" constant="6" id="shv-od-3Nd"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -2262,6 +2261,7 @@
                             <constraint firstItem="QyX-FW-c5F" firstAttribute="top" secondItem="m0f-Rk-bJd" secondAttribute="top" id="Ieo-YY-kRO"/>
                             <constraint firstAttribute="bottom" secondItem="SXA-hO-Zo4" secondAttribute="bottom" id="JHW-P4-Gkd"/>
                             <constraint firstItem="SXA-hO-Zo4" firstAttribute="trailing" secondItem="Wog-Ad-Gci" secondAttribute="trailing" id="JlJ-el-OoS"/>
+                            <constraint firstItem="QyX-FW-c5F" firstAttribute="height" secondItem="m0f-Rk-bJd" secondAttribute="height" multiplier="0.111607" id="Ykw-Gb-vdi"/>
                             <constraint firstItem="QyX-FW-c5F" firstAttribute="leading" secondItem="m0f-Rk-bJd" secondAttribute="leading" id="fAU-8v-Hle"/>
                             <constraint firstAttribute="bottom" secondItem="usk-8g-P4i" secondAttribute="bottom" id="pHV-KY-7qd"/>
                             <constraint firstItem="usk-8g-P4i" firstAttribute="leading" secondItem="Wog-Ad-Gci" secondAttribute="leading" id="sGC-qD-q2r"/>
@@ -2284,7 +2284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9VR-cP-Xul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6838" y="-751"/>
+            <point key="canvasLocation" x="6837.68115942029" y="-751.33928571428567"/>
         </scene>
         <!--SettingsVC-->
         <scene sceneID="bpN-6r-Vo8">
@@ -2322,7 +2322,6 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstItem="Ay2-Ld-D0Z" firstAttribute="centerX" secondItem="hR2-j8-CrV" secondAttribute="centerX" id="4XE-Ht-lzV"/>
-                                    <constraint firstAttribute="height" constant="100" id="5Ap-jA-di3"/>
                                     <constraint firstItem="eZE-hu-SDu" firstAttribute="leading" secondItem="hR2-j8-CrV" secondAttribute="leading" id="Hay-4D-zvi"/>
                                     <constraint firstAttribute="bottom" secondItem="Ay2-Ld-D0Z" secondAttribute="bottom" constant="10" id="JlQ-Vp-gDC"/>
                                     <constraint firstAttribute="bottom" secondItem="eZE-hu-SDu" secondAttribute="bottom" id="aaA-xq-l4K"/>
@@ -2442,6 +2441,7 @@
                             <constraint firstAttribute="bottom" secondItem="bMS-ZY-OkK" secondAttribute="bottom" id="2t5-g4-5fh"/>
                             <constraint firstItem="hR2-j8-CrV" firstAttribute="leading" secondItem="2lm-Bb-Zqe" secondAttribute="leading" id="6U5-px-AkO"/>
                             <constraint firstItem="1Qf-MN-vLi" firstAttribute="top" secondItem="hR2-j8-CrV" secondAttribute="bottom" constant="10" id="DpP-F4-nNO"/>
+                            <constraint firstItem="hR2-j8-CrV" firstAttribute="height" secondItem="2lm-Bb-Zqe" secondAttribute="height" multiplier="0.111607" id="Gvx-iX-9t7"/>
                             <constraint firstItem="bMS-ZY-OkK" firstAttribute="top" secondItem="1Qf-MN-vLi" secondAttribute="bottom" constant="10" id="HDt-Zd-cDZ"/>
                             <constraint firstItem="KZ4-MH-GM3" firstAttribute="trailing" secondItem="hR2-j8-CrV" secondAttribute="trailing" id="JpA-Ja-26k"/>
                             <constraint firstItem="bMS-ZY-OkK" firstAttribute="leading" secondItem="KZ4-MH-GM3" secondAttribute="leading" id="VbO-E3-Hbc"/>
@@ -2504,7 +2504,6 @@
                                     <constraint firstItem="CjD-a9-8It" firstAttribute="centerX" secondItem="Kf7-hP-Nm2" secondAttribute="centerX" id="fbK-xy-Zdu"/>
                                     <constraint firstAttribute="bottom" secondItem="CjD-a9-8It" secondAttribute="bottom" constant="10" id="hNM-YW-gv0"/>
                                     <constraint firstItem="QEO-Cq-cDy" firstAttribute="leading" secondItem="Kf7-hP-Nm2" secondAttribute="leading" id="q7U-G3-fg8"/>
-                                    <constraint firstAttribute="height" constant="100" id="xRx-br-4GF"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bildirim Ayarları" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYO-4R-UEb">
@@ -2619,6 +2618,7 @@ Görükle</string>
                             <constraint firstItem="NbK-ag-Ed5" firstAttribute="trailing" secondItem="Gmm-gf-dTi" secondAttribute="trailing" id="k1w-eF-Q9J"/>
                             <constraint firstItem="Gmm-gf-dTi" firstAttribute="trailing" secondItem="MYO-4R-UEb" secondAttribute="trailing" constant="20" id="kXQ-zM-wJS"/>
                             <constraint firstAttribute="bottom" secondItem="NbK-ag-Ed5" secondAttribute="bottom" id="oVG-4v-Kok"/>
+                            <constraint firstItem="Kf7-hP-Nm2" firstAttribute="height" secondItem="3jY-ml-7OB" secondAttribute="height" multiplier="0.111607" id="p8X-ku-4eb"/>
                             <constraint firstItem="Kf7-hP-Nm2" firstAttribute="leading" secondItem="3jY-ml-7OB" secondAttribute="leading" id="rbN-AE-NJT"/>
                             <constraint firstItem="Gmm-gf-dTi" firstAttribute="trailing" secondItem="Kf7-hP-Nm2" secondAttribute="trailing" id="yQg-Sx-hsM"/>
                         </constraints>
@@ -2675,7 +2675,6 @@ Görükle</string>
                                     <constraint firstItem="fPl-4t-7ym" firstAttribute="leading" secondItem="Ifz-Ce-u1d" secondAttribute="leading" id="czL-8W-gFQ"/>
                                     <constraint firstAttribute="trailing" secondItem="fPl-4t-7ym" secondAttribute="trailing" id="dTD-yL-1yL"/>
                                     <constraint firstAttribute="bottom" secondItem="dil-WS-WBD" secondAttribute="bottom" constant="10" id="dlC-9j-TSZ"/>
-                                    <constraint firstAttribute="height" constant="100" id="y5t-Bh-TEq"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre Değişikliği" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHp-Tg-bAP">
@@ -2722,6 +2721,7 @@ Görükle</string>
                             <constraint firstItem="VDm-Wt-nwU" firstAttribute="top" secondItem="WuX-nV-FuO" secondAttribute="bottom" constant="10" id="6KZ-OW-yuO"/>
                             <constraint firstItem="jgp-1A-WTT" firstAttribute="trailing" secondItem="VDm-Wt-nwU" secondAttribute="trailing" constant="10" id="8Sa-mB-5zc"/>
                             <constraint firstItem="jgp-1A-WTT" firstAttribute="trailing" secondItem="hHp-Tg-bAP" secondAttribute="trailing" constant="20" id="Bao-kS-anO"/>
+                            <constraint firstItem="Ifz-Ce-u1d" firstAttribute="height" secondItem="DtA-BL-Ze2" secondAttribute="height" multiplier="0.111607" id="CN3-Id-zuY"/>
                             <constraint firstItem="WuX-nV-FuO" firstAttribute="leading" secondItem="jgp-1A-WTT" secondAttribute="leading" id="DuQ-PK-bix"/>
                             <constraint firstItem="jgp-1A-WTT" firstAttribute="trailing" secondItem="Ro4-bO-hUA" secondAttribute="trailing" id="GKR-Vf-lN2"/>
                             <constraint firstItem="hHp-Tg-bAP" firstAttribute="top" secondItem="Ifz-Ce-u1d" secondAttribute="bottom" constant="10" id="JDJ-mm-kfq"/>
@@ -2796,7 +2796,6 @@ Görükle</string>
                                     <constraint firstItem="iiB-UD-h2o" firstAttribute="leading" secondItem="hNR-OX-YbO" secondAttribute="leading" constant="20" id="0tX-N8-hXq"/>
                                     <constraint firstItem="dJq-fm-mT0" firstAttribute="leading" secondItem="hNR-OX-YbO" secondAttribute="leading" id="F1j-2C-Lzt"/>
                                     <constraint firstAttribute="bottom" secondItem="VAh-Wh-MVY" secondAttribute="bottom" constant="10" id="FLd-UR-uzd"/>
-                                    <constraint firstAttribute="height" constant="100" id="NkT-pW-FdQ"/>
                                     <constraint firstItem="VAh-Wh-MVY" firstAttribute="centerX" secondItem="hNR-OX-YbO" secondAttribute="centerX" id="PbB-uP-gc6"/>
                                     <constraint firstItem="bhs-1n-tIe" firstAttribute="centerY" secondItem="VAh-Wh-MVY" secondAttribute="centerY" id="VFE-ZG-YHQ"/>
                                     <constraint firstAttribute="trailing" secondItem="bhs-1n-tIe" secondAttribute="trailing" constant="20" id="XTB-IS-6Hy"/>
@@ -2950,6 +2949,7 @@ Görükle</string>
                             <constraint firstItem="hNR-OX-YbO" firstAttribute="top" secondItem="FCq-4f-DoQ" secondAttribute="top" id="QVt-qN-kVR"/>
                             <constraint firstAttribute="bottom" secondItem="ocN-DR-5Br" secondAttribute="bottom" id="ZVE-LY-int"/>
                             <constraint firstItem="xk1-ey-5ZT" firstAttribute="trailing" secondItem="fVo-kd-cxi" secondAttribute="trailing" constant="20" id="b9O-te-TOt"/>
+                            <constraint firstItem="hNR-OX-YbO" firstAttribute="height" secondItem="FCq-4f-DoQ" secondAttribute="height" multiplier="0.111607" id="dML-hA-4hU"/>
                             <constraint firstItem="xk1-ey-5ZT" firstAttribute="trailing" secondItem="hNR-OX-YbO" secondAttribute="trailing" id="gyI-TN-fjf"/>
                         </constraints>
                     </view>
@@ -3003,7 +3003,6 @@ Görükle</string>
                                     <constraint firstAttribute="trailing" secondItem="HEQ-Mz-6b7" secondAttribute="trailing" id="a7X-T2-Aeh"/>
                                     <constraint firstItem="BmU-Cb-maQ" firstAttribute="centerY" secondItem="fud-wZ-DNX" secondAttribute="centerY" id="ftE-fd-8fZ"/>
                                     <constraint firstItem="fud-wZ-DNX" firstAttribute="centerX" secondItem="5Nh-Ux-XmW" secondAttribute="centerX" id="jZ2-9i-3Gx"/>
-                                    <constraint firstAttribute="height" constant="100" id="okq-dS-z4M"/>
                                     <constraint firstAttribute="bottom" secondItem="HEQ-Mz-6b7" secondAttribute="bottom" id="ora-ks-MaN"/>
                                 </constraints>
                             </view>
@@ -3117,6 +3116,7 @@ Görükle</string>
                             <constraint firstItem="waV-4x-8ED" firstAttribute="trailing" secondItem="w2l-Zp-w33" secondAttribute="trailing" id="GEr-3l-4pU"/>
                             <constraint firstItem="uxf-G3-f6J" firstAttribute="top" secondItem="5Nh-Ux-XmW" secondAttribute="bottom" constant="10" id="MdH-T0-BhS"/>
                             <constraint firstAttribute="bottom" secondItem="Mrm-AY-8jE" secondAttribute="bottom" id="SK5-oj-DP4"/>
+                            <constraint firstItem="5Nh-Ux-XmW" firstAttribute="height" secondItem="iaR-qM-GFd" secondAttribute="height" multiplier="0.111607" id="Soz-3g-6Af"/>
                             <constraint firstItem="waV-4x-8ED" firstAttribute="leading" secondItem="w2l-Zp-w33" secondAttribute="leading" id="YAu-q3-cNS"/>
                             <constraint firstItem="w2l-Zp-w33" firstAttribute="trailing" secondItem="waV-4x-8ED" secondAttribute="trailing" id="bDb-fa-4TV"/>
                             <constraint firstItem="w2l-Zp-w33" firstAttribute="trailing" secondItem="5Nh-Ux-XmW" secondAttribute="trailing" id="bP8-Bf-vFM"/>
@@ -3335,7 +3335,6 @@ Görükle</string>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="eOC-nR-nsO" secondAttribute="bottom" constant="10" id="3Dw-Zj-pyD"/>
                                     <constraint firstItem="yqv-a1-qPO" firstAttribute="leading" secondItem="uXg-da-eTg" secondAttribute="leading" id="7gD-AP-pBW"/>
-                                    <constraint firstAttribute="height" constant="100" id="O1z-rf-kd6"/>
                                     <constraint firstItem="yqv-a1-qPO" firstAttribute="top" secondItem="uXg-da-eTg" secondAttribute="top" id="RAa-Gl-ZQl"/>
                                     <constraint firstItem="i6F-Oq-KLZ" firstAttribute="centerY" secondItem="eOC-nR-nsO" secondAttribute="centerY" id="SvY-qk-Lij"/>
                                     <constraint firstItem="i6F-Oq-KLZ" firstAttribute="leading" secondItem="uXg-da-eTg" secondAttribute="leading" constant="20" id="UJY-jn-6VE"/>
@@ -3357,6 +3356,7 @@ Görükle</string>
                             <constraint firstItem="nBU-A4-WIb" firstAttribute="trailing" secondItem="P44-ob-gFn" secondAttribute="trailing" id="dcj-dP-DPM"/>
                             <constraint firstAttribute="bottom" secondItem="nBU-A4-WIb" secondAttribute="bottom" id="jdQ-eI-aWa"/>
                             <constraint firstItem="tF6-4R-9IZ" firstAttribute="leading" secondItem="P44-ob-gFn" secondAttribute="leading" id="pWc-I9-seU"/>
+                            <constraint firstItem="uXg-da-eTg" firstAttribute="height" secondItem="B9c-Fy-gxa" secondAttribute="height" multiplier="0.111607" id="s7n-SE-0Nc"/>
                             <constraint firstItem="uXg-da-eTg" firstAttribute="top" secondItem="B9c-Fy-gxa" secondAttribute="top" id="sOs-AL-qha"/>
                         </constraints>
                     </view>
@@ -3423,7 +3423,6 @@ Görükle</string>
                                     <constraint firstItem="HUk-UX-tIy" firstAttribute="centerY" secondItem="uwK-Ec-7jm" secondAttribute="centerY" id="3zm-Sm-MqO"/>
                                     <constraint firstItem="XTg-8W-wLp" firstAttribute="leading" secondItem="XO1-ty-3rQ" secondAttribute="leading" id="4Zc-7t-0QG"/>
                                     <constraint firstItem="XTg-8W-wLp" firstAttribute="top" secondItem="XO1-ty-3rQ" secondAttribute="top" id="5iM-kw-Lbt"/>
-                                    <constraint firstAttribute="height" constant="100" id="6UP-ad-l3U"/>
                                     <constraint firstItem="Yiq-VG-h9f" firstAttribute="centerY" secondItem="uwK-Ec-7jm" secondAttribute="centerY" id="AkA-s8-psv"/>
                                     <constraint firstItem="uwK-Ec-7jm" firstAttribute="centerX" secondItem="XO1-ty-3rQ" secondAttribute="centerX" id="Efv-aQ-ZV9"/>
                                     <constraint firstAttribute="bottom" secondItem="uwK-Ec-7jm" secondAttribute="bottom" constant="10" id="TTf-wc-QsH"/>
@@ -3562,6 +3561,7 @@ Görükle</string>
                             <constraint firstItem="XO1-ty-3rQ" firstAttribute="leading" secondItem="KyD-AU-VTc" secondAttribute="leading" id="O8F-11-yGz"/>
                             <constraint firstItem="cSC-2o-ocf" firstAttribute="trailing" secondItem="CBr-w5-9ew" secondAttribute="trailing" id="V3s-Ta-Zr4"/>
                             <constraint firstItem="Zqc-s4-F0z" firstAttribute="leading" secondItem="KyD-AU-VTc" secondAttribute="leading" constant="20" id="XLK-yc-9JH"/>
+                            <constraint firstItem="XO1-ty-3rQ" firstAttribute="height" secondItem="KyD-AU-VTc" secondAttribute="height" multiplier="0.111607" id="Xmk-yi-N0p"/>
                             <constraint firstItem="CBr-w5-9ew" firstAttribute="trailing" secondItem="Zqc-s4-F0z" secondAttribute="trailing" constant="20" id="bEg-9M-nEh"/>
                             <constraint firstItem="cSC-2o-ocf" firstAttribute="top" secondItem="Zqc-s4-F0z" secondAttribute="bottom" constant="10" id="cG8-8m-qlU"/>
                             <constraint firstItem="XO1-ty-3rQ" firstAttribute="top" secondItem="KyD-AU-VTc" secondAttribute="top" id="geP-ZM-kyu"/>
@@ -3783,7 +3783,6 @@ kabul ediyorum.</string>
                                 <constraints>
                                     <constraint firstItem="PBm-yC-eAR" firstAttribute="leading" secondItem="Mfg-dG-HFK" secondAttribute="leading" constant="20" id="Gdl-cC-zdj"/>
                                     <constraint firstItem="PBm-yC-eAR" firstAttribute="centerY" secondItem="HoC-vr-An5" secondAttribute="centerY" id="Ova-OL-KV4"/>
-                                    <constraint firstAttribute="height" constant="100" id="Tlo-zP-Vzf"/>
                                     <constraint firstItem="HoC-vr-An5" firstAttribute="centerX" secondItem="Mfg-dG-HFK" secondAttribute="centerX" id="aJ2-36-a64"/>
                                     <constraint firstAttribute="bottom" secondItem="Dhs-ph-gm9" secondAttribute="bottom" id="bl5-kP-1gf"/>
                                     <constraint firstItem="Dhs-ph-gm9" firstAttribute="top" secondItem="Mfg-dG-HFK" secondAttribute="top" id="lJT-ZW-w25"/>
@@ -3829,6 +3828,7 @@ kabul ediyorum.</string>
                             <constraint firstItem="Mfg-dG-HFK" firstAttribute="top" secondItem="11D-HX-fck" secondAttribute="top" id="m22-JI-rRK"/>
                             <constraint firstItem="MJe-ys-j21" firstAttribute="trailing" secondItem="wEz-xk-bF9" secondAttribute="trailing" constant="20" id="m5n-Ja-95O"/>
                             <constraint firstItem="wEz-xk-bF9" firstAttribute="top" secondItem="Mfg-dG-HFK" secondAttribute="bottom" constant="10" id="qnK-IZ-3Ah"/>
+                            <constraint firstItem="Mfg-dG-HFK" firstAttribute="height" secondItem="11D-HX-fck" secondAttribute="height" multiplier="0.111607" id="tb1-5s-XQU"/>
                         </constraints>
                     </view>
                     <connections>
@@ -3889,7 +3889,6 @@ kabul ediyorum.</string>
                                     <constraint firstItem="yZY-ts-fAy" firstAttribute="leading" secondItem="e6H-QW-oX2" secondAttribute="leading" id="5SV-wQ-Bza"/>
                                     <constraint firstItem="dZR-Ec-OBN" firstAttribute="centerY" secondItem="Oin-zT-Wwz" secondAttribute="centerY" id="Gcw-eg-gmv"/>
                                     <constraint firstAttribute="bottom" secondItem="yZY-ts-fAy" secondAttribute="bottom" id="ZDV-TZ-RZK"/>
-                                    <constraint firstAttribute="height" constant="100" id="b5r-0I-RZy"/>
                                     <constraint firstAttribute="trailing" secondItem="yZY-ts-fAy" secondAttribute="trailing" id="ht8-HV-NG5"/>
                                     <constraint firstItem="dZR-Ec-OBN" firstAttribute="centerX" secondItem="e6H-QW-oX2" secondAttribute="centerX" id="l4M-IP-P6L"/>
                                 </constraints>
@@ -4147,6 +4146,7 @@ Moleskin Seatle Gömlek</string>
                         <color key="backgroundColor" red="0.93714088200000001" green="0.9372404218" blue="0.94122511149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="SZc-iM-vrM" secondAttribute="bottom" id="3k4-cP-YNg"/>
+                            <constraint firstItem="e6H-QW-oX2" firstAttribute="height" secondItem="nD1-Nc-ydB" secondAttribute="height" multiplier="0.111607" id="4xO-fz-RS2"/>
                             <constraint firstItem="ASm-Qa-VD0" firstAttribute="trailing" secondItem="e6H-QW-oX2" secondAttribute="trailing" id="9Zg-Lh-Q4h"/>
                             <constraint firstItem="SZc-iM-vrM" firstAttribute="leading" secondItem="ASm-Qa-VD0" secondAttribute="leading" id="Beb-Oo-F3K"/>
                             <constraint firstItem="ciE-rm-dtf" firstAttribute="leading" secondItem="ASm-Qa-VD0" secondAttribute="leading" id="I9J-pV-kTH"/>
@@ -4349,7 +4349,6 @@ Moleskin Seatle Gömlek</string>
                                     <constraint firstItem="05r-Kz-Scm" firstAttribute="leading" secondItem="Up7-4m-Rbw" secondAttribute="leading" id="Abh-lO-LyA"/>
                                     <constraint firstItem="05r-Kz-Scm" firstAttribute="top" secondItem="Up7-4m-Rbw" secondAttribute="top" id="B98-e6-A4S"/>
                                     <constraint firstItem="hSg-mE-DWq" firstAttribute="centerY" secondItem="sHt-wj-3m6" secondAttribute="centerY" id="Us6-n7-Iwb"/>
-                                    <constraint firstAttribute="height" constant="100" id="bJY-vf-ia4"/>
                                     <constraint firstAttribute="trailing" secondItem="05r-Kz-Scm" secondAttribute="trailing" id="doF-SN-9eN"/>
                                     <constraint firstAttribute="bottom" secondItem="sHt-wj-3m6" secondAttribute="bottom" constant="10" id="odm-HF-FXN"/>
                                     <constraint firstAttribute="bottom" secondItem="05r-Kz-Scm" secondAttribute="bottom" id="tPz-Aw-bPh"/>
@@ -4510,6 +4509,7 @@ Moleskin Seatle Gömlek</string>
                         <constraints>
                             <constraint firstItem="GNc-9d-Bel" firstAttribute="trailing" secondItem="J45-rn-sE8" secondAttribute="trailing" id="4Cp-8x-0uu"/>
                             <constraint firstItem="Up7-4m-Rbw" firstAttribute="leading" secondItem="SYL-1g-72V" secondAttribute="leading" id="Hm8-DY-sLB"/>
+                            <constraint firstItem="Up7-4m-Rbw" firstAttribute="height" secondItem="SYL-1g-72V" secondAttribute="height" multiplier="0.111607" id="K1P-GW-Ejv"/>
                             <constraint firstAttribute="bottom" secondItem="J45-rn-sE8" secondAttribute="bottom" id="RFS-L5-PUc"/>
                             <constraint firstItem="J45-rn-sE8" firstAttribute="top" secondItem="Up7-4m-Rbw" secondAttribute="bottom" constant="10" id="W3B-Sv-K47"/>
                             <constraint firstItem="Up7-4m-Rbw" firstAttribute="top" secondItem="SYL-1g-72V" secondAttribute="top" id="YJ4-mh-vwL"/>
@@ -4561,7 +4561,6 @@ Moleskin Seatle Gömlek</string>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstItem="7Mt-VZ-E7a" firstAttribute="centerX" secondItem="xHR-XG-3DZ" secondAttribute="centerX" id="6XK-L1-cGC"/>
-                                    <constraint firstAttribute="height" constant="100" id="Jyw-bD-yJH"/>
                                     <constraint firstAttribute="trailing" secondItem="1mn-Yi-dmC" secondAttribute="trailing" id="KPF-Te-Nlv"/>
                                     <constraint firstItem="1mn-Yi-dmC" firstAttribute="leading" secondItem="xHR-XG-3DZ" secondAttribute="leading" id="W4Y-se-HXZ"/>
                                     <constraint firstItem="ctc-ce-JE0" firstAttribute="centerY" secondItem="7Mt-VZ-E7a" secondAttribute="centerY" id="Yfp-5e-MBK"/>
@@ -4938,6 +4937,7 @@ Moleskin Seatle Gömlek</string>
                             <constraint firstItem="F9n-Vm-dFN" firstAttribute="leading" secondItem="KAc-C8-Sbf" secondAttribute="trailing" constant="50" id="UEF-Om-VmE"/>
                             <constraint firstItem="KB9-6H-pAX" firstAttribute="trailing" secondItem="1sR-xz-peg" secondAttribute="trailing" id="Uco-3Z-EmM"/>
                             <constraint firstItem="KAc-C8-Sbf" firstAttribute="leading" secondItem="1sR-xz-peg" secondAttribute="leading" constant="50" id="V8L-gq-8nT"/>
+                            <constraint firstItem="xHR-XG-3DZ" firstAttribute="height" secondItem="Aea-At-4MI" secondAttribute="height" multiplier="0.111607" id="Ydw-LQ-sT7"/>
                             <constraint firstItem="8m7-en-tGC" firstAttribute="leading" secondItem="Aea-At-4MI" secondAttribute="leading" constant="20" id="bFb-bk-OFg"/>
                             <constraint firstItem="KB9-6H-pAX" firstAttribute="leading" secondItem="1sR-xz-peg" secondAttribute="leading" id="h08-pa-yrE"/>
                             <constraint firstItem="F9n-Vm-dFN" firstAttribute="top" secondItem="uay-ki-UWW" secondAttribute="top" id="hLW-B0-sgb"/>
@@ -5210,7 +5210,7 @@ Moleskin Seatle Gömlek</string>
                                             <action selector="confirmAndPayButtonPressed:" destination="kZF-WZ-mjQ" eventType="touchUpInside" id="8g4-Vb-vsS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7bV-N6-nZY">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7bV-N6-nZY">
                                         <rect key="frame" x="10" y="5" width="394" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5264,7 +5264,6 @@ Moleskin Seatle Gömlek</string>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="5cM-TY-daK"/>
                                     <constraint firstItem="qgU-Za-gff" firstAttribute="leading" secondItem="ZP3-Ua-aN3" secondAttribute="leading" constant="20" id="8t0-4I-Neb"/>
                                     <constraint firstItem="8LW-wb-bBJ" firstAttribute="top" secondItem="ZP3-Ua-aN3" secondAttribute="top" id="O51-KX-qNg"/>
                                     <constraint firstAttribute="trailing" secondItem="8LW-wb-bBJ" secondAttribute="trailing" id="VJv-Sj-e1x"/>
@@ -5289,6 +5288,7 @@ Moleskin Seatle Gömlek</string>
                             <constraint firstItem="BdT-fW-Cyj" firstAttribute="trailing" secondItem="7bS-uC-yfC" secondAttribute="trailing" id="dxK-nS-3Yu"/>
                             <constraint firstItem="BdT-fW-Cyj" firstAttribute="leading" secondItem="7bS-uC-yfC" secondAttribute="leading" id="hK4-Vc-fqH"/>
                             <constraint firstItem="BdT-fW-Cyj" firstAttribute="top" secondItem="ZP3-Ua-aN3" secondAttribute="bottom" id="pIC-ID-kXn"/>
+                            <constraint firstItem="ZP3-Ua-aN3" firstAttribute="height" secondItem="JYW-0x-dTP" secondAttribute="height" multiplier="0.111607" id="uhq-CX-BI4"/>
                         </constraints>
                     </view>
                     <connections>
@@ -5340,7 +5340,6 @@ Moleskin Seatle Gömlek</string>
                                     <constraint firstAttribute="bottom" secondItem="BWP-9H-Peu" secondAttribute="bottom" id="heT-22-wG9"/>
                                     <constraint firstItem="x9w-Qc-zgd" firstAttribute="centerX" secondItem="GJZ-WJ-lfl" secondAttribute="centerX" id="jaD-Po-8x7"/>
                                     <constraint firstAttribute="bottom" secondItem="x9w-Qc-zgd" secondAttribute="bottom" constant="10" id="pNJ-gV-ROs"/>
-                                    <constraint firstAttribute="height" constant="100" id="vjf-UY-XAP"/>
                                     <constraint firstItem="BWP-9H-Peu" firstAttribute="leading" secondItem="GJZ-WJ-lfl" secondAttribute="leading" id="yQE-wM-j8w"/>
                                 </constraints>
                             </view>
@@ -5497,7 +5496,7 @@ Moleskin Seatle Gömlek</string>
                                             <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wook Web" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jP-qP-u81">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wook Web" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5jP-qP-u81">
                                         <rect key="frame" x="140" y="87.5" width="254" height="25"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -5527,6 +5526,7 @@ Moleskin Seatle Gömlek</string>
                             <constraint firstItem="vIa-AX-OYK" firstAttribute="leading" secondItem="9HV-YA-7vU" secondAttribute="leading" id="QWy-jc-yOg"/>
                             <constraint firstItem="vIa-AX-OYK" firstAttribute="top" secondItem="GJZ-WJ-lfl" secondAttribute="bottom" id="Xfa-mB-hv3"/>
                             <constraint firstAttribute="bottom" secondItem="vIa-AX-OYK" secondAttribute="bottom" id="ZEL-TZ-bOV"/>
+                            <constraint firstItem="GJZ-WJ-lfl" firstAttribute="height" secondItem="r0I-KX-6Me" secondAttribute="height" multiplier="0.111607" id="ez7-iX-vaS"/>
                             <constraint firstItem="GJZ-WJ-lfl" firstAttribute="top" secondItem="r0I-KX-6Me" secondAttribute="top" id="nG8-GS-Zpp"/>
                             <constraint firstAttribute="trailing" secondItem="GJZ-WJ-lfl" secondAttribute="trailing" id="vUd-DG-i1Z"/>
                             <constraint firstItem="GJZ-WJ-lfl" firstAttribute="leading" secondItem="9HV-YA-7vU" secondAttribute="leading" id="za3-hr-E3U"/>
@@ -5595,7 +5595,6 @@ Moleskin Seatle Gömlek</string>
                                     <constraint firstItem="TFb-Ib-ijn" firstAttribute="centerY" secondItem="bTp-5K-XFC" secondAttribute="centerY" id="MAg-mC-y1y"/>
                                     <constraint firstAttribute="bottom" secondItem="bTp-5K-XFC" secondAttribute="bottom" constant="10" id="PfA-pC-YfY"/>
                                     <constraint firstItem="FUI-ay-WJs" firstAttribute="centerY" secondItem="bTp-5K-XFC" secondAttribute="centerY" id="QZR-kA-w68"/>
-                                    <constraint firstAttribute="height" constant="100" id="dbG-yp-A2Q"/>
                                     <constraint firstItem="AjT-FT-6hw" firstAttribute="leading" secondItem="J1m-ut-eLu" secondAttribute="leading" id="ohW-J4-lty"/>
                                     <constraint firstItem="TFb-Ib-ijn" firstAttribute="leading" secondItem="J1m-ut-eLu" secondAttribute="leading" constant="20" id="pDZ-gZ-ktv"/>
                                     <constraint firstAttribute="trailing" secondItem="FUI-ay-WJs" secondAttribute="trailing" constant="20" id="r29-Xi-DtB"/>
@@ -5670,6 +5669,7 @@ Moleskin Seatle Gömlek</string>
                             <constraint firstItem="mXu-0q-O3p" firstAttribute="top" secondItem="J1m-ut-eLu" secondAttribute="bottom" constant="10" id="euF-vy-ERn"/>
                             <constraint firstItem="J1m-ut-eLu" firstAttribute="leading" secondItem="LWo-fU-Ors" secondAttribute="leading" id="lO8-XK-BUd"/>
                             <constraint firstItem="mXu-0q-O3p" firstAttribute="leading" secondItem="A1n-ya-vYg" secondAttribute="leading" id="lYd-bB-1yD"/>
+                            <constraint firstItem="J1m-ut-eLu" firstAttribute="height" secondItem="LWo-fU-Ors" secondAttribute="height" multiplier="0.111607" id="p71-ck-w1l"/>
                         </constraints>
                     </view>
                     <connections>
@@ -5732,7 +5732,6 @@ Moleskin Seatle Gömlek</string>
                                 <constraints>
                                     <constraint firstItem="8nW-hg-tOi" firstAttribute="top" secondItem="xJe-qR-oBH" secondAttribute="top" id="3BI-D3-Hdj"/>
                                     <constraint firstAttribute="trailing" secondItem="8nW-hg-tOi" secondAttribute="trailing" id="6PZ-Et-RKH"/>
-                                    <constraint firstAttribute="height" constant="100" id="9sa-cy-kQW"/>
                                     <constraint firstAttribute="bottom" secondItem="Wus-L5-0ct" secondAttribute="bottom" constant="10" id="WjU-lD-a7j"/>
                                     <constraint firstItem="Wus-L5-0ct" firstAttribute="centerX" secondItem="xJe-qR-oBH" secondAttribute="centerX" id="ZNG-BU-JRM"/>
                                     <constraint firstItem="3PL-z1-XUj" firstAttribute="leading" secondItem="Wus-L5-0ct" secondAttribute="trailing" constant="10" id="aD8-Q1-tG5"/>
@@ -5816,6 +5815,7 @@ Moleskin Seatle Gömlek</string>
                             <constraint firstItem="xJe-qR-oBH" firstAttribute="leading" secondItem="E14-yI-3ah" secondAttribute="leading" id="TZb-jU-yjQ"/>
                             <constraint firstAttribute="trailing" secondItem="sXp-cm-6eq" secondAttribute="trailing" id="Wsf-Yp-1ax"/>
                             <constraint firstItem="zlP-07-8pV" firstAttribute="leading" secondItem="ViA-VB-h10" secondAttribute="leading" id="esL-op-aeg"/>
+                            <constraint firstItem="xJe-qR-oBH" firstAttribute="height" secondItem="E14-yI-3ah" secondAttribute="height" multiplier="0.111607" id="eyq-Qo-JI4"/>
                             <constraint firstItem="ViA-VB-h10" firstAttribute="trailing" secondItem="xJe-qR-oBH" secondAttribute="trailing" id="kIZ-oa-ucv"/>
                             <constraint firstAttribute="bottom" secondItem="zlP-07-8pV" secondAttribute="bottom" id="lJ1-uu-Nwh"/>
                             <constraint firstItem="sXp-cm-6eq" firstAttribute="leading" secondItem="ViA-VB-h10" secondAttribute="leading" id="qjy-0Q-Vgy"/>
@@ -5869,7 +5869,6 @@ Moleskin Seatle Gömlek</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="rgb-Qy-fsS" secondAttribute="trailing" constant="20" id="BLB-TD-0gB"/>
-                                    <constraint firstAttribute="height" constant="130" id="E9J-dN-bDR"/>
                                     <constraint firstAttribute="bottom" secondItem="rgb-Qy-fsS" secondAttribute="bottom" constant="10" id="P8d-Mi-nj3"/>
                                     <constraint firstItem="rgb-Qy-fsS" firstAttribute="leading" secondItem="g2O-CU-Je7" secondAttribute="leading" constant="20" id="TO2-O8-534"/>
                                 </constraints>
@@ -6019,6 +6018,7 @@ Moleskin Seatle Gömlek</string>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="g2O-CU-Je7" firstAttribute="leading" secondItem="FOj-AV-o4c" secondAttribute="leading" id="3FW-8a-IQK"/>
+                            <constraint firstItem="g2O-CU-Je7" firstAttribute="height" secondItem="FOj-AV-o4c" secondAttribute="height" multiplier="0.145089" id="3J1-Dk-zdP"/>
                             <constraint firstItem="kHK-OL-aZC" firstAttribute="trailing" secondItem="g2O-CU-Je7" secondAttribute="trailing" id="6il-hj-JAc"/>
                             <constraint firstItem="gmV-30-Y5I" firstAttribute="top" secondItem="g2O-CU-Je7" secondAttribute="bottom" constant="10" id="8gw-q2-UWn"/>
                             <constraint firstItem="gmV-30-Y5I" firstAttribute="trailing" secondItem="kHK-OL-aZC" secondAttribute="trailing" id="CAE-8g-b2L"/>
@@ -6500,10 +6500,10 @@ Moleskin Seatle Gömlek</string>
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Auw-1Z-Nd7">
-                                <rect key="frame" x="0.0" y="826" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="836" width="414" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTJ-Ux-LAL">
-                                        <rect key="frame" x="207" y="20" width="207" height="50"/>
+                                        <rect key="frame" x="207" y="0.0" width="207" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.44682055710000002" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Sepete Ekle">
@@ -6513,15 +6513,15 @@ Moleskin Seatle Gömlek</string>
                                             <action selector="addToCartButtonPressed:" destination="GyA-Tw-FtD" eventType="touchUpInside" id="h6T-lk-ZRd"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="iNg-7k-4mt">
-                                        <rect key="frame" x="10" y="20" width="187" height="40"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iNg-7k-4mt">
+                                        <rect key="frame" x="20" y="5" width="167" height="45"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKk-hO-vdt">
-                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="45"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="120₺">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.25499471028645837" green="0.25499471028645837" blue="0.25499471028645837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" metaFont="system" size="16"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             <integer key="NSStrikethrough" value="1"/>
@@ -6530,29 +6530,26 @@ Moleskin Seatle Gömlek</string>
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqA-W6-P1S">
-                                                <rect key="frame" x="93.5" y="0.0" width="93.5" height="40"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="F1W-6K-01z">
+                                                <rect key="frame" x="46" y="0.0" width="121" height="45"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90,50 ₺" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ecz-fK-dDq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="40"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sepette %10 indirim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ELU-Vt-gJg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="121" height="20"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90,50 ₺" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ecz-fK-dDq">
+                                                        <rect key="frame" x="0.0" y="25" width="121" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                         <color key="textColor" red="0.91764705879999997" green="0.4431372549" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.93603739109999995" green="0.93603739109999995" blue="0.93603739109999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstItem="ecz-fK-dDq" firstAttribute="leading" secondItem="gqA-W6-P1S" secondAttribute="leading" id="VwS-Zq-dMu"/>
-                                                    <constraint firstItem="ecz-fK-dDq" firstAttribute="top" secondItem="gqA-W6-P1S" secondAttribute="top" id="Xmr-T0-HzQ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ecz-fK-dDq" secondAttribute="trailing" id="jc3-vw-sTc"/>
-                                                    <constraint firstAttribute="height" constant="40" id="kaq-z3-n6j"/>
-                                                    <constraint firstAttribute="bottom" secondItem="ecz-fK-dDq" secondAttribute="bottom" id="wOi-Wa-ip6"/>
-                                                </constraints>
-                                            </view>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="VKk-hO-vdt" secondAttribute="bottom" id="MN1-TL-x9v"/>
-                                            <constraint firstItem="gqA-W6-P1S" firstAttribute="leading" secondItem="VKk-hO-vdt" secondAttribute="trailing" id="fUh-O0-3eL"/>
                                             <constraint firstItem="VKk-hO-vdt" firstAttribute="leading" secondItem="iNg-7k-4mt" secondAttribute="leading" id="oLt-6U-Q7o"/>
                                             <constraint firstItem="VKk-hO-vdt" firstAttribute="top" secondItem="iNg-7k-4mt" secondAttribute="top" id="wjq-Fg-gbF"/>
                                         </constraints>
@@ -6561,14 +6558,14 @@ Moleskin Seatle Gömlek</string>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="xTJ-Ux-LAL" secondAttribute="trailing" id="1VW-x9-49n"/>
-                                    <constraint firstItem="xTJ-Ux-LAL" firstAttribute="top" secondItem="Auw-1Z-Nd7" secondAttribute="top" constant="20" id="4EQ-3a-Rl4"/>
-                                    <constraint firstAttribute="height" constant="70" id="5Dg-pf-bHM"/>
-                                    <constraint firstItem="iNg-7k-4mt" firstAttribute="leading" secondItem="Auw-1Z-Nd7" secondAttribute="leading" constant="10" id="Tyj-8d-0Rs"/>
+                                    <constraint firstItem="xTJ-Ux-LAL" firstAttribute="top" secondItem="Auw-1Z-Nd7" secondAttribute="top" id="4EQ-3a-Rl4"/>
+                                    <constraint firstAttribute="height" constant="60" id="5Dg-pf-bHM"/>
+                                    <constraint firstItem="iNg-7k-4mt" firstAttribute="leading" secondItem="Auw-1Z-Nd7" secondAttribute="leading" constant="20" id="Tyj-8d-0Rs"/>
+                                    <constraint firstItem="xTJ-Ux-LAL" firstAttribute="leading" secondItem="iNg-7k-4mt" secondAttribute="trailing" constant="20" id="d6G-gI-1AL"/>
                                     <constraint firstItem="xTJ-Ux-LAL" firstAttribute="width" secondItem="Auw-1Z-Nd7" secondAttribute="width" multiplier="0.5" id="jDf-zs-1id"/>
-                                    <constraint firstItem="iNg-7k-4mt" firstAttribute="top" secondItem="Auw-1Z-Nd7" secondAttribute="top" constant="20" id="lgB-6J-4d5"/>
+                                    <constraint firstItem="iNg-7k-4mt" firstAttribute="top" secondItem="Auw-1Z-Nd7" secondAttribute="top" constant="5" id="lgB-6J-4d5"/>
                                     <constraint firstAttribute="bottom" secondItem="iNg-7k-4mt" secondAttribute="bottom" constant="10" id="ui5-II-2HB"/>
                                     <constraint firstAttribute="bottom" secondItem="xTJ-Ux-LAL" secondAttribute="bottom" id="x60-8C-XFA"/>
-                                    <constraint firstItem="xTJ-Ux-LAL" firstAttribute="leading" secondItem="iNg-7k-4mt" secondAttribute="trailing" constant="10" id="y7O-H1-WR1"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wV0-r7-HsE">
@@ -6598,7 +6595,6 @@ Moleskin Seatle Gömlek</string>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="2nM-nM-s7v"/>
                                     <constraint firstAttribute="bottom" secondItem="mQV-Rl-wRs" secondAttribute="bottom" constant="10" id="3qQ-GI-9xq"/>
                                     <constraint firstItem="WDS-VM-R4q" firstAttribute="top" secondItem="wV0-r7-HsE" secondAttribute="top" id="GYD-bd-9jA"/>
                                     <constraint firstAttribute="trailing" secondItem="WDS-VM-R4q" secondAttribute="trailing" id="HBF-Ld-Xap"/>
@@ -6620,6 +6616,7 @@ Moleskin Seatle Gömlek</string>
                             <constraint firstItem="wV0-r7-HsE" firstAttribute="trailing" secondItem="Ksq-1N-ifl" secondAttribute="trailing" id="c76-Ea-7XF"/>
                             <constraint firstItem="Ksq-1N-ifl" firstAttribute="trailing" secondItem="Auw-1Z-Nd7" secondAttribute="trailing" id="cKx-Rc-QS7"/>
                             <constraint firstItem="Auw-1Z-Nd7" firstAttribute="leading" secondItem="Ksq-1N-ifl" secondAttribute="leading" id="gfF-UP-CCd"/>
+                            <constraint firstItem="wV0-r7-HsE" firstAttribute="height" secondItem="Ngg-Gm-ywK" secondAttribute="height" multiplier="0.111607" id="hOM-LO-hOL"/>
                             <constraint firstItem="Hl5-b0-RX7" firstAttribute="trailing" secondItem="Ksq-1N-ifl" secondAttribute="trailing" id="pEC-Os-Toa"/>
                             <constraint firstItem="Hl5-b0-RX7" firstAttribute="leading" secondItem="Ksq-1N-ifl" secondAttribute="leading" id="ruT-U9-zz8"/>
                             <constraint firstAttribute="bottom" secondItem="Auw-1Z-Nd7" secondAttribute="bottom" id="uc8-58-nvJ"/>
@@ -6639,11 +6636,11 @@ Moleskin Seatle Gömlek</string>
                         <outlet property="pageIndicatorPageControl" destination="7RF-aI-xX2" id="PGL-2l-RgJ"/>
                         <outlet property="previousPriceLabel" destination="VKk-hO-vdt" id="wPQ-gv-Lbl"/>
                         <outlet property="priceLabel" destination="ecz-fK-dDq" id="dzs-PL-11P"/>
-                        <outlet property="priceView" destination="gqA-W6-P1S" id="Xqz-Fd-R1l"/>
                         <outlet property="productColorCollectionView" destination="t93-Mg-ASs" id="Axh-wV-Ip3"/>
                         <outlet property="productCommentTableView" destination="VRc-qO-hh2" id="z5W-PS-hT6"/>
                         <outlet property="productDescriptionLabel" destination="53L-Hj-M8c" id="hCl-G8-7C4"/>
                         <outlet property="productsYouMayLikeCollectionView" destination="UiU-4n-I3W" id="vtB-sx-tvw"/>
+                        <outlet property="salePersentageLabel" destination="ELU-Vt-gJg" id="H62-Fe-HWS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPx-le-sRL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -7037,7 +7034,6 @@ Moleskin Seatle Gömlek</string>
                                     <constraint firstItem="W7A-fO-eJP" firstAttribute="leading" secondItem="N3c-ff-ufg" secondAttribute="leading" constant="20" id="9Qb-AY-3MW"/>
                                     <constraint firstAttribute="bottom" secondItem="t98-eD-2z5" secondAttribute="bottom" constant="10" id="LpQ-rH-ftf"/>
                                     <constraint firstItem="W7A-fO-eJP" firstAttribute="centerY" secondItem="t98-eD-2z5" secondAttribute="centerY" id="VEm-TS-93N"/>
-                                    <constraint firstAttribute="height" constant="100" id="bZJ-bH-wC8"/>
                                     <constraint firstAttribute="trailing" secondItem="XCr-YP-W8M" secondAttribute="trailing" id="hXO-fZ-ceT"/>
                                     <constraint firstItem="XCr-YP-W8M" firstAttribute="top" secondItem="N3c-ff-ufg" secondAttribute="top" id="jFb-SN-wwt"/>
                                     <constraint firstItem="XCr-YP-W8M" firstAttribute="leading" secondItem="N3c-ff-ufg" secondAttribute="leading" id="koa-ji-Cl9"/>
@@ -7124,6 +7120,7 @@ Moleskin Seatle Gömlek</string>
                             <constraint firstAttribute="bottom" secondItem="QlJ-x1-fF3" secondAttribute="bottom" id="ODr-3w-YOb"/>
                             <constraint firstItem="QlJ-x1-fF3" firstAttribute="leading" secondItem="vsH-LK-nxC" secondAttribute="leading" id="Uaz-mW-Jde"/>
                             <constraint firstItem="vsH-LK-nxC" firstAttribute="trailing" secondItem="QlJ-x1-fF3" secondAttribute="trailing" id="mHI-zJ-y9N"/>
+                            <constraint firstItem="N3c-ff-ufg" firstAttribute="height" secondItem="Fg3-B1-YSI" secondAttribute="height" multiplier="0.111607" id="rOi-SQ-YHv"/>
                             <constraint firstItem="vsH-LK-nxC" firstAttribute="trailing" secondItem="N3c-ff-ufg" secondAttribute="trailing" id="u4C-KQ-kSk"/>
                             <constraint firstItem="7lm-Vw-TA1" firstAttribute="leading" secondItem="vsH-LK-nxC" secondAttribute="leading" constant="20" id="vX5-5D-GZC"/>
                             <constraint firstItem="N3c-ff-ufg" firstAttribute="top" secondItem="Fg3-B1-YSI" secondAttribute="top" id="wsY-GM-eia"/>
@@ -7287,13 +7284,13 @@ Moleskin Seatle Gömlek</string>
                                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_HomeUnselected" translatesAutoresizingMaskIntoConstraints="NO" id="V8U-kp-kMt">
-                                                                <rect key="frame" x="2" y="2" width="74.5" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="74.5" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="s4d-Un-pGv"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ana Sayfa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15P-MD-Efc">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="74.5" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -7301,7 +7298,7 @@ Moleskin Seatle Gömlek</string>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="V8U-kp-kMt" firstAttribute="top" secondItem="Wk7-T9-apS" secondAttribute="top" constant="2" id="FjZ-js-fJn"/>
+                                                            <constraint firstItem="V8U-kp-kMt" firstAttribute="top" secondItem="Wk7-T9-apS" secondAttribute="top" constant="6" id="FjZ-js-fJn"/>
                                                             <constraint firstItem="V8U-kp-kMt" firstAttribute="leading" secondItem="Wk7-T9-apS" secondAttribute="leading" constant="2" id="G54-Eq-bhO"/>
                                                             <constraint firstItem="15P-MD-Efc" firstAttribute="leading" secondItem="Wk7-T9-apS" secondAttribute="leading" constant="2" id="eno-7p-Awa"/>
                                                             <constraint firstItem="15P-MD-Efc" firstAttribute="top" secondItem="V8U-kp-kMt" secondAttribute="bottom" constant="2" id="qHT-SC-ry0"/>
@@ -7313,13 +7310,13 @@ Moleskin Seatle Gömlek</string>
                                                         <rect key="frame" x="78.5" y="0.0" width="79" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_categorySelected" translatesAutoresizingMaskIntoConstraints="NO" id="1FC-Ya-iVS">
-                                                                <rect key="frame" x="2" y="2" width="75" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="75" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="3N0-er-nbg"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAV-Pn-gGj">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="75" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="1" green="0.44705882352941173" blue="0.0" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -7332,7 +7329,7 @@ Moleskin Seatle Gömlek</string>
                                                             <constraint firstItem="LAV-Pn-gGj" firstAttribute="leading" secondItem="Cyy-Fk-ABR" secondAttribute="leading" constant="2" id="DR5-0v-CfN"/>
                                                             <constraint firstAttribute="trailing" secondItem="1FC-Ya-iVS" secondAttribute="trailing" constant="2" id="Dht-U6-WH6"/>
                                                             <constraint firstItem="LAV-Pn-gGj" firstAttribute="top" secondItem="1FC-Ya-iVS" secondAttribute="bottom" constant="2" id="SYa-0x-4jR"/>
-                                                            <constraint firstItem="1FC-Ya-iVS" firstAttribute="top" secondItem="Cyy-Fk-ABR" secondAttribute="top" constant="2" id="ndH-TD-Ruh"/>
+                                                            <constraint firstItem="1FC-Ya-iVS" firstAttribute="top" secondItem="Cyy-Fk-ABR" secondAttribute="top" constant="6" id="ndH-TD-Ruh"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -7344,13 +7341,13 @@ Moleskin Seatle Gömlek</string>
                                                         <rect key="frame" x="0.0" y="0.0" width="79" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favTabbar" translatesAutoresizingMaskIntoConstraints="NO" id="bXl-F7-v2v">
-                                                                <rect key="frame" x="2" y="2" width="75" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="75" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="tXQ-Hq-l6U"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX9-Cj-Ugx">
-                                                                <rect key="frame" x="2" y="24" width="75" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="75" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -7363,20 +7360,20 @@ Moleskin Seatle Gömlek</string>
                                                             <constraint firstItem="WX9-Cj-Ugx" firstAttribute="leading" secondItem="vGA-3R-UHf" secondAttribute="leading" constant="2" id="Cjx-5K-z6z"/>
                                                             <constraint firstItem="bXl-F7-v2v" firstAttribute="leading" secondItem="vGA-3R-UHf" secondAttribute="leading" constant="2" id="LLo-tV-JyG"/>
                                                             <constraint firstItem="WX9-Cj-Ugx" firstAttribute="top" secondItem="bXl-F7-v2v" secondAttribute="bottom" constant="2" id="cNv-H4-JlJ"/>
-                                                            <constraint firstItem="bXl-F7-v2v" firstAttribute="top" secondItem="vGA-3R-UHf" secondAttribute="top" constant="2" id="yXe-iB-lx9"/>
+                                                            <constraint firstItem="bXl-F7-v2v" firstAttribute="top" secondItem="vGA-3R-UHf" secondAttribute="top" constant="6" id="yXe-iB-lx9"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvO-X0-69p">
                                                         <rect key="frame" x="79" y="0.0" width="78.5" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_person" translatesAutoresizingMaskIntoConstraints="NO" id="oVQ-Vw-W0b">
-                                                                <rect key="frame" x="2" y="2" width="74.5" height="20"/>
+                                                                <rect key="frame" x="2" y="6" width="74.5" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="ue9-XH-U3w"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesabım" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJq-2A-Mru">
-                                                                <rect key="frame" x="2" y="24" width="74.5" height="12.5"/>
+                                                                <rect key="frame" x="2" y="28" width="74.5" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="10"/>
                                                                 <color key="textColor" red="0.60784313729999995" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -7386,7 +7383,7 @@ Moleskin Seatle Gömlek</string>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="JJq-2A-Mru" secondAttribute="trailing" constant="2" id="0CS-hb-BtF"/>
                                                             <constraint firstItem="oVQ-Vw-W0b" firstAttribute="leading" secondItem="bvO-X0-69p" secondAttribute="leading" constant="2" id="TbH-iY-KWO"/>
-                                                            <constraint firstItem="oVQ-Vw-W0b" firstAttribute="top" secondItem="bvO-X0-69p" secondAttribute="top" constant="2" id="Td7-nb-egf"/>
+                                                            <constraint firstItem="oVQ-Vw-W0b" firstAttribute="top" secondItem="bvO-X0-69p" secondAttribute="top" constant="6" id="Td7-nb-egf"/>
                                                             <constraint firstItem="JJq-2A-Mru" firstAttribute="top" secondItem="oVQ-Vw-W0b" secondAttribute="bottom" constant="2" id="W9L-VL-xch"/>
                                                             <constraint firstAttribute="trailing" secondItem="oVQ-Vw-W0b" secondAttribute="trailing" constant="2" id="dsf-QC-B1v"/>
                                                             <constraint firstItem="JJq-2A-Mru" firstAttribute="leading" secondItem="bvO-X0-69p" secondAttribute="leading" constant="2" id="hxo-At-Eut"/>
@@ -7489,7 +7486,6 @@ Moleskin Seatle Gömlek</string>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="6E1-qu-Klg"/>
                                     <constraint firstItem="2ie-n3-y0Z" firstAttribute="top" secondItem="xg1-l6-gn7" secondAttribute="top" id="Dv0-2w-tJX"/>
                                     <constraint firstItem="eGX-3x-Thm" firstAttribute="leading" secondItem="xg1-l6-gn7" secondAttribute="leading" constant="20" id="EAS-lq-geW"/>
                                     <constraint firstAttribute="bottom" secondItem="tHx-0b-lVR" secondAttribute="bottom" constant="10" id="GDH-FF-moN"/>
@@ -7525,6 +7521,7 @@ Moleskin Seatle Gömlek</string>
                             <constraint firstItem="xhv-vk-Awn" firstAttribute="leading" secondItem="lDX-4z-3KQ" secondAttribute="leading" id="eIc-Ff-acd"/>
                             <constraint firstItem="Y0g-6U-LAw" firstAttribute="leading" secondItem="lDX-4z-3KQ" secondAttribute="leading" id="gDe-u9-WmU"/>
                             <constraint firstAttribute="bottom" secondItem="xhv-vk-Awn" secondAttribute="bottom" id="gWI-EJ-fxm"/>
+                            <constraint firstItem="xg1-l6-gn7" firstAttribute="height" secondItem="lfT-jp-nfZ" secondAttribute="height" multiplier="0.111607" id="qx9-mm-YS9"/>
                             <constraint firstItem="xg1-l6-gn7" firstAttribute="top" secondItem="lfT-jp-nfZ" secondAttribute="top" id="xAk-hD-y6a"/>
                         </constraints>
                     </view>
@@ -7542,7 +7539,7 @@ Moleskin Seatle Gömlek</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U4C-0y-oMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6838" y="4842"/>
+            <point key="canvasLocation" x="6837.68115942029" y="4841.5178571428569"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="8Ju-bY-VcO">

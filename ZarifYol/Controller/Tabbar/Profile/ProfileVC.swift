@@ -28,13 +28,13 @@ class ProfileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //MARK:- DELEGATES
         profileMenuTableView.dataSource = self
         profileMenuTableView.delegate = self
         
         setupLayouts()
         setupSideMenu()
-        
 
         addGestureRecognizer(view: myCartTabbarView)
         addGestureRecognizer(view: favouriteTabbarView)
@@ -71,7 +71,6 @@ class ProfileVC: UIViewController {
             break
         }
     }
-    
 
     func setupLayouts() {
         

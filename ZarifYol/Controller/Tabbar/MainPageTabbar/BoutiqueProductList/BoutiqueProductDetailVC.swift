@@ -25,7 +25,7 @@ class BoutiqueProductDetailVC: UIViewController {
     @IBOutlet weak var productsYouMayLikeCollectionView: UICollectionView!
     @IBOutlet weak var productCommentTableView: UITableView!
     @IBOutlet weak var commentTableViewHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var priceView: UIView!
+    @IBOutlet weak var salePersentageLabel: UILabel!
     @IBOutlet weak var addToCartButton: UIButton!
     @IBOutlet weak var bottomView: UIView!
     
@@ -36,6 +36,7 @@ class BoutiqueProductDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //MARK:- DELEGATE
         boutiqueProductDetailImageCollectionView.dataSource = self
         boutiqueProductDetailImageCollectionView.delegate = self
@@ -75,9 +76,9 @@ class BoutiqueProductDetailVC: UIViewController {
         chooseQuantityDropDown.arrowColor = .orange
         chooseQuantityDropDown.checkMarkEnabled = false
         
-        priceView.layer.cornerRadius = 10
+        //priceView.layer.cornerRadius = 10
         
-        addToCartButton.roundCorners(corners: [.topLeft, .topRight], radius: addToCartButton.frame.height / 2)
+        addToCartButton.roundCorners(corners: [.topLeft, .topRight], radius: 15)
         
         bottomView.addShadow(color: .lightGray, opacity: 0.5, radius: 10)
         bottomView.backgroundColor = UIColor.white
@@ -88,6 +89,7 @@ class BoutiqueProductDetailVC: UIViewController {
         allCommentsButton.titleLabel?.text = "Tümünü Gör (324)"
         previousPriceLabel.text = "120₺"
         priceLabel.text = "90,50 ₺"
+        salePersentageLabel.text = "Sepette %10 indirim"
     }
     
     

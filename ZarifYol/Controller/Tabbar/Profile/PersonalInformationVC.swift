@@ -74,18 +74,14 @@ class PersonalInformationVC: UIViewController, UIImagePickerControllerDelegate, 
         
     }
     
-    
     func configureTextView(container: MDCTextInputControllerOutlined?) {
-        
         container?.borderRadius = 15
         container?.roundedCorners = [.topRight, .bottomRight]
         container?.borderStrokeColor = UIColor.lightGray
         container?.inlinePlaceholderColor = UIColor.lightGray
         container?.activeColor = UIColor(named: "color_orange")
         container?.floatingPlaceholderActiveColor = UIColor(named: "color_orange")
-        
     }
-    
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)

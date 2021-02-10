@@ -82,6 +82,7 @@ class MainPageVC: UIViewController {
     
     
     func setupLayouts() {
+        
         myCartInsideView.layer.backgroundColor = UIColor.white.cgColor
         myCartInsideView.layer.cornerRadius = myCartInsideView.frame.height / 2
         myCartInsideView.addShadow(color: .lightGray, opacity: 0.3, radius: 3)
@@ -144,7 +145,6 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate, SeeAllProducts
         self.present(vc, animated: true, completion: nil)
     }
     
-    
     @objc func tapSection(sender: UIButton) {
         //        self.arrayHeader[sender.tag] = (self.arrayHeader[sender.tag] == 1) ? 0 : 1
         //        self.selectedIndex = sender.tag
@@ -186,8 +186,6 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate, SeeAllProducts
         }
         
     }
-    
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(identifier: "BoutiqueProductDetailVC") as! BoutiqueProductDetailVC
@@ -237,6 +235,7 @@ extension MainPageVC: UITableViewDataSource, UITableViewDelegate, SeeAllProducts
     
     
 }
+
 
 extension MainPageVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

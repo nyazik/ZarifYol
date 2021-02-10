@@ -15,6 +15,7 @@ class SearchVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //MARK:- DELEGATE
         searchCategoryCollectionView.dataSource = self
         searchCategoryCollectionView.delegate = self

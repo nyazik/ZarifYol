@@ -9,7 +9,12 @@ import UIKit
 import iOSDropDown
 import Cosmos
 
+protocol DeleteProductCellDelegate {
+    func didDeleteProductButtonPressed(tag: Int)
+}
+
 class FavouriteProductCell: UITableViewCell {
+    var delegate: DeleteProductCellDelegate?
 
     @IBOutlet weak var chooseSizeDropDown: DropDown!
     @IBOutlet weak var ratingBarCosmosView: CosmosView!
@@ -33,7 +38,7 @@ class FavouriteProductCell: UITableViewCell {
     
     
     @IBAction func deleteFavouriteProductButtonPressed(_ sender: UIButton) {
-        
+        delegate?.didDeleteProductButtonPressed(tag: sender.tag)
     }
     
     

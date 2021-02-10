@@ -22,6 +22,7 @@ class FavouriteProductsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //MARK:- DELEGATE
         favouriteProductTableView.dataSource = self
         favouriteProductTableView.delegate = self
@@ -35,7 +36,6 @@ class FavouriteProductsVC: UIViewController {
         addGestureRecognizer(view: myCategoriesTabbarView)
         addGestureRecognizer(view: mainPageTabbarView)
     }
-    
     
     func addGestureRecognizer(view: UIView) {
         view.isUserInteractionEnabled = true
@@ -66,7 +66,6 @@ class FavouriteProductsVC: UIViewController {
         }
     }
     
-
     func setupLayouts() {
         
         myCartTabbarView.layer.cornerRadius = myCartTabbarView.frame.height / 2
@@ -82,7 +81,6 @@ class FavouriteProductsVC: UIViewController {
         titleLabel.text = "Favorilerim (4 ürün)"
     }
 
-
     @IBAction func menuButtonPressed(_ sender: UIButton) {
         let menu = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as! SideMenuNavigationController
         settingsSetupSlide()
@@ -94,7 +92,6 @@ class FavouriteProductsVC: UIViewController {
         SideMenuManager.default.leftMenuNavigationController = storyboard?.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? SideMenuNavigationController
         settingsSetupSlide()
     }
-    
     
     //menuDissolveIn
     func settingsSetupSlide() {
@@ -115,7 +112,10 @@ class FavouriteProductsVC: UIViewController {
     
 }
 
-extension FavouriteProductsVC: UITableViewDataSource, UITableViewDelegate {
+extension FavouriteProductsVC: UITableViewDataSource, UITableViewDelegate,  DeleteProductCellDelegate{
+    func didDeleteProductButtonPressed(tag: Int) {
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -131,7 +131,7 @@ extension FavouriteProductsVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FavouriteProductCell
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.addToCartTapped(_:)))
         cell.addtoToCardView.addGestureRecognizer(tapGesture)
-
+        cell.delegate = self
         cell.productNameLabel.text = "Oduncu Gömlek"
         cell.productPriceLabel.text = "76 ₺"
         cell.productColorLabel.text = "Siyah"

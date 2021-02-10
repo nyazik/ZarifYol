@@ -66,6 +66,7 @@ class RateProductVC: UIViewController {
     }
     
     @IBAction func userAgreementButtonButtonPressed(_ sender: UIButton) {
+        
         if userAgreementButton.isSelected {
             userAgreementButton.isSelected = false
         }

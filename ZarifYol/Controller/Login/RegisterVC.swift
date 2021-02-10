@@ -46,7 +46,6 @@ class RegisterVC: UIViewController {
         emailTextField.layer.backgroundColor = UIColor.clear.cgColor
         passwordTextField.layer.backgroundColor = UIColor.clear.cgColor
         passwordRepeatTextField.layer.backgroundColor = UIColor.clear.cgColor
-
     }
     
 //    func congigureBlurView(view: UIView) {

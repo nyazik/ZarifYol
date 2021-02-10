@@ -39,6 +39,7 @@ class ChangePasswordVC: UIViewController {
     }
     
     func setupLayouts() {
+        
         currentPasswordController = MDCTextInputControllerOutlined(textInput: currentPasswordTextField)
         configureTextView(container: currentPasswordController)
         

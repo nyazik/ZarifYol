@@ -14,6 +14,7 @@ class MyOrdersVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //MARK:- DELEGATE
         myOrdersTableView.dataSource = self
         myOrdersTableView.delegate = self
@@ -47,6 +48,5 @@ extension MyOrdersVC: UITableViewDataSource, UITableViewDelegate, MyOrderCellDel
         cell.configureCell()
         return cell
     }
-    
     
 }

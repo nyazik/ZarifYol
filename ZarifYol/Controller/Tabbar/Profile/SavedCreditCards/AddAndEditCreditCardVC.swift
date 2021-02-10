@@ -19,12 +19,10 @@ class AddAndEditCreditCardVC: UIViewController {
     @IBOutlet weak var CVCTextField: MDCTextField!
     @IBOutlet weak var saveButton: UIButton!
     
-    
     var addCard = false
     
     var textFields: [UITextField] {
         return [accountNameTextField, nameOfTheBankTextField, accountNumberTextField, expirationDateTextField, CVCTextField]
-        
     }
     
     var accountNameController: MDCTextInputControllerOutlined?
@@ -100,6 +98,7 @@ class AddAndEditCreditCardVC: UIViewController {
         if addCard == false{
             dismiss(animated: true, completion: nil)
         }else{
+            
         }
     }
     
